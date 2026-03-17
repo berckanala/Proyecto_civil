@@ -1,4 +1,4 @@
-PWD C:\Users\HP\Desktop\Uandes\11avo_semestre\Proyecto_civil\Entrega_1
+PWD c:\Users\HP\Desktop\Uandes\11avo_semestre\Proyecto_civil\Entrega_1
 INPUT C:\Users\HP\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\HP\Desktop\Uandes\11avo_semestre\Proyecto_civil\Entrega_1\informe.tex
 OUTPUT informe.log
@@ -371,6 +371,8 @@ OUTPUT secciones_inf\02info_gen.aux
 INPUT .\secciones_inf\02info_gen.tex
 INPUT .\secciones_inf\02info_gen.tex
 INPUT secciones_inf\02info_gen.tex
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
@@ -487,5 +489,9 @@ INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\c
 INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
