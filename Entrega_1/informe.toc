@@ -1,1 +1,10 @@
 \babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}INTRODUCCION}{2}{section.1}%
+\contentsline {section}{\numberline {2}INFORMACION GENERAL DEL EDIFICIO}{3}{section.2}%
+\contentsline {section}{\numberline {3}ESTRUCTURACION}{4}{section.3}%
+\contentsline {section}{\numberline {4}MATERIALES}{5}{section.4}%
+\contentsline {section}{\numberline {5}NORMAS}{6}{section.5}%
+\contentsline {section}{\numberline {6}SOLICITACIONES}{7}{section.6}%
+\contentsline {section}{\numberline {7}COMBINACIONES DE CARGA}{8}{section.7}%
+\contentsline {section}{\numberline {8}ANTECEDENTES ANÁLISIS SÍSMICO}{9}{section.8}%
+\contentsline {section}{\numberline {9}SUELO Y PARÁMETROS MECÁNICA DE SUELOS}{10}{section.9}%

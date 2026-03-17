@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  17 MAR 2026 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  17 MAR 2026 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -610,7 +610,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (informe.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (secciones_inf/01intro.aux) (secciones_inf/02info_gen.aux) (secciones_inf/03estructuracion.aux) (secciones_inf/04Materiales.aux) (secciones_inf/05normas.aux) (secciones_inf/06solicitaciones.aux) (secciones_inf/07comb_cargas.aux) (secciones_inf/08suelos_params.aux) (secciones_inf/09conclu_com.aux))
+ (secciones_inf/01intro.aux) (secciones_inf/02info_gen.aux) (secciones_inf/03estructuracion.aux) (secciones_inf/04Materiales.aux) (secciones_inf/05normas.aux) (secciones_inf/06solicitaciones.aux) (secciones_inf/07comb_cargas.aux) (secciones_inf/08antecedentes_sis.aux) (secciones_inf/09suelo_param.aux) (secciones_inf/10conclu_com.aux))
 \openout1 = `informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -699,7 +699,7 @@ Package hyperref Info: Link coloring ON on input line 61.
 \openout4 = `informe.out'.
 
 \c@lstlisting=\count336
-<LOGO_UNIVERSIDAD.jpg, id=6, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=42, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 72.
@@ -726,15 +726,49 @@ l.111 \newpage
 \openout2 = `secciones_inf/01intro.aux'.
 
  (secciones_inf/01intro.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 113.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [2
+
+]
 \openout2 = `secciones_inf/02info_gen.aux'.
 
  (secciones_inf/02info_gen.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 115.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [3
+
+
+
+]
 \openout2 = `secciones_inf/03estructuracion.aux'.
 
  (secciones_inf/03estructuracion.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 117.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [4
+
+
+
+]
 \openout2 = `secciones_inf/04Materiales.aux'.
 
  (secciones_inf/04Materiales.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 119.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [5
+
+
+
+]
 \openout2 = `secciones_inf/05normas.aux'.
 
  (secciones_inf/05normas.tex)
@@ -742,17 +776,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 121.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [2
-
-
-
-
-
-
-
-
-
-
+ [6
 
 
 
@@ -760,29 +784,59 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 121.
 \openout2 = `secciones_inf/06solicitaciones.aux'.
 
  (secciones_inf/06solicitaciones.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 123.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [7
+
+
+
+]
 \openout2 = `secciones_inf/07comb_cargas.aux'.
 
  (secciones_inf/07comb_cargas.tex)
-\openout2 = `secciones_inf/08suelos_params.aux'.
-
- (secciones_inf/08suelos_params.tex)
-\openout2 = `secciones_inf/09conclu_com.aux'.
-
- (secciones_inf/09conclu_com.tex) (informe.bbl)
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 135.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 125.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [3
+ [8
 
 
 
+]
+\openout2 = `secciones_inf/08antecedentes_sis.aux'.
+
+ (secciones_inf/08antecedentes_sis.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 127.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [9
 
 
 
+]
+\openout2 = `secciones_inf/09suelo_param.aux'.
+
+ (secciones_inf/09suelo_param.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 129.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [10
 
 
 
+]
+\openout2 = `secciones_inf/10conclu_com.aux'.
+
+ (secciones_inf/10conclu_com.tex) (informe.bbl)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 136.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [11
 
 
 
@@ -791,26 +845,26 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 135.
 ] (informe.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (secciones_inf/01intro.aux) (secciones_inf/02info_gen.aux) (secciones_inf/03estructuracion.aux) (secciones_inf/04Materiales.aux) (secciones_inf/05normas.aux) (secciones_inf/06solicitaciones.aux) (secciones_inf/07comb_cargas.aux) (secciones_inf/08suelos_params.aux) (secciones_inf/09conclu_com.aux))
+ (secciones_inf/01intro.aux) (secciones_inf/02info_gen.aux) (secciones_inf/03estructuracion.aux) (secciones_inf/04Materiales.aux) (secciones_inf/05normas.aux) (secciones_inf/06solicitaciones.aux) (secciones_inf/07comb_cargas.aux) (secciones_inf/08antecedentes_sis.aux) (secciones_inf/09suelo_param.aux) (secciones_inf/10conclu_com.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 4D5E23350EA89B2390BDC8329F6BA8D0;1315.
  ) 
 Here is how much of TeX's memory you used:
- 24375 strings out of 474485
- 454993 string characters out of 5745150
- 1929542 words of memory out of 5000000
- 46181 multiletter control sequences out of 15000+600000
+ 24430 strings out of 474485
+ 456548 string characters out of 5745150
+ 1930542 words of memory out of 5000000
+ 46212 multiletter control sequences out of 15000+600000
  560193 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,93p,641b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on informe.pdf (4 pages, 262768 bytes).
+Output written on informe.pdf (12 pages, 284937 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
