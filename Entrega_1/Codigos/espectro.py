@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
+
+G = 9.81  # m/s^2
 
 # ============================================================
 # DATOS DEL PROYECTO
@@ -108,11 +111,11 @@ def coeficiente_maximo(Ao_over_g, S, R):
 
 def espectro_diseno(T_array, S, Ao_over_g, I, Rstar, To, p):
     """
-    Sa/g = (S * Ao/g * alpha(T) * I) / R*
+    Sa = (S * Ao/g * alpha(T) * I / R*) * g
     """
     a = alpha(T_array, To, p)
-    Sa_over_g = (S * Ao_over_g * a * I) / Rstar
-    return Sa_over_g
+    Sa = ((S * Ao_over_g * a * I) / Rstar) * G
+    return Sa
 
 
 # ============================================================
@@ -164,7 +167,10 @@ Qo_max = Cmax * I * P_total
 # ============================================================
 
 T = np.linspace(0.01, 4.0, 1000)
-Sa_over_g = espectro_diseno(T, S, Ao_over_g, I, Rstar, To, p)
+Sa_m_s2 = espectro_diseno(T, S, Ao_over_g, I, Rstar, To, p)
+# Conversión explícita a aceleración espectral en unidades de g
+# (numéricamente equivale a Sa/g).
+Sa_g = Sa_m_s2 / G
 
 # ============================================================
 # RESULTADOS EN PANTALLA
@@ -224,14 +230,15 @@ print("=" * 60)
 # ============================================================
 
 plt.figure(figsize=(10, 6))
-plt.plot(T, Sa_over_g, label='Sa/g', linewidth=2)
+plt.plot(T, Sa_g, label='Sa (g)', linewidth=2)
 plt.axvline(Tstar, linestyle='--', linewidth=1.5, label=f'T* = {Tstar:.3f} s')
 plt.xlabel("Período T (s)")
-plt.ylabel("Sa / g")
+plt.ylabel("Sa (g)")
 plt.title("Espectro de Diseño NCh433")
+plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda y, _: f"{y:.2f}"))
 plt.grid(True, alpha=0.3)
 plt.legend()
 plt.tight_layout()
 
 #guardar figura en misma carpeta del script
-plt.savefig("Entrega_1\Codigos\Espectro_diseno.png", dpi=300)
+plt.savefig("Entrega_1/Codigos/Espectro_diseno.png", dpi=300)
