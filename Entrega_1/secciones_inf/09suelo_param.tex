@@ -2,42 +2,210 @@
 
 \subsection{Clasificación Suelo y descripción de características generales}
 
-Segun la norma NCh433, el tipo de suelo para la zona de antofagasta es de tipo A, lo cual se corresponde con roca o suelo cementado. En terminos sismicos, este suelo presenta una buena respuesta ante ondas sismicas, ya que al no tratarse de un suelo blando, no amplifica las ondas sismicas, lo que se traduce en una menor aceleración del suelo durante un evento sísmico. La norma establece que para este tipo de suelo, se debe utilizar la condicion $V {s30} \geq 900 m/s$, lo que indica que \textbf{CONTINUAAAR}
+De acuerdo con la norma NCh433, la clasificación sísmica del suelo de fundación debe establecerse a partir de parámetros geotécnicos medidos en el sitio, y no únicamente en función de la ubicación geográfica del proyecto.
 
-En conclucion, el suelo tipo A es un suelo que presenta una alta rigidez, baja deformabilidad y una buena capacidad de soporte, lo que lo hace adecuado para la construcción de estructuras. Sin embargo, es importante tener en cuenta que la presencia de fracturas o discontinuidades en el suelo puede afectar su comportamiento y capacidad de soporte, por lo que se recomienda realizar un estudio geotécnico detallado antes de iniciar cualquier proyecto de construcción en esta zona.
+Para clasificar un terreno como \textbf{Suelo Tipo A}, la norma establece que éste debe corresponder a roca o suelo cementado, cumpliendo en general con la siguiente condición:
 
-\subsubsection{Parametros geotecnicos del suelo}
+\begin{equation}
+V_{s30} \geq 900 \, m/s
+\end{equation}
 
-\textbf{RADACTAAAR Y CONFIRMAR DATOS}
-gamma soil kN m3: 18.0
-phi deg: 35.0
-cohesion kPa: 0.0
-gamma water kN m3: 9.81
-water table depth m: None
+donde $V_{s30}$ es la velocidad promedio de propagación de ondas de corte en los primeros 30 m de profundidad.
 
-Definir el modulo de elasticidad del suelop
+Adicionalmente, la norma permite verificar esta condición mediante parámetros geotécnicos equivalentes, tales como:
+
+\begin{itemize}
+    \item Índice de calidad de la roca:
+    \begin{equation}
+    RQD \geq 50\%
+    \end{equation}
+
+    \item Resistencia a compresión simple del material:
+    \begin{equation}
+    q_u \geq 10 \, MPa
+    \end{equation}
+
+    con deformación unitaria asociada menor o igual a 2\%.
+\end{itemize}
+
+En el caso del presente proyecto, ubicado en la ciudad de Antofagasta, el contexto geológico indica la presencia de un basamento rocoso compuesto principalmente por rocas ígneas y volcánicas, sobre el cual pueden existir depósitos superficiales de origen aluvial, marino o eólico.
+
+En base a estos antecedentes, y para efectos de las bases de cálculo, se adopta preliminarmente una clasificación de \textbf{Suelo Tipo A}, sujeta a verificación mediante el correspondiente estudio de mecánica de suelos.
+
+Desde el punto de vista sísmico, este tipo de suelo presenta un comportamiento favorable, caracterizado por una baja amplificación de las ondas sísmicas, lo que se traduce en menores demandas estructurales en comparación con suelos más deformables.
+
+En conclusión, el suelo Tipo A se caracteriza por presentar alta rigidez, baja deformabilidad y elevada capacidad portante. No obstante, la posible presencia de fracturas, discontinuidades o capas superficiales menos competentes puede influir en su comportamiento local, por lo que es imprescindible validar estos antecedentes mediante un estudio geotécnico detallado.
+
+\subsubsection{Parámetros geotécnicos del suelo}
+
+Para efectos de las bases de cálculo, se adoptan parámetros geotécnicos preliminares representativos de suelos granulares densos o materiales cementados, consistentes con el contexto geológico del sector:
+
+\begin{itemize}
+    \item Peso unitario del suelo:
+    \begin{equation}
+    \gamma = 18 \, kN/m^3
+    \end{equation}
+
+    \item Ángulo de fricción interna:
+    \begin{equation}
+    \phi = 35^\circ
+    \end{equation}
+
+    \item Cohesión:
+    \begin{equation}
+    c = 0 \, kPa
+    \end{equation}
+
+    \item Peso unitario del agua:
+    \begin{equation}
+    \gamma_w = 9.81 \, kN/m^3
+    \end{equation}
+
+    \item Nivel freático:
+
+    En esta etapa preliminar no se considera la presencia de napa freática dentro de la profundidad de fundación. Este antecedente deberá ser verificado mediante el estudio de mecánica de suelos.
+\end{itemize}
+
+El módulo de elasticidad del suelo ($E$) es un parámetro relevante para la estimación de deformaciones y la interacción suelo-estructura. Para materiales granulares densos o suelos cementados, se pueden considerar valores en el rango:
+
+\begin{equation}
+E \approx 50 - 150 \, MPa
+\end{equation}
+
+Para efectos de cálculo preliminar, se adopta:
+
+\begin{equation}
+E = 100 \, MPa
+\end{equation}
+
+Cabe señalar que estos parámetros son referenciales y deberán ser ajustados en función de los resultados del estudio geotécnico del proyecto.
 
 \subsection{Presiones admisibles}
 
-Segun enunciado, la capacidad de soporte del suelo pertenece entre 7.0 y 9.3 $kg/cm^2$, lo que se traduce en una capacidad de soporte entre 686.7 y 911.8 kPa. Para fines de diseño, se recomienda utilizar un valor conservador de capacidad de soporte, por lo que se puede considerar una presión admisible de 7.0 $kg/cm^2$ o 686.7 kPa para el diseño de la cimentación.
+Según el enunciado del proyecto, la capacidad de soporte del suelo se encuentra en el rango de:
+
+\begin{equation}
+q_{adm} = 7.0 - 9.3 \, kg/cm^2
+\end{equation}
+
+Lo anterior equivale a:
+
+\begin{equation}
+q_{adm} = 686.7 - 911.8 \, kPa
+\end{equation}
+
+Para efectos de diseño preliminar, se adopta un valor conservador de:
+
+\begin{equation}
+q_{adm} = 7.0 \, kg/cm^2 = 686.7 \, kPa
+\end{equation}
+
+Este valor deberá ser verificado posteriormente en función del tipo de fundación, profundidad de desplante y condiciones de deformabilidad del terreno.
 
 \subsection{Constante de balasto}
 
-\textbf{NESECITAMOS DATOS DE LAS FUNDACIONES PARA CALCULAR LA CONSTANTE DE BALASTO}
+La constante de balasto ($k$) representa la relación entre la presión aplicada sobre el suelo y la deformación generada, siendo un parámetro clave en el análisis de interacción suelo-estructura.
 
-La constante de balasto ($k$) es un parámetro que se utiliza para describir la relación entre la presión aplicada en la base de una cimentación y la deformación resultante del suelo. Este valor depende del tipo de fundacion, asi como las dimenciones de esta, ademas de las propiedades del suelo. En la etapa actual del proyecto, no se han definido las caractiristicas dimencionales de las fundaciones, pero si se puede establecer que los pilares usaran zapatas aisladas y los muros usaran zapatas corridas. Para el caso de las zapatas aisladas, la constante de balasto se puede estimar utilizando la siguiente formula:
+Este parámetro depende de múltiples factores, entre los que se incluyen:
+
+\begin{itemize}
+    \item Dimensiones de la fundación
+    \item Profundidad de desplante
+    \item Tipo de fundación (zapata aislada, corrida o losa)
+    \item Rigidez del suelo
+\end{itemize}
+
+En la etapa actual del proyecto no se cuenta con la geometría definitiva de las fundaciones, por lo que no es posible definir un valor único de la constante de balasto.
+
+Sin embargo, se puede realizar una estimación preliminar mediante la siguiente expresión:
 
 \begin{equation}
-k = \frac{E}{B}
+k \approx \frac{E}{B}
 \end{equation}
 
-Donde $E$ es el módulo de elasticidad del suelo y $B$ es el ancho de la zapata. Para el caso de las zapatas corridas, la constante de balasto se puede estimar utilizando la siguiente formula:
+donde:
+
+\begin{itemize}
+    \item $E$ es el módulo de elasticidad del suelo
+    \item $B$ es el ancho característico de la fundación
+\end{itemize}
+
+Para fundaciones continuas, una expresión análoga es:
 
 \begin{equation}
-k = \frac{E}{L}
+k \approx \frac{E}{L}
 \end{equation}
 
-Donde $L$ es la longitud de la zapata corrida.
+Estas expresiones corresponden a aproximaciones simplificadas y su uso es válido únicamente en etapas preliminares. El valor definitivo de $k$ deberá ser determinado a partir del Informe de Mecánica de Suelos.
 
 \subsection{Diagrama de empujes}
 
+Dado que el proyecto contempla un subterráneo, los muros enterrados estarán sometidos a empujes laterales de suelo.
+
+Considerando que estos elementos presentan restricción de desplazamiento lateral, se adopta como condición representativa el \textbf{estado de empuje en reposo}.
+
+El esfuerzo lateral a una profundidad $z$ se expresa como:
+
+\begin{equation}
+\sigma_h(z) = K_0 \, \gamma \, z + K_0 \, q
+\end{equation}
+
+donde:
+
+\begin{itemize}
+    \item $K_0 = 1 - \sin(\phi)$ es el coeficiente de empuje en reposo
+    \item $\gamma$ es el peso unitario del suelo
+    \item $z$ es la profundidad
+    \item $q$ es la sobrecarga superficial
+\end{itemize}
+
+En caso de presencia de napa freática, se deberá considerar adicionalmente la presión hidrostática:
+
+\begin{equation}
+u(z) = \gamma_w \, h_w
+\end{equation}
+
+Por lo tanto, la presión total se expresa como:
+
+\begin{equation}
+\sigma_{total}(z) = K_0 \gamma z + K_0 q + \gamma_w h_w
+\end{equation}
+
+El diagrama resultante corresponde a una distribución triangular (debido al peso del suelo) más una componente uniforme (debido a sobrecargas), con un posible incremento en presencia de agua.
+
+El diseño definitivo de los muros deberá considerar además condiciones de drenaje, sobrecargas adicionales y la variabilidad de las propiedades del suelo con la profundidad.
+
+\subsection{Napa de agua}
+
+La presencia de napa freática constituye un factor relevante en el diseño geotécnico, ya que influye directamente en:
+
+\begin{itemize}
+    \item Los empujes laterales sobre muros enterrados
+    \item La presión de poros en el suelo
+    \item La capacidad de soporte del terreno
+    \item La ocurrencia de subpresiones bajo elementos de fundación
+    \item Las condiciones de excavación y estabilidad de taludes
+\end{itemize}
+
+En el caso del presente proyecto, y en ausencia de antecedentes específicos provenientes de un estudio de mecánica de suelos, no se considera preliminarmente la presencia de napa freática dentro de la profundidad de fundación.
+
+No obstante, este supuesto deberá ser verificado mediante el correspondiente estudio geotécnico, ya que la eventual presencia de agua subterránea puede modificar significativamente el comportamiento del suelo.
+
+En caso de detectarse napa freática dentro de la profundidad de excavación, deberán considerarse los siguientes efectos en el diseño:
+
+\begin{itemize}
+    \item Incremento de los empujes laterales debido a la presión hidrostática, definida como:
+    \begin{equation}
+    u(z) = \gamma_w \cdot h_w
+    \end{equation}
+
+    donde $h_w$ corresponde a la altura de la columna de agua.
+
+    \item Reducción de la resistencia efectiva del suelo, debido al aumento de presión de poros.
+
+    \item Posible generación de subpresión bajo fundaciones, especialmente en losas de subterráneo, lo cual puede inducir fenómenos de flotación.
+
+    \item Necesidad de incorporar sistemas de drenaje o impermeabilización, tales como drenes perimetrales o muros con sistemas de alivio de presión.
+\end{itemize}
+
+Por lo tanto, la consideración definitiva de la napa de agua deberá integrarse en el diseño estructural y geotécnico una vez disponibles los resultados del estudio de mecánica de suelos.
