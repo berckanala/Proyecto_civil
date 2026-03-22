@@ -23,10 +23,15 @@ Ro = 11.0
 
 # Geometría básica
 N_pisos = 21
-
+N_subt = 1
 # Peso sísmico total sobre el nivel basal
 # Si P está en kN, Qo saldrá en kN
-P_total = 250000.0   # <-- CAMBIA ESTE VALOR por tu peso real
+q_piso = 1 #ton/m2
+q_subt = 1.2 #ton/m2
+A_piso = 352.2374 # m2
+A_subt = 1141.3908 # m2
+
+P_total = A_piso*q_piso*N_pisos + A_subt*q_subt*N_subt   # ton
 
 # ============================================================
 # OPCIÓN DE PERÍODO
