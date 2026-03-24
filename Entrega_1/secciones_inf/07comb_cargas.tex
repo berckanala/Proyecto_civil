@@ -1,1 +1,68 @@
 \section{COMBINACIONES DE CARGA}
+Las combinaciones de carga se establecen conforme a \textbf{NCh3171:2010}, que adopta el formato LRFD para el diseño por resistencia última. La simbología empleada es la siguiente:
+
+\begin{itemize}
+    \item $D$: Carga muerta (permanente).
+    \item $L$: Carga viva (sobrecarga de uso).
+    \item $L_r$: Carga viva de techo.
+    \item $S$: Carga de nieve.
+    \item $W$: Acción de viento.
+    \item $E$: Acción sísmica.
+    \item $H$: Presión de suelo o líquidos.
+\end{itemize}
+
+% ------------------------------------------------------------
+\subsection{Combinaciones para Estados Límites Últimos (ELU)}
+% ------------------------------------------------------------
+
+Estas combinaciones se utilizan para el diseño de resistencia de todos los elementos estructurales:
+
+\begin{table}[H]
+    \centering
+    \caption{Combinaciones de carga para ELU según NCh3171:2010.}
+    \label{tab:combinaciones_elu}
+    \begin{tabular}{clc}
+        \hline
+        \textbf{N°} & \textbf{Combinación} & \textbf{Observación} \\
+        \hline
+        C1 & $U = 1{,}4\,D$ & Solo carga muerta \\
+        C2 & $U = 1{,}2\,D + 1{,}6\,L + 0{,}5\,(L_r \text{ ó } S)$ & Predomina CV \\
+        C3 & $U = 1{,}2\,D + 1{,}6\,(L_r \text{ ó } S) + (1{,}0\,L \text{ ó } 0{,}5\,W)$ & Predomina techo \\
+        C4 & $U = 1{,}2\,D + 1{,}0\,W + 1{,}0\,L + 0{,}5\,(L_r \text{ ó } S)$ & Predomina viento \\
+        C5 & $U = 0{,}9\,D + 1{,}0\,W$ & Viento c/ baja CM \\
+        C6 & $U = 1{,}2\,D + 1{,}0\,E + 1{,}0\,L + 0{,}2\,S$ & Predomina sismo \\
+        C7 & $U = 0{,}9\,D + 1{,}0\,E$ & Sismo c/ baja CM \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Cuando actúa la presión de suelo o hidrostática ($H$):
+\begin{itemize}
+    \item Si $H$ aumenta el efecto desfavorable: agregar $1{,}6\,H$ en C1--C5 y $1{,}0\,H$ en C6--C7.
+    \item Si $H$ reduce el efecto (favorece la estabilidad): usar $0{,}9\,H$.
+\end{itemize}
+
+% ------------------------------------------------------------
+\subsection{Combinaciones para Estados Límites de Servicio (ELS)}
+% ------------------------------------------------------------
+
+Se utilizan para la verificación de deflexiones, derivas de piso y fisuración:
+
+\begin{table}[H]
+    \centering
+    \caption{Combinaciones de carga para ELS según NCh3171:2010.}
+    \label{tab:combinaciones_els}
+    \begin{tabular}{cl}
+        \hline
+        \textbf{N°} & \textbf{Combinación} \\
+        \hline
+        CS1 & $U = D + L$ \\
+        CS2 & $U = D + L + W$ \\
+        CS3 & $U = D + L + 0{,}7\,E$ \\
+        CS4 & $U = D + 0{,}75\,L + 0{,}75\,W$ \\
+        CS5 & $U = D + 0{,}75\,L + 0{,}525\,E$ \\
+        CS6 & $U = 0{,}6\,D + W$ \\
+        CS7 & $U = D + 0{,}7\,E$ \\
+        \hline
+    \end{tabular}
+\end{table}

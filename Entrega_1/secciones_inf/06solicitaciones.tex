@@ -1,1 +1,119 @@
 \section{SOLICITACIONES}
+
+Las solicitaciones consideradas en el diseño estructural del edificio corresponden a todas las acciones que actuarán sobre la estructura durante su vida útil, de acuerdo con la normativa NCh1537:2009 y NCh3171:2010.
+
+% ------------------------------------------------------------
+\subsection{Cargas Muertas (D) -- Pesos Propios}
+% ------------------------------------------------------------
+
+Las cargas muertas comprenden el peso permanente de todos los elementos estructurales y no estructurales. Los pesos unitarios se obtienen de NCh1537:2009 y se resumen en la Tabla~\ref{tab:cargas_muertas}.
+
+\begin{table}[H]
+    \centering
+    \caption{Cargas muertas consideradas en el diseño.}
+    \label{tab:cargas_muertas}
+    \begin{tabular}{lc}
+        \hline
+        \textbf{Elemento} & \textbf{Valor} \\
+        \hline
+        Hormigón armado (muros, losas, vigas) & $\gamma = 2{,}400\ \text{kg/m}^3$ \\
+        Losa de HA ($e = 15\ \text{cm}$)      & $360\ \text{kg/m}^2$ \\
+        Terminaciones y pavimento              & $80\ \text{kg/m}^2$ \\
+        Tabiquería (Metalcom + Volcanita)      & $80\ \text{kg/m}^2$ \\
+        Cielo falso e instalaciones            & $30\ \text{kg/m}^2$ \\
+        \hline
+        \textbf{Carga muerta total (losas habitacionales)} & $\boldsymbol{\approx 550\ \text{kg/m}^2}$ \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Los muros de hormigón armado de 20~cm de espesor aportan un peso lineal de:
+\[
+    p_{\text{muro}} = \gamma_{\text{HA}} \cdot e \cdot h_{\text{piso}} = 2{,}400 \times 0{,}20 \times 3{,}00 = 1{,}440\ \text{kg/m}
+\]
+
+% ------------------------------------------------------------
+\subsection{Sobrecargas -- Cargas Vivas (CV)}
+% ------------------------------------------------------------
+
+Según NCh1537:2009, los valores característicos de sobrecarga según el uso de cada zona del edificio se presentan en la Tabla~\ref{tab:cargas_vivas}.
+
+\begin{table}[H]
+    \centering
+    \caption{Sobrecargas características según uso.}
+    \label{tab:cargas_vivas}
+    \begin{tabular}{lc}
+        \hline
+        \textbf{Zona} & \textbf{SC (kg/m$^2$)} \\
+        \hline
+        Departamentos / dormitorios                    & $200\ \text{kg/m}^2$ \\
+        Pasillos y escaleras interiores                & $300\ \text{kg/m}^2$ \\
+        Estacionamiento subterráneo (vehículos livianos) & $250\ \text{kg/m}^2$ \\
+        Terraza no accesible (cubierta)                & $50\ \text{kg/m}^2$  \\
+        Terraza accesible                              & $200\ \text{kg/m}^2$ \\
+        \hline
+    \end{tabular}
+\end{table}
+
+El uso principal del edificio es habitacional (departamentos), por lo que el valor de referencia es $\mathbf{SC = 200\ \text{kg/m}^2}$.
+
+% ------------------------------------------------------------
+\subsection{Carga de Viento (W)}
+% ------------------------------------------------------------
+
+De acuerdo con NCh432:2010, Antofagasta se ubica en Zona de Viento I. La velocidad básica de diseño es $V_b \approx 28\ \text{m/s}$ y la presión básica de viento se calcula como:
+
+\[
+    q_b = \frac{1}{2} \cdot \rho_{\text{aire}} \cdot V_b^2 = \frac{1}{2} \cdot 1{,}25 \cdot (28)^2 \approx 490\ \text{Pa} \approx \mathbf{50\ \text{kg/m}^2}
+\]
+
+Para un edificio de 21 pisos (altura total $H \approx 63\ \text{m}$), la presión de diseño se incrementa con la altura mediante coeficientes de exposición de terreno. En la zona superior del edificio, los valores pueden alcanzar entre $70$ y $100\ \text{kg/m}^2$. La acción de viento se aplica en ambas direcciones principales ($X$ e $Y$), considerando presión en barlovento y succión en sotavento de manera simultánea. Si bien el viento generalmente no es la solicitación crítica en Zona Sísmica 3, debe incorporarse en todas las combinaciones de carga correspondientes.
+
+% ------------------------------------------------------------
+\subsection{Acción Sísmica (E)}
+% ------------------------------------------------------------
+
+El diseño sísmico se realiza conforme a NCh433:1996 mod. 2009 y DS~N°61 (2011). Los parámetros de diseño para este proyecto se indican en la Tabla~\ref{tab:parametros_sismicos}.
+
+\begin{table}[H]
+    \centering
+    \caption{Parámetros sísmicos de diseño según NCh433 y DS N°61.}
+    \label{tab:parametros_sismicos}
+    \begin{tabular}{lc}
+        \hline
+        \textbf{Parámetro} & \textbf{Valor} \\
+        \hline
+        Zona sísmica                                    & Zona 3 \\
+        Aceleración efectiva máxima $A_0$               & $0{,}40\,g$ \\
+        Tipo de suelo                                   & Tipo A \\
+        Categoría de Ocupación                         & II \\
+        Factor de importancia $I_0$                    & $1{,}0$ \\
+        Coeficiente sísmico $C$                        & $0{,}10$ \\
+        Resistencia al corte del suelo $\tau$          & $7{,}0\ \text{kg/cm}^2$ \\
+        Factor de modificación de respuesta $R$        & $7$ (muros de corte de HA) \\
+        Período característico del suelo $T^*$         & $0{,}20\ \text{s}$ \\
+        \hline
+    \end{tabular}
+\end{table}
+
+El análisis sísmico se realizará mediante el \textbf{método de análisis modal espectral} conforme a NCh433, requerido para edificios de altura superior a 5 pisos. El espectro utilizado corresponde al \textbf{espectro elástico} con $R^* = 1$, según lo indicado por la cátedra. La acción sísmica se aplica independientemente en ambas direcciones ortogonales del edificio, considerando además el efecto de torsión accidental. De acuerdo con el DS~N°61, se combina el $100\%$ de la acción sísmica en la dirección principal con el $30\%$ en la dirección ortogonal.
+
+Los valores límite del coeficiente sísmico se determinan a partir de NCh433:
+
+\[
+    C_{\min} = \frac{A_0 \cdot I_0}{6\,g} \cdot \frac{R^*}{R} \qquad ; \qquad C_{\max} = \frac{A_0 \cdot I_0}{g} \cdot \frac{R^*}{R}
+\]
+
+donde $A_0 = 0{,}40\,g$, $I_0 = 1{,}0$, $R = 7$ y $R^* = 1$.
+
+% ------------------------------------------------------------
+\subsection{Carga de Nieve (S)}
+% ------------------------------------------------------------
+
+Según NCh431:2010, Antofagasta se ubica al nivel del mar en la zona hiperárida del norte de Chile (Desierto de Atacama). En consecuencia, la carga característica de nieve es:
+
+\[
+    S_k = 0\ \text{kg/m}^2
+\]
+
+La carga de nieve es nula para este proyecto, pues la ciudad no registra precipitaciones níveas a nivel del mar. Se menciona e incorpora en las combinaciones de carga por cumplimiento normativo de NCh3171:2010, sin efecto práctico en el diseño.
