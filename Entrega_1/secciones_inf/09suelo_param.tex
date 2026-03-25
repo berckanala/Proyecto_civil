@@ -43,12 +43,12 @@ Para efectos de las bases de cálculo, se adoptan parámetros geotécnicos preli
 \begin{itemize}
     \item Peso unitario del suelo:
     \begin{equation}
-    \gamma = 18 \, kN/m^3
+    \gamma = 19-21 \, kN/m^3
     \end{equation}
 
     \item Ángulo de fricción interna:
     \begin{equation}
-    \phi = 35^\circ
+    \phi = 40-50^\circ
     \end{equation}
 
     \item Cohesión:
@@ -104,39 +104,11 @@ Este valor deberá ser verificado posteriormente en función del tipo de fundaci
 
 \subsection{Constante de balasto}
 
-La constante de balasto ($k$) representa la relación entre la presión aplicada sobre el suelo y la deformación generada, siendo un parámetro clave en el análisis de interacción suelo-estructura.
+La constante de balasto ($k$), también denominada módulo de reacción del subgrado, representa la relación entre la presión aplicada sobre el suelo y la deformación generada, siendo un parámetro clave en el análisis de interacción suelo-estructura. 
 
-Este parámetro depende de múltiples factores, entre los que se incluyen:
+Este parámetro permite calcular la interacción entre la cimentación del edificio y el terreno existente, dependiendo fundamentalmente de dos factores: la naturaleza del terreno y el tipo de cimentación diseñada. Gráficamente, este módulo se puede modelar como una base de infinitos muelles con una rigidez $K$ situados bajo la cimentación de nuestro edificio.
 
-\begin{itemize}
-    \item Dimensiones de la fundación
-    \item Profundidad de desplante
-    \item Tipo de fundación (zapata aislada, corrida o losa)
-    \item Rigidez del suelo
-\end{itemize}
-
-En la etapa actual del proyecto no se cuenta con la geometría definitiva de las fundaciones, por lo que no es posible definir un valor único de la constante de balasto.
-
-Sin embargo, se puede realizar una estimación preliminar mediante la siguiente expresión:
-
-\begin{equation}
-k \approx \frac{E}{B}
-\end{equation}
-
-donde:
-
-\begin{itemize}
-    \item $E$ es el módulo de elasticidad del suelo
-    \item $B$ es el ancho característico de la fundación
-\end{itemize}
-
-Para fundaciones continuas, una expresión análoga es:
-
-\begin{equation}
-k \approx \frac{E}{L}
-\end{equation}
-
-Estas expresiones corresponden a aproximaciones simplificadas y su uso es válido únicamente en etapas preliminares. El valor definitivo de $k$ deberá ser determinado a partir del Informe de Mecánica de Suelos.
+Para la estimación de este valor, se han utilizado los parámetros propuestos por \cite{CYPE2019Balasto}, específicamente los valores de $K_{30}$ (coeficiente para placa de 30 cm). Considerando las características geotécnicas de la zona de Antofagasta, donde predomina la formación de Andesitas, se ha seleccionado el parámetro correspondiente a \textbf{Rocas blandas o alteradas}, cuyo rango de diseño oscila entre $30$ kg/cm$^3$ y $500$ kg/cm$^3$. El valor definitivo de $k$ deberá ser ajustado posteriormente según la geometría final de las fundaciones basándose en el Informe de Mecánica de Suelos definitivo.
 
 \subsection{Diagrama de empujes}
 
