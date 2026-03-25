@@ -193,7 +193,7 @@ def resultant_force_from_diagram(diagram: list[dict]) -> dict:
 # ============================================================
 # GRÁFICA DEL DIAGRAMA DE EMPUJE
 # ============================================================
-
+ 
 def plot_pressure_diagram(diagram: list[dict], title: str = "Diagrama de empuje lateral") -> None:
     z = [row["z_m"] for row in diagram]
     soil = [row["soil_kPa"] for row in diagram]
