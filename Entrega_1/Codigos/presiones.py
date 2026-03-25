@@ -309,8 +309,8 @@ if __name__ == "__main__":
     )
 
     soil = SoilParameters(
-        gamma_soil_kN_m3=18.0,
-        phi_deg=35.0,
+        gamma_soil_kN_m3=20.0,
+        phi_deg=45.0,
         cohesion_kPa=0.0,
         gamma_water_kN_m3=9.81,
         water_table_depth_m=None
@@ -318,7 +318,7 @@ if __name__ == "__main__":
     )
 
     wall = BasementWall(
-        height_m=3.2,
+        height_m=2.6,
         surcharge_kPa=10.0
     )
 
