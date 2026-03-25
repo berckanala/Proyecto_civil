@@ -105,85 +105,43 @@ Este valor deberá ser verificado posteriormente en función del tipo de fundaci
 
 En términos sencillos, el coeficiente de balasto ($k$) mide cuánto se deforma el suelo bajo presión. Es clave para entender la interacción suelo-estructura y se puede visualizar como si la cimentación descansara sobre una base de infinitos muelles con rigidez $K$.
 
-Para el cálculo, tomamos como referencia los valores de $K_{30}$ de \cite{CYPE2019Balasto}. Considerando que en Antofagasta predominan las \textbf{Andesitas} (rocas blandas o alteradas), el rango de diseño se sitúa entre $30$ kg/cm$^3$ y $500$ kg/cm$^3$. 
+Para el cálculo, tomamos como referencia los valores de $K_{30}$ de \cite{CYPE2019Balasto}. Considerando que en Antofagasta predominan las Andesitas (rocas blandas o alteradas), el rango de diseño se sitúa entre $30$ kg/cm$^3$ y $500$ kg/cm$^3$. 
 
 Este valor se ajustará según la geometría final de las fundaciones una vez se tenga el Informe de Mecánica de Suelos definitivo.
+\subsection{Diagrama de empujes y napa freática}
 
-\subsection{Diagrama de empujes}
-
-Dado que el proyecto contempla un subterráneo, los muros enterrados estarán sometidos a empujes laterales de suelo.
-
-Considerando que estos elementos presentan restricción de desplazamiento lateral, se adopta como condición representativa el \textbf{estado de empuje en reposo}.
-
-El esfuerzo lateral a una profundidad $z$ se expresa como:
+Dado que el proyecto contempla muros de subterráneo con restricción de desplazamiento, el diseño se basa en el estado de empuje en reposo. La presión lateral total a una profundidad $z$ se calcula mediante la superposición del empuje del suelo, la sobrecarga superficial y la presión hidrostática:
 
 \begin{equation}
-\sigma_h(z) = K_0 \, \gamma \, z + K_0 \, q
+\sigma_{total}(z) = K_0 (\gamma \, z + q) + \gamma_w \, h_w
 \end{equation}
 
-donde:
-
+Donde:
 \begin{itemize}
-    \item $K_0 = 1 - \sin(\phi)$ es el coeficiente de empuje en reposo
-    \item $\gamma$ es el peso unitario del suelo
-    \item $z$ es la profundidad
-    \item $q$ es la sobrecarga superficial
+    \item $K_0 = 1 - \sin(\phi)$ es el coeficiente de empuje en reposo.
+    \item $\gamma$ y $\gamma_w$ son los pesos unitarios del suelo y del agua, respectivamente.
+    \item $q$ representa la sobrecarga superficial (tránsito o estructuras vecinas).
+    \item $h_w$ es la altura de la columna de agua sobre el punto de cálculo.
 \end{itemize}
 
-En caso de presencia de napa freática, se deberá considerar adicionalmente la presión hidrostática:
 
-\begin{equation}
-u(z) = \gamma_w \, h_w
-\end{equation}
 
-Por lo tanto, la presión total se expresa como:
+\subsubsection*{Consideraciones sobre la napa freática}
 
-\begin{equation}
-\sigma_{total}(z) = K_0 \gamma z + K_0 q + \gamma_w h_w
-\end{equation}
+De forma preliminar consideramos que la napa freática está a una profundidad de $h_w = 5.0 \, m$, por lo tanto, no se considera la presencia de napa freática dentro de la profundidad de excavación, basándose en los antecedentes generales de la zona. No obstante, esto deberá ser ratificado por el Informe de Mecánica de Suelos definitivo. 
 
-El diagrama resultante corresponde a una distribución triangular (debido al peso del suelo) más una componente uniforme (debido a sobrecargas), con un posible incremento en presencia de agua.
-
-El diseño definitivo de los muros deberá considerar además condiciones de drenaje, sobrecargas adicionales y la variabilidad de las propiedades del suelo con la profundidad.
-
-\subsection{Napa de agua}
-
-La presencia de napa freática constituye un factor relevante en el diseño geotécnico, ya que influye directamente en:
-
+En caso de detectarse agua subterránea, el diseño deberá ajustarse para mitigar los siguientes efectos:
 \begin{itemize}
-    \item Los empujes laterales sobre muros enterrados
-    \item La presión de poros en el suelo
-    \item La capacidad de soporte del terreno
-    \item La ocurrencia de subpresiones bajo elementos de fundación
-    \item Las condiciones de excavación y estabilidad de taludes
+    \item Empuje Hidrostático: Aumento de la presión lateral sobre los muros.
+    \item Subpresión: Empuje vertical ascendente bajo la losa del subterráneo que podría inducir flotación.
+    \item Resistencia: Reducción de la tensión efectiva y la capacidad de soporte del terreno.
 \end{itemize}
 
-En el caso del presente proyecto, y en ausencia de antecedentes específicos provenientes de un estudio de mecánica de suelos, no se considera preliminarmente la presencia de napa freática dentro de la profundidad de fundación.
+Bajo estas consideraciones, el esquema de presiones adoptado se presenta en la Figura \ref{fig:diagrama_empujes}.
 
-No obstante, este supuesto deberá ser verificado mediante el correspondiente estudio geotécnico, ya que la eventual presencia de agua subterránea puede modificar significativamente el comportamiento del suelo.
-
-En caso de detectarse napa freática dentro de la profundidad de excavación, deberán considerarse los siguientes efectos en el diseño:
-
-\begin{itemize}
-    \item Incremento de los empujes laterales debido a la presión hidrostática, definida como:
-    \begin{equation}
-    u(z) = \gamma_w \cdot h_w
-    \end{equation}
-
-    donde $h_w$ corresponde a la altura de la columna de agua.
-
-    \item Reducción de la resistencia efectiva del suelo, debido al aumento de presión de poros.
-
-    \item Posible generación de subpresión bajo fundaciones, especialmente en losas de subterráneo, lo cual puede inducir fenómenos de flotación.
-
-    \item Necesidad de incorporar sistemas de drenaje o impermeabilización, tales como drenes perimetrales o muros con sistemas de alivio de presión.
-\end{itemize}
-
-Por lo tanto, la consideración definitiva de la napa de agua deberá integrarse en el diseño estructural y geotécnico una vez disponibles los resultados del estudio de mecánica de suelos.
-
-Con todo esto en consideración el diagrama de empujes queda de la siguiente forma:
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{secciones_inf/IMG/Diagrama_presiones.png}
-    \caption{Diagrama de empujes laterales considerando la presencia de napa freática.}
+    \includegraphics[width=0.7\textwidth]{secciones_inf/IMG/Diagrama_presiones.png}
+    \caption{Distribución de empujes laterales considerando suelo, sobrecarga y napa.}
+    \label{fig:diagrama_empujes}
 \end{figure}
