@@ -1,3 +1,76 @@
 \section{Estudio de Losas por piso}
 
-pipe en trabajo
+\subsection{Espesores de losa}
+
+Se tomaron las 3 losas de mayor dimensión de cada piso, se obtuvo la realción $\epsilon$
+, se interpoló el valor $\phi$ en base a la \textbf{tabla del apunte del curso} y se determinó el tipo de losa según tipo de apoyos. Con eso
+se utilizó la siguiente formula para obtener el espesor de la losa:
+
+\begin{equation}
+    e \ge \frac{L_x \phi}{\lambda + r}
+\end{equation}
+
+Donde $L_x$ es la luz menor, $\phi$ es el coeficiente de esbeltez, $\lambda$ es 35 si es losa típica y 45 si es losa de techo, $r$ es el recubrimiento (2 cm) y $e$ es el espesor de la losa.
+
+Según los espesores de las losas utilizadas, se definirá el espesor final como el mayor valor entre las 3 losas.
+
+\subsubsection{Piso 3 al 21}
+
+Se tomarón las losas A, B y C. Los espesores obtenidos fueron los siquientes:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Losa & Tipo Losa & $L_x$ (m)& $L_y$ (m) & $\epsilon$ & $\phi$ & $e$ (cm) \\
+        \hline
+        A & 6 & 5.73 & 8.75 & 1.52 & 0.591 & 9.14 \\
+        B & 6 & 6.18 & 8.43 & 1.36 & 0.567 & 9.47 \\
+        C & 6 & 6.21 & 8.98 & 1.45 & 0.575 & 9.65 \\
+        \hline
+    \end{tabular}
+    \caption{Espesores de losas del piso 3 al 21}
+\end{table}
+
+Por lo tanto, el espesor final del piso 3 al 21 es $e=10$ cm.
+
+\subsubsection{Piso 2}
+
+Se tomarón las losas D, E y F. Los espesores obtenidos fueron los siquientes:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Losa & Tipo Losa & $L_x$ (m)& $L_y$ (m) & $\epsilon$ & $\phi$ & $e$ (cm) \\
+        \hline
+        D & 6 & 6.24 & 6.91 & 1.11 & 0.55 & 9.27 \\
+        E & 6 & 6.18 & 8.43 & 1.36 & 0.567 & 9.47 \\
+        F & 6 & 5.73 & 8.75 & 1.52 & 0.591 & 9.14 \\
+        \hline
+    \end{tabular}
+    \caption{Espesores de losas del piso 2}
+\end{table}
+
+Por lo tanto, el espesor final del piso 2 es $e=10$ cm.
+
+\subsubsection{Piso 1}
+
+Se tomarón las losas G, H y I. Los espesores obtenidos fueron los siquientes:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Losa & Tipo Losa & $L_x$ (m)& $L_y$ (m) & $\epsilon$ & $\phi$ & $e$ (cm) \\
+        \hline
+        G & 6 & 6.24 & 6.91 & 1.11 & 0.55 & 9.27 \\
+        H & 6 & 5.78 & 7.12 & 1.23 & 0.56 & 8.75 \\
+        I & 5a & 5.73 & 6.12 & 1.07 & 0.58 & 8.98 \\
+        \hline
+    \end{tabular}
+    \caption{Espesores de losas del piso 1}
+\end{table}
+
+Por lo tanto, el espesor final del piso 1 es $e=10$ cm.
+

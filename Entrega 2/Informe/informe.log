@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.16)  9 APR 2026 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.16)  9 APR 2026 16:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,7 +695,7 @@ Package hyperref Info: Link coloring ON on input line 61.
 \openout4 = `informe.out'.
 
 \c@lstlisting=\count343
-<LOGO_UNIVERSIDAD.jpg, id=14, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=30, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 72.
@@ -746,7 +746,22 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 115.
 
 
 
-]
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 \include{secciones/losas.tex}
+                                   
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 \include{secciones/losas.tex}
+                                   
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 \include{secciones/losas.tex}
+                                   ]
 \openout2 = `secciones/vigas.aux'.
 
  (secciones/vigas.tex)
@@ -766,20 +781,20 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: 4ED8707DAEE271918D975418B8D6D0A3;286.
+(rerunfilecheck)             Checksum: 1FB85321AD78157E80162D29140383C7;770.
  ) 
 Here is how much of TeX's memory you used:
- 24199 strings out of 473899
- 447692 string characters out of 5726499
- 1930960 words of memory out of 5000000
- 46623 multiletter control sequences out of 15000+600000
- 560193 words of font info for 43 fonts, out of 8000000 for 9000
+ 24226 strings out of 473899
+ 448139 string characters out of 5726499
+ 1944960 words of memory out of 5000000
+ 46641 multiletter control sequences out of 15000+600000
+ 560647 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,93p,666b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on informe.pdf (4 pages, 262459 bytes).
+<C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on informe.pdf (4 pages, 301237 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 34 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
