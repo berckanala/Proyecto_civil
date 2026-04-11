@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {section}{\numberline {2}Estudio de Losas por piso}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Espesores de losa}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Piso 1}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Piso 2}{3}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Piso 3 al 21}{3}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Subterráneo}{4}{subsubsection.2.1.4}%
