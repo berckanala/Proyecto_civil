@@ -1,0 +1,91 @@
+\section{Estudio de Muros}
+
+A continuación, se presenta el análisis detallado de los muros del edificio con el objetivo de establecer las características de su prediseño estructural.
+
+\subsection{Largos de Muros}
+
+Para determinar el espesor requerido en los elementos verticales, se midió la longitud total de los muros en las direcciones horizontal ($X$) y vertical ($Y$) para cada nivel. Los resultados obtenidos se resumen en la Tabla \ref{tab:largos_muros}:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Piso} & \textbf{Largo Horizontal [m]} & \textbf{Largo Vertical [m]} \\
+        \midrule
+        Subterráneo  & 81.22 & 63.76 \\
+        Primer Piso  & 41.16 & 46.77 \\
+        Segundo Piso & 36.41 & 38.83 \\
+        Piso Tipo    & 37.31 & 45.20 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Longitudes totales de muros por nivel.}
+    \label{tab:largos_muros}
+\end{table}
+
+\subsection{Corte Basal}
+
+El esfuerzo de corte basal se determinó mediante la siguiente expresión:
+
+\begin{equation}
+    V = C \cdot I \cdot P
+\end{equation}
+
+Donde $C$ representa el coeficiente sísmico, $I$ el factor de importancia y $P$ el peso total de la estructura. Considerando los valores $C = 0.1$, $I = 1.0$ y $P = 9289.149 \text{ tonf}$, se obtiene un corte basal total de $V = 928.915 \text{ tonf}$.
+
+\subsection{Índice de densidad de muros}
+
+El índice de densidad de muros ($Im$) permite evaluar la rigidez lateral de la edificación en relación con su área en planta. La metodología de cálculo empleada es la siguiente:
+
+\begin{equation}
+    Im_i = \frac{L_i \cdot e_{prop}}{A_{planta}}
+\end{equation}
+
+Donde $L_i$ corresponde al largo acumulado de muros en la dirección analizada, $e_{prop}$ es el espesor propuesto y $A_{planta}$ es el área neta de la planta (descontando el área de la caja de ascensor de $7.47 \text{ m}^2$). Las áreas netas resultantes son: $1146.13 \text{ m}^2$ para el subterráneo, $319.93 \text{ m}^2$ para el primer piso, $322.53 \text{ m}^2$ para el segundo piso y $349.33 \text{ m}^2$ para el piso tipo.
+
+Como referencia para el espesor de diseño, se utiliza la relación basada en el esfuerzo de corte admisible ($\tau$):
+
+\begin{equation}
+    e_{ref} = \frac{V}{\tau \cdot L_i}
+\end{equation}
+
+Se adopta un valor conservador de $\tau = 80 \text{ tonf/m}^2$. Los resultados del análisis se presentan a continuación:
+
+\subsubsection{Índice de Densidad de Muros Horizontales}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Nivel} & \textbf{Lx [m]} & \textbf{ex (ref) [m]} & \textbf{ex prop [m]} & \textbf{Área Planta [$m^2$]} & \textbf{Imx} \\
+        \midrule
+        Subterráneo  & 81.22 & 0.14 & 0.35 & 1146.13 & 2.5\% \\
+        Primer Piso  & 41.16 & 0.28 & 0.25 & 319.93  & 3.2\% \\
+        Segundo Piso & 36.41 & 0.32 & 0.35 & 322.53  & 4.0\% \\
+        Piso Tipo    & 37.31 & 0.31 & 0.30 & 349.33  & 3.2\% \\
+        \bottomrule
+    \end{tabular}
+    \caption{Resultados e índice de densidad para muros horizontales.}
+    \label{tab:densidad_horiz}
+\end{table}
+
+\subsubsection{Índice de Densidad de Muros Verticales}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Nivel} & \textbf{Ly [m]} & \textbf{ey (ref) [m]} & \textbf{ey prop [m]} & \textbf{Área Planta [$m^2$]} & \textbf{Imy} \\
+        \midrule
+        Subterráneo  & 141.62 & 0.08 & 0.35 & 1146.13 & 4.3\% \\
+        Primer Piso  & 46.77  & 0.25 & 0.25 & 319.93  & 3.7\% \\
+        Segundo Piso & 38.83  & 0.30 & 0.30 & 322.53  & 3.6\% \\
+        Piso Tipo    & 45.20  & 0.26 & 0.20 & 349.33  & 2.6\% \\
+        \bottomrule
+    \end{tabular}
+    \caption{Resultados e índice de densidad para muros verticales.}
+    \label{tab:densidad_vert}
+\end{table}
+
+\subsection{Espesor Definitivo de Muros}
+
+Dado que el índice de densidad ($Im$) se mantiene dentro del rango normativo/recomendado (entre el 2.5\% y 5.0\%) para ambas direcciones en todos los niveles, se validan los espesores propuestos. Por lo tanto, el diseño contempla un espesor de 0.35 m para el subterráneo, 0.25 m para el primer piso y 0.30 m para el segundo piso y piso tipo.
