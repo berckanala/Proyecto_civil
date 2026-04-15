@@ -337,6 +337,8 @@ INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\informe.toc
 INPUT .\informe.toc
 INPUT informe.toc
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\HP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT informe.toc
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
@@ -365,6 +367,10 @@ OUTPUT secciones\vigas.aux
 INPUT .\secciones\vigas.tex
 INPUT .\secciones\vigas.tex
 INPUT secciones\vigas.tex
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\secciones\Muros.tex
 OUTPUT secciones\Muros.aux
 INPUT .\secciones\Muros.tex
