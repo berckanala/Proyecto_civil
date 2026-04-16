@@ -2,95 +2,85 @@
 
 \subsection{Determinación de Espesores de Losa}
 
-Para el análisis, se seleccionaron las tres losas de mayores dimensiones de cada nivel. El procedimiento consistió en determinar la relación de aspecto $\epsilon$, interpolar el coeficiente de esbeltez $\phi$ (según las condiciones de apoyo indicadas en la normativa o apuntes de referencia) y aplicar la siguiente expresión para el cálculo del espesor mínimo:
+Para el análisis, se seleccionaron las tres losas de mayores dimensiones de cada 
+nivel. El procedimiento consistió en determinar la relación de aspecto $\epsilon = 
+L_y/L_x$, interpolar el coeficiente de esbeltez $\phi$ según las condiciones de 
+apoyo de cada paño —clasificadas conforme a la tabla de factores para losas 
+bidireccionales del material de referencia del curso— y aplicar la siguiente 
+expresión para el cálculo del espesor mínimo:
 
 \begin{equation}
-    e \ge \frac{L_x \cdot \phi}{\lambda + r}
+    e \geq \frac{L_x \cdot \phi}{\lambda + r}
+    \label{eq:espesor_losa}
 \end{equation}
 
 Donde:
 \begin{itemize}
     \item $L_x$: Luz menor del paño de losa [m].
-    \item $\phi$: Coeficiente de esbeltez dependiente de las condiciones de borde.
-    \item $\lambda$: Parámetro de diseño (35 para losas de piso tipo y 45 para losas de techumbre).
-    \item $r$: Recubrimiento normativo considerado ($2 \text{ cm} = 0.02 \text{ m}$).
-    \item $e$: Espesor calculado de la losa [m].
+    \item $\phi$: Coeficiente de esbeltez, función de las condiciones de borde 
+    y de la relación de aspecto $\epsilon$. Se interpola linealmente entre los 
+    valores tabulados según el tipo de losa.
+    \item $\lambda$: Parámetro de diseño adimensional; se adopta $\lambda = 35$ 
+    para losas de piso tipo y $\lambda = 45$ para losas de techumbre.
+    \item $r$: Corrección por recubrimiento, expresada en las mismas unidades 
+    que $L_x$ ($r = 0{,}02$~m).
+    \item $e$: Espesor mínimo calculado de la losa [m].
 \end{itemize}
 
-El espesor final de diseño para cada nivel se define como el valor máximo obtenido entre las tres losas analizadas, redondeado al centímetro superior por criterios constructivos.
-
-\subsubsection{Piso 1}
-
-Se analizaron las losas 101, 110 y 111. Los resultados obtenidos se presentan en la Tabla \ref{tab:esp_piso1}:
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{lcccccc}
-        \toprule
-        \textbf{Losa} & \textbf{Tipo} & $L_x$ [m] & $L_y$ [m] & $\epsilon$ & $\phi$ & $e$ [cm] \\
-        \midrule
-        111 & 6  & 6.24 & 6.91 & 1.11 & 0.550 & 9.27 \\
-        110 & 6  & 5.78 & 7.12 & 1.23 & 0.560 & 8.75 \\
-        101 & 3a & 5.73 & 6.12 & 1.07 & 0.600 & 9.29 \\
-        \bottomrule
-    \end{tabular}
-    \caption{Determinación de espesores para el primer nivel.}
-    \label{tab:esp_piso1}
-\end{table}
-
-En consecuencia, se adopta un espesor final de \textbf{$e = 10 \text{ cm}$} para el primer piso.
-
-\subsubsection{Piso 2}
-
-Se analizaron las losas 201, 202 y 208. Los resultados se resumen a continuación:
+El coeficiente $\phi$ se determina a partir de la tabla de factores para losas 
+bidireccionales (Tabla~\ref{tab:factores_phi}), la cual clasifica cada paño según 
+sus condiciones de borde. El \textbf{Caso~1} corresponde a un paño libre en sus 
+cuatro bordes, mientras que los casos sucesivos incorporan progresivamente mayor 
+empotramiento. El \textbf{Caso~6} representa un paño con los cuatro bordes 
+empotrados, y el \textbf{Caso~2b} corresponde a un paño con dos bordes opuestos 
+empotrados y los otros dos apoyados, lo que implica menor restricción y, por 
+tanto, valores de $\phi$ mayores que en el Caso~6. Para relaciones de aspecto 
+intermedias, $\phi$ se interpola linealmente entre los valores tabulados.
 
 \begin{table}[H]
     \centering
-    \begin{tabular}{lcccccc}
+    \caption{Factores $\phi$ para determinación de espesor de losa.}
+    \label{tab:factores_phi}
+    \begin{tabular}{ccccccc}
         \toprule
-        \textbf{Losa} & \textbf{Tipo} & $L_x$ [m] & $L_y$ [m] & $\epsilon$ & $\phi$ & $e$ [cm] \\
+        \textbf{Caso} & \multicolumn{6}{c}{$\epsilon = L_y / L_x$} \\
+        \cmidrule(lr){2-7}
+        \textbf{(Apoyo)} & \textbf{1.00} & \textbf{1.10} & \textbf{1.20} 
+        & \textbf{1.30} & \textbf{1.40} & \textbf{1.50} \\
         \midrule
-        201 & 6 & 6.24 & 6.91 & 1.11 & 0.550 & 9.27 \\
-        202 & 6 & 6.18 & 8.43 & 1.36 & 0.567 & 9.47 \\
-        208 & 6 & 5.73 & 8.75 & 1.52 & 0.591 & 9.14 \\
+        1   & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+        2a  & 0.80 & 0.80 & 0.80 & 0.80 & 0.80 & 0.80 \\
+        2b  & 0.80 & 0.88 & 0.91 & 0.93 & 0.94 & 0.95 \\
+        3a  & 0.60 & 0.60 & 0.60 & 0.60 & 0.60 & 0.60 \\
+        3b  & 0.60 & 0.66 & 0.72 & 0.78 & 0.84 & 0.88 \\
+        4   & 0.66 & 0.70 & 0.72 & 0.74 & 0.75 & 0.76 \\
+        5a  & 0.58 & 0.58 & 0.58 & 0.59 & 0.59 & 0.59 \\
+        5b  & 0.58 & 0.61 & 0.66 & 0.70 & 0.74 & 0.75 \\
+        6   & 0.53 & 0.55 & 0.56 & 0.56 & 0.57 & 0.58 \\
         \bottomrule
     \end{tabular}
-    \caption{Determinación de espesores para el segundo nivel.}
-    \label{tab:esp_piso2}
 \end{table}
 
-Se define un espesor de diseño de \textbf{$e = 10 \text{ cm}$} para el segundo piso.
+El espesor final de diseño para cada nivel se define como el valor máximo 
+obtenido entre las tres losas analizadas, redondeado al centímetro superior 
+inmediato por razones constructivas.
 
-\subsubsection{Pisos 3 al 21}
-
-Para los niveles superiores (piso tipo), se analizaron las losas 301, 302 y 308:
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{lcccccc}
-        \toprule
-        \textbf{Losa} & \textbf{Tipo} & $L_x$ [m] & $L_y$ [m] & $\epsilon$ & $\phi$ & $e$ [cm] \\
-        \midrule
-        301 & 6 & 5.73 & 8.75 & 1.52 & 0.591 & 9.14 \\
-        302 & 6 & 6.18 & 8.43 & 1.36 & 0.567 & 9.47 \\
-        308 & 6 & 6.21 & 8.98 & 1.45 & 0.575 & 9.65 \\
-        \bottomrule
-    \end{tabular}
-    \caption{Determinación de espesores para pisos tipo (3 al 21).}
-    \label{tab:esp_pisotipo}
-\end{table}
-
-Se adopta un espesor de diseño de \textbf{$e = 10 \text{ cm}$} para la planta tipo.
-
+% ---------------------------------------------------------------
 \subsubsection{Subterráneo}
+% ---------------------------------------------------------------
 
-En el nivel de subterráneo se consideraron las losas 008, 035 y 036. Se destaca un incremento significativo en el espesor debido a las condiciones de apoyo de la losa 036:
+En el nivel de subterráneo se consideraron las losas 008, 035 y 036. La 
+losa~036 corresponde al Caso~2b, condición que implica menor restricción en 
+sus bordes respecto a las losas Caso~6, resultando en un coeficiente $\phi$ 
+significativamente mayor y, en consecuencia, en el espesor determinante para 
+este nivel.
 
 \begin{table}[H]
     \centering
     \begin{tabular}{lcccccc}
         \toprule
-        \textbf{Losa} & \textbf{Tipo} & $L_x$ [m] & $L_y$ [m] & $\epsilon$ & $\phi$ & $e$ [cm] \\
+        \textbf{Losa} & \textbf{Caso} & $L_x$ [m] & $L_y$ [m] & 
+        $\epsilon$ & $\phi$ & $e$ [cm] \\
         \midrule
         008 & 6  & 6.24 & 6.91 & 1.11 & 0.550 & 9.27 \\
         035 & 6  & 5.78 & 7.12 & 1.23 & 0.560 & 8.75 \\
@@ -101,4 +91,86 @@ En el nivel de subterráneo se consideraron las losas 008, 035 y 036. Se destaca
     \label{tab:esp_subt}
 \end{table}
 
-Debido a los requerimientos de la losa 036, el espesor final para el subterráneo se define en \textbf{$e = 15 \text{ cm}$}.
+Dado que la losa~036 gobierna el dimensionamiento con $e = 14{,}30$~cm, 
+el espesor final para el subterráneo se define en $\mathbf{e = 15}$~\textbf{cm}.
+
+% ---------------------------------------------------------------
+\subsubsection{Piso 1}
+% ---------------------------------------------------------------
+
+Se analizaron las losas 101, 110 y 111. Los resultados obtenidos se presentan 
+en la Tabla~\ref{tab:esp_piso1}:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcccccc}
+        \toprule
+        \textbf{Losa} & \textbf{Caso} & $L_x$ [m] & $L_y$ [m] & 
+        $\epsilon$ & $\phi$ & $e$ [cm] \\
+        \midrule
+        111 & 6  & 6.24 & 6.91 & 1.11 & 0.550 & 9.27 \\
+        110 & 6  & 5.78 & 7.12 & 1.23 & 0.560 & 8.75 \\
+        101 & 3a & 5.73 & 6.12 & 1.07 & 0.600 & 9.29 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Determinación de espesores para el primer nivel.}
+    \label{tab:esp_piso1}
+\end{table}
+
+El valor máximo corresponde a la losa~101 con $e = 9{,}29$~cm, por lo que 
+se adopta un espesor final de $\mathbf{e = 10}$~\textbf{cm} para el primer piso.
+
+% ---------------------------------------------------------------
+\subsubsection{Piso 2}
+% ---------------------------------------------------------------
+
+Se analizaron las losas 201, 202 y 208. Los resultados se resumen en la 
+Tabla~\ref{tab:esp_piso2}:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcccccc}
+        \toprule
+        \textbf{Losa} & \textbf{Caso} & $L_x$ [m] & $L_y$ [m] & 
+        $\epsilon$ & $\phi$ & $e$ [cm] \\
+        \midrule
+        201 & 6 & 6.24 & 6.91 & 1.11 & 0.550 & 9.27 \\
+        202 & 6 & 6.18 & 8.43 & 1.36 & 0.567 & 9.47 \\
+        208 & 6 & 5.73 & 8.75 & 1.52 & 0.591 & 9.14 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Determinación de espesores para el segundo nivel.}
+    \label{tab:esp_piso2}
+\end{table}
+
+La losa~202 presenta el mayor espesor calculado con $e = 9{,}47$~cm, 
+definiéndose un espesor de diseño de $\mathbf{e = 10}$~\textbf{cm} para 
+el segundo piso.
+
+% ---------------------------------------------------------------
+\subsubsection{Pisos 3 al 21}
+% ---------------------------------------------------------------
+
+Para los niveles superiores (piso tipo), se analizaron las losas 301, 302 
+y 308, que corresponden a los paños de mayor dimensión de la planta 
+repetitiva del edificio:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcccccc}
+        \toprule
+        \textbf{Losa} & \textbf{Caso} & $L_x$ [m] & $L_y$ [m] & 
+        $\epsilon$ & $\phi$ & $e$ [cm] \\
+        \midrule
+        301 & 6 & 5.73 & 8.75 & 1.52 & 0.591 & 9.14 \\
+        302 & 6 & 6.18 & 8.43 & 1.36 & 0.567 & 9.47 \\
+        308 & 6 & 6.21 & 8.98 & 1.45 & 0.575 & 9.65 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Determinación de espesores para pisos tipo (3 al~21).}
+    \label{tab:esp_pisotipo}
+\end{table}
+
+La losa~308 resulta determinante con $e = 9{,}65$~cm, adoptándose un espesor 
+de diseño de $\mathbf{e = 10}$~\textbf{cm} para la planta tipo, válido para 
+los 19 niveles comprendidos entre el piso~3 y el piso~21.
