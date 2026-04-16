@@ -9,8 +9,7 @@ adecuadamente las fuerzas sísmicas en ambas direcciones principales.
 El prediseño se aplica a la zona crítica del edificio, correspondiente al 
 nivel de cota cero (primer piso), donde la caja perimetral está presente 
 en su totalidad. Se consideraron únicamente los muros de gran rigidez que 
-forman parte del sistema resistente lateral, excluyendo tabiques y muros 
-de relleno. 
+forman parte del sistema resistente lateral, excluyendo tabiques y muros cortos. 
 
 \subsection{Longitudes de Muros por Nivel}
 
@@ -36,8 +35,7 @@ resumen en la Tabla~\ref{tab:largos_muros}:
 
 \subsection{Peso Sísmico y Corte Basal}
 
-El peso sísmico de la estructura se estimó considerando las cargas de uso 
-según el destino de cada nivel. Se adopta $q = 1{,}0$~tonf/m² para pisos 
+El peso sísmico de la estructura se estimó considerando las áreas de cada nivel restándo el área de la caja de ascensor (7{,}47~m²). Se adopta $q = 1{,}0$~tonf/m² para pisos 
 tipo, $q = 0{,}9$~tonf/m² para el nivel de techo y $q = 1{,}2$~tonf/m² 
 para el subterráneo. Los resultados por nivel se resumen en la 
 Tabla~\ref{tab:peso_sismico}:
@@ -79,8 +77,8 @@ importancia y $P = 9{.}289{,}15$~tonf el peso sísmico total, obteniéndose:
 
 \subsection{Índice de Densidad de Muros}
 
-El índice de densidad de muros $Im$ evalúa la rigidez lateral de la 
-edificación en relación con su área en planta:
+El índice de densidad de muros $Im$ es un porcentaje que representa la 
+proporción de la cantidad de muros en relación con su área en planta:
 
 \begin{equation}
     Im_i = \frac{L_i \cdot e_{prop}}{A_{planta}}
@@ -151,6 +149,8 @@ conforme al criterio indicado).
     \label{tab:densidad_vert}
 \end{table}
 
+Es importante destacar, que el área ocupada en el subtarráneo equivale a solo el área del edificio, sin considerar el área de la caja del ascensor y los estacionamientos.
+
 \subsection{Espesor Definitivo de Muros}
 
 Si bien el espesor de referencia en dirección $X$ arroja valores de hasta 
@@ -170,7 +170,7 @@ demanda sobre los muros.
 
 En el presente proyecto, dado que el índice de densidad ya en el nivel 
 base se encuentra próximo al límite inferior recomendado (2{,}7\% en 
-dirección $X$ para el piso tipo), no se justifica una reducción de 
+dirección $X$ para el piso tipo), se evaluará más adelante si se justifica una reducción de 
 espesor en altura sin comprometer la densidad mínima exigida. Por lo 
 tanto, se mantiene el espesor de 25~cm en toda la altura del edificio 
 como decisión conservadora y coherente con los resultados del prediseño. 
