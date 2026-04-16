@@ -5,7 +5,7 @@ cálculo y las restricciones arquitectónicas de cada nivel.
 
 \subsection{Criterios de Prediseño}
 
-La altura mínima de las vigas se estima a partir de la relación luz--peralte:
+La altura mínima de las vigas se estima a partir de la relación luz y el alto de la sección:
 
 \begin{equation}
     h \geq \frac{L}{n}
@@ -14,115 +14,87 @@ La altura mínima de las vigas se estima a partir de la relación luz--peralte:
 
 donde $L$ corresponde a la luz libre de la viga y $n$ es un coeficiente que 
 depende de las condiciones de apoyo: se utiliza $n = 10$ para vigas simplemente 
-apoyadas y $n = 12$ para vigas continuas. El ancho mínimo adoptado es de 20~cm, 
+apoyadas y $n = 15$ para vigas empotradas o continuas. El ancho mínimo adoptado en estacionamientos es de 25~cm, 
 condicionado por el espesor de los muros de apoyo.
 
-Para las \textbf{vigas interiores}, la restricción arquitectónica limita la 
-altura total del conjunto viga--losa a 35~cm. Con un espesor de losa de 10~cm, 
-el peralte disponible bajo la losa es de 25~cm. Este límite gobierna el 
-dimensionamiento en todos los niveles habitacionales, por cuanto la aplicación 
-de la ecuación~(\ref{eq:viga_peralte}) para la luz interior crítica de 
-6{,}00~m arroja $h \geq 6{,}00/12 = 0{,}50$~m, valor superior al permitido 
-arquitectónicamente, confirmando que la restricción de altura es la condición 
-determinante.
 
-Las \textbf{vigas de fachada} son elementos invertidos cuya altura queda 
+Las vigas de fachada son elementos invertidos cuya altura queda 
 definida por los planos de arquitectura, los cuales fijan las cotas de 
 cierre de fachada en cada tramo. Se distinguen tres alturas según el sector:
-74~cm para tramos de luz intermedia, 164~cm para el tramo de mayor luz, y 
-72~cm en el sector de la escalera.
+74~cm y 164~cm. Además, se incorpora una viga invertida de 72~cm en el sector de la caja escala.
 
 \subsection{Prediseño por Nivel}
 
 \subsubsection{Subterráneo}
 
-Las vigas del subterráneo son convencionales, sin restricción de altura 
-arquitectónica. La luz crítica medida en planta es de 6{,}00~m; aplicando 
-el criterio para vigas continuas ($n = 12$) en la ecuación~(\ref{eq:viga_peralte}):
+Las vigas del subterráneo son normales, con una restricción de altura de 50~cm. La luz crítica medida en planta es de 8{,}15~m; aplicando 
+el criterio para vigas continuas ($n = 15$) en la ecuación~(\ref{eq:viga_peralte}):
 
 \[
-    h \geq \frac{6{,}00}{12} = 0{,}50 \text{ m} = 50 \text{ cm}
+    h \geq \frac{8{,}15}{15} = 0{,}40 \text{ m} = 54.33 \text{ cm}
 \]
 
-Se adopta una viga de \textbf{25/50~cm} (ancho/peralte).
+Se adopta una viga de \textbf{25/50~cm} (ancho/alto). Ya que la altura máxima es de 50~cm.
 
 \subsubsection{Primer Piso}
 
 Las vigas de fachada son invertidas con altura definida por arquitectura:
 
 \begin{itemize}
-    \item \textbf{Viga 25/74~cm}: viga invertida de fachada para tramos de 
-    luz intermedia.
-    \item \textbf{Viga 25/164~cm}: viga invertida de fachada para el tramo 
-    de mayor luz.
+    \item \textbf{Viga 25/74~cm}: viga invertida de fachada.
+    \item \textbf{Viga 25/164~cm}: viga invertida de fachada.
+    \item \textbf{Viga 25/7~cm}: viga invertida de la caja escala.
 \end{itemize}
 
-Las vigas interiores quedan regidas por la restricción arquitectónica, 
-resultando en un peralte libre de \textbf{25~cm} bajo la losa 
-(35~cm total incluyendo losa).
 
 \subsubsection{Segundo Piso}
 
-Mantiene la misma configuración de fachada que el primer piso. Se incorpora 
-además una viga invertida en el sector de la escalera, cuya altura proviene 
-del plano de arquitectura:
+Mantiene la misma configuración de fachada que el primer piso. 
 
 \begin{itemize}
-    \item \textbf{Viga 25/74~cm}: viga invertida de fachada, tramos 
-    intermedios.
-    \item \textbf{Viga 25/164~cm}: viga invertida de fachada, tramo de 
-    mayor luz.
-    \item \textbf{Viga 25/72~cm}: viga invertida en sector escalera.
+    \item \textbf{Viga 25/74~cm}: viga invertida de fachada.
+    \item \textbf{Viga 25/164~cm}: viga invertida de fachada.
+    \item \textbf{Viga 25/7~cm}: viga invertida de la caja escala.
 \end{itemize}
 
-Las vigas interiores mantienen el peralte máximo de \textbf{25~cm} bajo 
-la losa.
 
 \subsubsection{Piso Tipo (Pisos 3 al 21)}
 
 La planta tipo replica la configuración del segundo piso en los 19 niveles 
-restantes: vigas de fachada 25/74~cm y 25/164~cm, viga de escalera 25/72~cm, 
-y vigas interiores con peralte de 25~cm bajo la losa.
+restantes: vigas de fachada 25/74~cm y 25/164~cm, viga de escalera 25/72~cm.
 
 \subsection{Resumen de Vigas Tipo por Nivel}
 
 Los resultados del prediseño se resumen en la Tabla~\ref{tab:vigas_tipo}. 
-Las dimensiones se expresan como ancho/peralte total; para las vigas 
+Las dimensiones se expresan como ancho/alto total para las vigas 
 invertidas de fachada el peralte indicado corresponde a la altura total 
-del elemento, medida desde el intradós hasta el extradós, sin incluir 
-la losa. Las vigas interiores no se incluyen en el resumen por ser 
-comunes a todos los niveles habitacionales con peralte uniforme de 25~cm 
-bajo losa (35~cm totales).
+del elemento.
 
 \begin{table}[H]
     \centering
     \begin{tabular}{llc}
         \toprule
-        \textbf{Nivel} & \textbf{Tipo de Viga} & \textbf{Ancho/Peralte [cm]} \\
+        \textbf{Nivel} & \textbf{Tipo de Viga} & \textbf{Ancho/Alto [cm]} \\
         \midrule
         Subterráneo 
-            & Viga convencional interior & 25/50 \\
+            & Viga subterráneo & 25/50 \\
         \midrule
         \multirow{2}{*}{Primer Piso}
-            & Viga invertida de fachada (luz intermedia) & 25/74  \\
-            & Viga invertida de fachada (luz mayor)      & 25/164 \\
+            & Viga invertida de fachada  & 25/74  \\
+            & Viga invertida de fachada       & 25/164 \\
+            & Viga invertida sector escalera & 25/72  \\
         \midrule
         \multirow{3}{*}{Segundo Piso}
-            & Viga invertida de fachada (luz intermedia) & 25/74  \\
-            & Viga invertida de fachada (luz mayor)      & 25/164 \\
+            & Viga invertida de fachada  & 25/74  \\
+            & Viga invertida de fachada      & 25/164 \\
             & Viga invertida sector escalera             & 25/72  \\
         \midrule
         \multirow{3}{*}{Piso Tipo (3--21)}
-            & Viga invertida de fachada (luz intermedia) & 25/74  \\
-            & Viga invertida de fachada (luz mayor)      & 25/164 \\
+            & Viga invertida de fachada  & 25/74  \\
+            & Viga invertida de fachada      & 25/164 \\
             & Viga invertida sector escalera             & 25/72  \\
         \bottomrule
     \end{tabular}
-    \caption{Resumen de vigas tipo por nivel. Las vigas interiores, comunes 
-    a todos los niveles habitacionales, tienen peralte de 25~cm bajo losa 
-    (35~cm totales con losa incluida) y ancho de 25~cm.}
+    \caption{Resumen de vigas tipo por nivel}
     \label{tab:vigas_tipo}
 \end{table}
-
-En todos los casos el ancho de 25~cm supera el mínimo de 20~cm impuesto 
-por el espesor de muro.
