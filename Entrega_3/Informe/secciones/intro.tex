@@ -1,0 +1,50 @@
+\section{Introducción}
+
+El proyecto consiste en el análisis y diseño estructural de un edificio residencial ubicado en Antofagasta, Chile. El diseño se ajusta a la normativa vigente según los siguientes parámetros:
+
+\subsection{Información General del Edificio}
+\begin{itemize}
+    \item Ubicación: Antofagasta, Chile.
+    \item Uso: Habitacional (Residencial).
+    \item Categoría de Ocupación: Categoría II (Estructuras de ocupación normal), según NCh433 \cite{NCh433:1996}.
+    \item Zonificación Sísmica: Zona 3 (Alta sismicidad costera).
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \caption{Parámetros sísmicos de diseño según NCh433 y DS N°61.}
+    \label{tab:parametros_sismicos}
+    \begin{tabular}{lc}
+        \hline
+        \textbf{Parámetro} & \textbf{Valor} \\
+        \hline
+        Zona sísmica                                    & Zona 3 \\
+        Aceleración efectiva máxima $A_0$               & $0{,}40\,g$ \\
+        Tipo de suelo                                   & Tipo A \\
+        Categoría de Ocupación                         & II \\
+        Factor de importancia $I_0$                    & $1{,}0$ \\
+        Coeficiente sísmico $C$                        & $0{,}10$ \\
+        Sistema estructural                             & Muros de corte de hormigón armado \\
+        Factor de modificación de respuesta $R$        & $7$ \\
+        Período característico del suelo $T^*$         & $0{,}20\ \text{s}$ \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{IMG/Espectro_NCh433_Grupo1.png}
+    \caption{Espectro de diseño NCh433}
+\end{figure}
+
+Los resultados obtenidos para el análisis sísmico se presentan a continuación:
+
+\begin{itemize}
+    \item Peso sísmico edificio: $P=8,766.65 ton$
+    \item Periodo aproximado: $T=1.05s$
+    \item Factor de modificación de respuesta modificado: $R^*=10.51$
+    \item Coeficiente sísmico: $C=0.0269$, por lo tanto, $C_{utilizado}=0.01$
+    \item Corte basal mínimo: $Q_0=526 ton$
+    \item Corte basal máximo: $Q_{max}=1,104.6 ton$
+    \item Corte basal utilizado: $Q=526 ton$
+\end{itemize}
