@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.16)  6 MAY 2026 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.16)  6 MAY 2026 19:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,7 +695,7 @@ Package hyperref Info: Link coloring ON on input line 62.
 \openout4 = `informe.out'.
 
 \c@lstlisting=\count344
-<LOGO_UNIVERSIDAD.jpg, id=30, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=54, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 73.
@@ -726,7 +726,7 @@ l.111 \newpage
 \openout2 = `secciones/1intro.aux'.
 
  (secciones/1intro.tex
-<IMG/Espectro_NCh433_Grupo1.png, id=53, 650.43pt x 433.62pt>
+<IMG/Espectro_NCh433_Grupo1.png, id=83, 650.43pt x 433.62pt>
 File: IMG/Espectro_NCh433_Grupo1.png Graphic file (type png)
 <use IMG/Espectro_NCh433_Grupo1.png>
 Package pdftex.def Info: IMG/Espectro_NCh433_Grupo1.png  used on input line 36.
@@ -834,7 +834,86 @@ l.116 \include{secciones/3calculo.tex}
  (secciones/4Espectro.tex)
 \openout2 = `secciones/5chequeo.aux'.
 
- (secciones/5chequeo.tex)
+ (secciones/5chequeo.tex
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 57.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[7
+
+
+
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 
+     ]
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 124.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[8]
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 190.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.190 \end{table}
+                 ]
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 232.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.232 \end{equation}
+                    ]
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 287.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[11
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.287 L
+       os tres períodos principales obtenidos del modelo modal son los sigu...]
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 352.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.352 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.352 
+      ])
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 118.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[13]
 \openout2 = `secciones/6tablas.aux'.
 
  (secciones/6tablas.tex)
@@ -846,13 +925,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 120.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[7
-
-
-
-
-
-
+[14
 
 
 
@@ -883,7 +956,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 126.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[8
+[15
 
 
 
@@ -911,7 +984,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 134.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[9
+[16
 
 
 
@@ -926,20 +999,20 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: 8A0E234AD563C9FE910A0215B4B0E16A;1105.
+(rerunfilecheck)             Checksum: 92B210B4D77FF1CE4CB1C524CDBDFAD1;2310.
  ) 
 Here is how much of TeX's memory you used:
- 24536 strings out of 473899
- 460271 string characters out of 5726499
+ 24604 strings out of 473899
+ 461056 string characters out of 5726499
  1941960 words of memory out of 5000000
- 46864 multiletter control sequences out of 15000+600000
+ 46875 multiletter control sequences out of 15000+600000
  561821 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,17n,93p,666b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\felip\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on informe.pdf (10 pages, 456051 bytes).
+Output written on informe.pdf (17 pages, 495760 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
