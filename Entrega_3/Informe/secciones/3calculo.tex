@@ -49,7 +49,7 @@ Estos datos se ingresan en los espectros respectivos para cada eje y se obtiene 
 \begin{table}[H]
     \centering
     \begin{tabular}{ccc}
-        Eje & Corte basal (ton) \\
+        Eje & Corte basal (tonf) \\
         \hline
         X & 160.34 \\
         Y & 201.92 \\
@@ -58,4 +58,36 @@ Estos datos se ingresan en los espectros respectivos para cada eje y se obtiene 
     \label{tab:corte_basal}
 \end{table}
 
-Con estos valores de corte basal, 
+Con estos valores de corte basal, se compara con los cortes mínimos establecidos en la norma NCh 433 \cite{NCh433:1996} que tienen relación con el peso sísmico del edificio. Este calculo se mostrará en secciones posteriores, pero se puede adelantar que el corte basal esta por debajo del mínimo requerido, por lo tanto, se debe aumentar el corte basal a un valor que cumpla con la norma. 
+
+Entonces, para poder cumplir con la norma se empleará la siguiente ecuación para determinar el $R^*$ necesario para cumplir con el corte basal mínimo:
+\begin{equation}
+    R*= \frac{Q_0}{Q_{norma}} \cdot R^*_{calculado}
+\end{equation}
+
+Donde $Q_0$ es el corte basal calculado, $Q_{norma}$ es el corte basal que se encuentra dentro de los rangos establecidos en la norma y $R^*_{calculado}$ es el factor de reducción de la fuerza sísmica calculado previamente.
+
+Para el eje X, se tiene:
+\begin{equation}
+    R* = \frac{160.34}{766.05} \cdot 10.609 = 2.22
+\end{equation}
+
+Y para el eje Y, se tiene:
+\begin{equation}
+    R* = \frac{201.92}{766.05} \cdot 10.217 = 2.69
+\end{equation}
+
+Con los nuevos valores de $R^*$, se vuelve a ingresar en ETABS el factor de redicción para cada eje y se obtiene el nuevo corte basal. Estos resultados se muestran a continuación:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        Eje & Corte basal (tonf) \\
+        \hline
+        X & 766.06 \\
+        Y & 765.99 \\
+    \end{tabular}
+    \caption{Corte basal obtenido para cada eje con el nuevo $R^*$}
+    \label{tab:corte_basal_nuevo}
+\end{table}
+ 
+Con estos nuevos valores de corte basal, se cumple con los requisitos establecidos en la norma NCh 433 \cite{NCh433:1996}, por lo tanto, se puede proceder con el análisis sísmico utilizando estos nuevos valores de $R^*$.

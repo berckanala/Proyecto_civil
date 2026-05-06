@@ -1,5 +1,5 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Información General del Edificio}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Factores \textbf {$R_0$} y \textbf {R*}, materiales}{4}{section.2}%
+\contentsline {section}{\numberline {2}Factores \textbf {R} y \textbf {$R_0$}, materiales}{4}{section.2}%
 \contentsline {section}{\numberline {3}Calculo factor $R^*$ para sismo en X e Y}{5}{section.3}%
