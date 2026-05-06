@@ -4,3 +4,4 @@
 \contentsline {section}{\numberline {2}Factores \textbf {R} y \textbf {$R_0$}, materiales}{4}{section.2}%
 \contentsline {section}{\numberline {3}Calculo factor $R^*$ para sismo en X e Y}{5}{section.3}%
 \contentsline {section}{\numberline {4}Coeficientes Sísmicos}{7}{section.4}%
+\contentsline {section}{\numberline {5}Indicador de acoplamiento}{8}{section.5}%

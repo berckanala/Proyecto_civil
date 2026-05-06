@@ -471,6 +471,10 @@ OUTPUT secciones\13acoplamiento.aux
 INPUT .\secciones\13acoplamiento.tex
 INPUT .\secciones\13acoplamiento.tex
 INPUT secciones\13acoplamiento.tex
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\secciones\15conclu.tex
 OUTPUT secciones\15conclu.aux
 INPUT .\secciones\15conclu.tex
