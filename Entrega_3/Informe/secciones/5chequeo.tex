@@ -1,0 +1,352 @@
+\section{Cortes basales}
+
+El corte basal corresponde a la fuerza sísmica total que actúa en la base de la estructura para cada dirección de análisis. Para verificar si el modelo cumple, los cortes obtenidos en ETABS deben compararse con el corte mínimo, el corte máximo y el corte objetivo adoptado.
+
+\begin{equation}
+Q_{min} = \frac{I \cdot A_0 \cdot P}{6} = 510.7 \text{tonf}
+\end{equation}
+
+\begin{equation}
+Q_{max} = 0.35 \cdot S \cdot I \cdot A_0 \cdot P = 965.23 \text{tonf}
+\end{equation}
+
+Obtenido los rangos del corte basal, se calcula el corte basal objetivo según la NCh433\cite{NCh433:1996}, con $C=0.1$:
+
+\begin{equation}
+Q_{obj} = C \cdot I \cdot P = 766.05 \text{tonf}
+\end{equation}
+
+Con estos valores, se comparan los cortes basales obtenidos en ETABS con los límites normativos para verificar si el modelo sísmico final cumple con la verificación de corte basal.
+
+\begin{table}[H]
+\centering
+\caption{Comparación de cortes basales obtenidos en ETABS con los límites normativos}
+\begin{tabular}{ccccc}
+\toprule
+Dirección & $Q_{\min}$ (tonf) & $Q_{\max}$ (tonf) & $Q$ obtenido (tonf) & Error (\%) \\
+\midrule
+X & 510.70 & 965.23 & 763.60 & 0.32 \\
+Y & 510.70 & 965.23 & 764.28 & 0.23 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Como se observa en la tabla, los cortes basales finales en ambas direcciones son prácticamente iguales al corte basal objetivo y se encuentran dentro del rango permitido entre el corte mínimo y el corte máximo. En consecuencia, el modelo sísmico final cumple con la verificación de corte basal.
+
+\section{Deformaciones del centro de masa por dirección}
+
+Las deformaciones del centro de masa permiten evaluar si la estructura presenta desplazamientos laterales compatibles con los límites admisibles frente a la acción sísmica. Esta verificación se realiza a partir de los desplazamientos del centro de masa de cada nivel, obtenidos desde el modelo estructural en ETABS, para las direcciones X e Y.
+
+El análisis se realiza con la deformación relativa de entrepiso. Esta deformación corresponde a la diferencia entre los desplazamientos laterales de dos niveles consecutivos. Luego, dicha diferencia se divide por la altura del entrepiso, obteniéndose la deriva de entrepiso. Este parámetro permite medir qué tanto se deforma lateralmente cada piso respecto del piso inferior.
+
+El desplazamiento absoluto del centro de masa en la dirección X se representa como $U_{x,i}$, mientras que el desplazamiento del nivel inferior se representa como $U_{x,i-1}$. Por lo tanto, la deformación relativa de entrepiso en la dirección X se calcula como:
+
+\begin{equation}
+\Delta_{x,i} = \left| U_{x,i} - U_{x,i-1} \right|
+\end{equation}
+
+De forma análoga, para la dirección Y, la deformación relativa de entrepiso se obtiene mediante:
+
+\begin{equation}
+\Delta_{y,i} = \left| U_{y,i} - U_{y,i-1} \right|
+\end{equation}
+
+Donde $\Delta_{x,i}$ y $\Delta_{y,i}$ representan los desplazamientos relativos de entrepiso en las direcciones X e Y, respectivamente.
+
+Una vez obtenida la deformación relativa de entrepiso, se calcula la deriva dividiendo dicha deformación por la altura del entrepiso evaluado. Para la dirección X:
+
+\begin{equation}
+\theta_{x,i} = \frac{\Delta_{x,i}}{h_i}
+\end{equation}
+
+Para la dirección Y:
+
+\begin{equation}
+\theta_{y,i} = \frac{\Delta_{y,i}}{h_i}
+\end{equation}
+
+En estas expresiones, $\theta_{x,i}$ y $\theta_{y,i}$ corresponden a las derivas de entrepiso en las direcciones X e Y, respectivamente, mientras que $h_i$ corresponde a la altura del entrepiso. En el modelo analizado, la altura de entrepiso considerada es:
+
+\begin{equation}
+h_i = 2420 \ \text{mm}
+\end{equation}
+
+El criterio de aceptación para la deformación del centro de masa establece que la deriva máxima de entrepiso debe ser menor o igual que el límite admisible:
+
+\begin{equation}
+\theta_i = \frac{\Delta_i}{h_i} \leq 0.002
+\end{equation}
+
+Por lo tanto, para cada dirección se identifica la deriva máxima obtenida en todos los pisos del edificio y se compara con el límite anterior. En la dirección X, la máxima deriva del centro de masa obtenida del modelo fue:
+
+\begin{equation}
+\theta_{x,\max} = 0.001015
+\end{equation}
+
+La verificación en X queda dada por:
+
+\begin{equation}
+0.001015 \leq 0.002
+\end{equation}
+
+Por lo tanto, la dirección X cumple con el límite de deformación del centro de masa.
+
+Para la dirección Y, la máxima deriva del centro de masa obtenida fue:
+
+\begin{equation}
+\theta_{y,\max} = 0.000612
+\end{equation}
+
+La verificación en Y queda dada por:
+
+\begin{equation}
+0.000612 \leq 0.002
+\end{equation}
+
+Por lo tanto, la dirección Y también cumple con el límite de deformación del centro de masa.
+
+Adicionalmente, se registraron los desplazamientos máximos de techo obtenidos del modelo. En la dirección X, el desplazamiento máximo de techo fue de $46.43$ mm, mientras que en la dirección Y fue de $28.59$ mm. Estos valores permiten observar la magnitud global del desplazamiento lateral del edificio, pero la verificación normativa se realiza mediante la deriva máxima de entrepiso.
+
+Los resultados principales de la verificación se resumen en la siguiente tabla:
+
+\begin{table}[H]
+\centering
+\caption{Verificación de deformaciones del centro de masa}
+\begin{tabular}{cccccc}
+\hline
+Dirección & $U_{\max}$ techo (mm) & $\theta_{\max}$ & Piso crítico & Límite & Verificación \\
+\hline
+X & 46.43 & 0.001015 & Piso 15 & 0.002 & Cumple \\
+Y & 28.59 & 0.000612 & Piso 13 & 0.002 & Cumple \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Verificación de rigidez}
+
+La verificación de rigidez permite evaluar si la estructura presenta una respuesta lateral adecuada frente a la acción sísmica. Primero, se realiza una verificación global mediante la relación entre la altura total del edificio y el período fundamental de vibración. Luego, se revisa la rigidez por piso, con el objetivo de identificar posibles reducciones bruscas de rigidez en altura.
+
+\subsection{Verificación global de rigidez}
+
+Para una misma altura, un período mayor indica una estructura más flexible, mientras que un período menor indica una estructura más rígida.
+
+La razón utilizada se define como:
+
+\begin{equation}
+\frac{H}{T}
+\end{equation}
+
+Donde $H$ corresponde a la altura total del edificio y $T$ corresponde al período fundamental de vibración en la dirección analizada.
+
+Para este modelo, la altura total del edificio es:
+
+\begin{equation}
+H = 54.78 \ \text{m}
+\end{equation}
+
+Los períodos traslacionales principales obtenidos del modelo son:
+
+\begin{equation}
+T_x = 1.14 \ \text{s}
+\end{equation}
+
+\begin{equation}
+T_y = 0.853 \ \text{s}
+\end{equation}
+
+Por lo tanto, para la dirección X, la razón entre la altura total y el período fundamental es:
+
+\begin{equation}
+\frac{H}{T_x} = \frac{54.78}{1.14}
+\end{equation}
+
+\begin{equation}
+\frac{H}{T_x} = 48.05 \ \text{m/s}
+\end{equation}
+
+Para la dirección Y, se obtiene:
+
+\begin{equation}
+\frac{H}{T_y} = \frac{54.78}{0.853}
+\end{equation}
+
+\begin{equation}
+\frac{H}{T_y} = 64.22 \ \text{m/s}
+\end{equation}
+
+Los resultados se resumen en la siguiente tabla:
+
+\begin{table}[H]
+\centering
+\caption{Verificación global de rigidez mediante la razón $H/T$}
+\begin{tabular}{cccc}
+\hline
+Dirección & Período $T$ (s) & $H/T$ (m/s) & Interpretación \\
+\hline
+X & 1.14 & 48.05 & Dirección más flexible \\
+Y & 0.853 & 64.22 & Mayor rigidez global \\
+\hline
+\end{tabular}
+\end{table}
+
+De acuerdo con los resultados obtenidos, la dirección X presenta el mayor período fundamental, por lo que corresponde a la dirección más flexible del edificio. En cambio, la dirección Y presenta un período menor y, en consecuencia, una mayor rigidez global. Además, la razón $H/T$ debe estar entre $50$ y $70$, la dirección Y se encuentra dentro del rango, mientras que la dirección X queda levemente por debajo, lo que confirma que esta dirección presenta una mayor flexibilidad lateral.
+
+\subsection{Verificación de rigidez por piso}
+
+Esta verificación permite identificar si existe una disminución brusca de rigidez en algún piso, lo que podría indicar la presencia de un piso blando o una discontinuidad importante en la distribución de elementos resistentes.
+
+La rigidez lateral de un piso se puede estimar como la razón entre el corte de piso y la deformación relativa de entrepiso. Para la dirección X, se utiliza la siguiente expresión:
+
+\begin{equation}
+K_{x,i} = \frac{V_{x,i}}{\Delta_{x,i}}
+\end{equation}
+
+Para la dirección Y:
+
+\begin{equation}
+K_{y,i} = \frac{V_{y,i}}{\Delta_{y,i}}
+\end{equation}
+
+Donde $K_{x,i}$ y $K_{y,i}$ corresponden a las rigideces laterales del piso $i$ en las direcciones X e Y, respectivamente. Los términos $V_{x,i}$ y $V_{y,i}$ corresponden a los cortes de piso obtenidos del modelo estructural, mientras que $\Delta_{x,i}$ y $\Delta_{y,i}$ corresponden a las deformaciones relativas de entrepiso.
+
+Para evaluar si existe una reducción brusca de rigidez entre dos pisos consecutivos, se puede calcular la razón de rigidez entre el piso superior y el piso inferior:
+
+\begin{equation}
+r_{x,i} = \frac{K_{x,i}}{K_{x,i-1}}
+\end{equation}
+
+\begin{equation}
+r_{y,i} = \frac{K_{y,i}}{K_{y,i-1}}
+\end{equation}
+
+Donde $r_{x,i}$ y $r_{y,i}$ permiten observar cuánto cambia la rigidez de un piso respecto del piso inmediatamente inferior. Valores cercanos a $1.0$ indican una variación suave de rigidez, mientras que valores menores que $1.0$ indican una pérdida de rigidez hacia el piso superior.
+
+A partir de los resultados obtenidos, la rigidez calculada en la dirección X del piso 1 y techo son:
+
+\begin{equation}
+K_{x,1} = 1035.88 \ \text{tonf/mm}
+\end{equation}
+
+\begin{equation}
+K_{x,\text{techo}} = 35.65 \ \text{tonf/mm}
+\end{equation}
+
+En la dirección Y:
+
+\begin{equation}
+K_{y,1} = 1542.59 \ \text{tonf/mm}
+\end{equation}
+
+\begin{equation}
+K_{y,\text{techo}} = 56.01 \ \text{tonf/mm}
+\end{equation}
+
+La mayor variación de rigidez se observa entre los pisos 1 y 2. En la dirección X, la razón de rigidez entre ambos pisos es aproximadamente:
+
+\begin{equation}
+\frac{K_{x,2}}{K_{x,1}} \approx 0.66
+\end{equation}
+
+En la dirección Y, se obtiene:
+
+\begin{equation}
+\frac{K_{y,2}}{K_{y,1}} \approx 0.69
+\end{equation}
+
+Estos valores indican que existe una reducción de rigidez entre los primeros niveles. Sin embargo, desde el piso 2 hacia los niveles superiores, la disminución de rigidez ocurre de manera progresiva.
+
+Los resultados principales de la verificación de rigidez por piso se resumen en la siguiente tabla:
+
+\begin{table}[H]
+\centering
+\caption{Resumen de la verificación de rigidez por piso}
+\begin{tabular}{ccccc}
+\hline
+Dirección & $K_1$ (tonf/mm) & $K_{\text{techo}}$ (tonf/mm) & Mayor variación & Interpretación \\
+\hline
+X & 1035.88 & 35.65 & $K_{2}/K_{1} \approx 0.66$ & Disminución progresiva \\
+Y & 1542.59 & 56.01 & $K_{2}/K_{1} \approx 0.69$ & Disminución progresiva \\
+\hline
+\end{tabular}
+\end{table}
+
+De acuerdo con los resultados obtenidos, la rigidez lateral disminuye hacia los niveles superiores, lo cual es esperable debido a que los cortes de piso también disminuyen en altura. La mayor reducción se concentra entre los pisos 1 y 2, pero no se identifica una caída brusca aislada. Por lo tanto, no se evidencia la presencia de un piso blando en los niveles superiores.
+
+\section{Indicador de acoplamiento}
+
+El indicador de acoplamiento permite evaluar si los modos principales de vibración del edificio se encuentran suficientemente separados entre sí. Esta verificación es importante porque, cuando dos períodos principales son muy cercanos, sus modos pueden interactuar, generando una respuesta acoplada entre traslación y torsión.
+
+El indicador de acoplamiento se expresa como el cociente entre los tres períodos principales del edificio: período traslacional en X, período traslacional en Y y período torsional. Para que no exista acoplamiento significativo entre modos, se debe cumplir que el cociente entre períodos principales sea mayor que $1.2$.
+
+\begin{equation}
+\frac{T_i}{T_j} > 1.2
+\end{equation}
+
+donde $T_i$ y $T_j$ corresponden a dos de los tres períodos principales del edificio. 
+
+Los tres períodos principales obtenidos del modelo modal son los siguientes:
+
+\begin{table}[H]
+\centering
+\caption{Períodos principales del edificio}
+\begin{tabular}{ccc}
+\hline
+Modo & Eje traslacional & Período (s) \\
+\hline
+1 & Torsional & 1.251 \\
+2 & Eje X & 1.140 \\
+3 & Eje Y & 0.853 \\
+\hline
+\end{tabular}
+\end{table}
+
+A partir de estos valores, se comparan los períodos principales entre sí.
+
+\begin{equation}
+\frac{T_{\text{tors}}}{T_x} = \frac{1.251}{1.140}
+\end{equation}
+
+\begin{equation}
+\frac{T_{\text{tors}}}{T_x} = 1.10
+\end{equation}
+
+Luego, se compara el período torsional con el período traslacional en Y:
+
+\begin{equation}
+\frac{T_{\text{tors}}}{T_y} = \frac{1.251}{0.853}
+\end{equation}
+
+\begin{equation}
+\frac{T_{\text{tors}}}{T_y} = 1.47
+\end{equation}
+
+Finalmente, se comparan los períodos traslacionales principales en X e Y:
+
+\begin{equation}
+\frac{T_x}{T_y} = \frac{1.140}{0.853}
+\end{equation}
+
+\begin{equation}
+\frac{T_x}{T_y} = 1.34
+\end{equation}
+
+\begin{table}[H]
+\centering
+\caption{Verificación del indicador de acoplamiento entre períodos principales}
+\begin{tabular}{cccc}
+\hline
+Comparación & Cociente entre períodos & Límite & Verificación \\
+\hline
+$T_{\text{tors}}/T_x$ & 1.10 & $> 1.2$ & No cumple \\
+$T_{\text{tors}}/T_y$ & 1.47 & $> 1.2$ & Cumple \\
+$T_x/T_y$ & 1.34 & $> 1.2$ & Cumple \\
+\hline
+\end{tabular}
+\end{table}
+
+De los tres cocientes evaluados, se observa que la relación entre el período torsional y el período traslacional en X es igual a $1.10$, por lo que existe acoplamiento entre torsión y traslación en dicha dirección.
+
+En cambio, la relación entre el período torsional y el período traslacional en Y es igual a $1.47$, cumpliendo el criterio de separación modal. Asimismo, la relación entre los períodos traslacionales en X e Y es igual a $1.34$, por lo que también cumple con el límite establecido.
+
+Por lo tanto, el edificio no cumple completamente la verificación de desacoplamiento modal, debido a la cercanía entre el período torsional y el período traslacional en X. Esto sugiere que la respuesta sísmica en la dirección X puede presentar interacción torsional.
+
