@@ -1,50 +1,270 @@
-\section{Introducción}
+%--- Requiere en el preámbulo: \usepackage{booktabs} ---
 
-El proyecto consiste en el análisis y diseño estructural de un edificio residencial ubicado en Antofagasta, Chile. El diseño se ajusta a la normativa vigente según los siguientes parámetros:
+\section{Información General del Edificio y Parámetros Sísmicos}
 
-\subsection{Información General del Edificio}
+El proyecto corresponde al análisis y diseño estructural de un edificio residencial 
+ubicado en Antofagasta, Chile, ajustado a la normativa sísmica vigente.
+
+\subsection{Antecedentes Generales}
+
 \begin{itemize}
-    \item Ubicación: Antofagasta, Chile.
-    \item Uso: Habitacional (Residencial).
-    \item Categoría de Ocupación: Categoría II (Estructuras de ocupación normal), según NCh433 \cite{NCh433:1996}.
-    \item Zonificación Sísmica: Zona 3 (Alta sismicidad costera).
+    \item \textbf{Ubicación:} Antofagasta, Chile.
+    \item \textbf{Uso:} Habitacional (Residencial).
+    \item \textbf{Categoría de Ocupación:} Categoría II --- Estructuras de ocupación 
+          normal, según NCh433~\cite{NCh433:1996}.
+    \item \textbf{Zonificación Sísmica:} Zona 3 (Alta sismicidad costera).
 \end{itemize}
+
+\subsection{Parámetros Sísmicos de Diseño}
+
+Los parámetros sísmicos de diseño, determinados según la norma NCh433~\cite{NCh433:1996} 
+y el DS N°61, se resumen en la Tabla~\ref{tab:parametros_sismicos}.
 
 \begin{table}[H]
     \centering
     \caption{Parámetros sísmicos de diseño según NCh433 y DS N°61.}
     \label{tab:parametros_sismicos}
     \begin{tabular}{lc}
-        \hline
+        \toprule
         \textbf{Parámetro} & \textbf{Valor} \\
-        \hline
-        Zona sísmica                                    & Zona 3 \\
-        Aceleración efectiva máxima $A_0$               & $0{,}40\,g$ \\
-        Tipo de suelo                                   & Tipo A \\
-        Categoría de Ocupación                         & II \\
-        Factor de importancia $I_0$                    & $1{,}0$ \\
-        Coeficiente sísmico $C$                        & $0{,}10$ \\
-        Sistema estructural                             & Muros de corte de hormigón armado \\
-        Factor de modificación de respuesta $R$        & $7$ \\
-        Período característico del suelo $T^*$         & $0{,}20\ \text{s}$ \\
-        \hline
+        \midrule
+        Zona sísmica                                        & Zona 3 \\
+        Tipo de suelo                                       & Tipo A \\
+        Aceleración efectiva máxima $A_0$                   & $0{,}40\,g$ \\
+        Período característico del suelo $T_0$              & $0{,}20\ \text{s}$ \\
+        Factor de amplificación del suelo $S$               & $0{,}9$ \\
+        Categoría de Ocupación                              & II \\
+        Factor de importancia $I$                           & $1{,}0$ \\
+        Sistema estructural                                 & Muros de corte de hormigón armado \\
+        Factor de modificación de respuesta $R_0$           & $11$ \\
+        Factor de modificación de respuesta $R$             & $7$ \\
+        \bottomrule
     \end{tabular}
 \end{table}
+
+\subsection{Espectro de Diseño}
+
+En la Figura~\ref{fig:espectro} se presenta el espectro de diseño elástico obtenido 
+según NCh433~\cite{NCh433:1996}, considerando los parámetros de la 
+Tabla~\ref{tab:parametros_sismicos}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{IMG/Espectro_NCh433_Grupo1.png}
-    \caption{Espectro de diseño NCh433}
+    \caption{Espectro de diseño elástico según NCh433.}
+    \label{fig:espectro}
 \end{figure}
 
-Los resultados obtenidos para el análisis sísmico se presentan a continuación:
+\subsection{Resumen de Resultados del Prediseño Sísmico}
+
+A modo de referencia, la Tabla~\ref{tab:resumen_prediseno} presenta los principales 
+resultados del prediseño sísmico del edificio, los cuales serán contrastados con los 
+obtenidos del modelo en secciones posteriores.
+
+\begin{table}[H]
+    \centering
+    \caption{Resultados del prediseño sísmico.}
+    \label{tab:resumen_prediseno}
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Parámetro}                                  & \textbf{Valor} \\
+        \midrule
+        Peso sísmico del edificio $P$                       & $8{.}766{,}65\ \text{tonf}$ \\
+        Período aproximado $T$                              & $1{,}05\ \text{s}$ \\
+        Factor de reducción modificado $R^*$                & $10{,}51$ \\
+        Coeficiente sísmico calculado $C$                   & $0{,}0269$ \\
+        Coeficiente sísmico utilizado $C_{\min}$            & $0{,}10$ \\
+        Corte basal mínimo $Q_{\min}$                       & $526\ \text{tonf}$ \\
+        Corte basal máximo $Q_{\max}$                       & $1{.}104{,}6\ \text{tonf}$ \\
+        Corte basal de prediseño $Q$                        & $526\ \text{tonf}$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Masas y pesos sísmicos}
+
+Para el análisis sísmico, es fundamental determinar las masas y pesos sísmicos del edificio. Estos se calculan considerando las cargas permanentes (peso propio de la estructura) 
+y porcentajes de las sobrecargas de la estructura. Este parámetro se obtiene de ETABS. Es importante destacar, que para obtener un valor correcto del peso sísmico, en el apartado \textit{Mass source} se ocupa un factor de 1.0 para las cargas permanentes y un factor de 0.25 para las sobrecargas. Luego, al correr el modelo, se obtiene un peso sísmico total de:
+
+\begin{equation}
+    P = 7{.}660{,}05\ \text{tonf}
+\end{equation}
+
+En cuanto al peso total del edificio, se obtienen los siguientes valores:
+\begin{equation}
+    P_{\text{propio}} = 8218\ \text{tonf}
+\end{equation}
+
+\begin{equation}
+    P_{\text{sobrecargas}} = 2093\ \text{tonf}
+\end{equation}
+
+
+
+
+
+
+% ---------------------------------------------------------------
+\section{Factores $R$ y $R_0$}
+
+Para determinar los factores $R_0$ y $R$ correspondientes al sistema estructural 
+del edificio, se recurre a la Tabla 5.1 de la norma NCh433~\cite{NCh433:1996}, la 
+cual especifica dichos valores en función del material y del sistema resistente a 
+las cargas sísmicas. Dado que el sistema estructural corresponde a muros de corte 
+de hormigón armado, los factores a utilizar son:
+
+\begin{equation}
+    R = 7 \qquad R_0 = 11
+\end{equation}
+
+% ---------------------------------------------------------------
+\section{Coeficientes Sísmicos Máximo y Mínimo}
+
+Previo al análisis sísmico, la norma NCh433~\cite{NCh433:1996} establece rangos 
+admisibles para el coeficiente sísmico $C$. A continuación se determinan el valor 
+mínimo y máximo permitidos.
+
+\subsection{Coeficiente Sísmico Mínimo}
+
+Según el artículo 6.2.3.1 de la norma NCh433~\cite{NCh433:1996}, el coeficiente 
+sísmico no puede ser inferior a:
+
+\begin{equation}
+    C_{\min} = \frac{A_0 \cdot S \cdot I}{6} = \frac{0{,}40 \cdot 0{,}9 \cdot 1{,}0}{6} 
+    = 0{,}060
+\end{equation}
+
+\subsection{Coeficiente Sísmico Máximo}
+
+Según el artículo 6.2.3.2 de la norma NCh433~\cite{NCh433:1996}, el coeficiente 
+sísmico máximo se determina como:
+
+\begin{equation}
+    C_{\max} = 0{,}35 \cdot S \cdot A_0 \cdot I 
+    = 0{,}35 \cdot 0{,}9 \cdot 0{,}40 \cdot 1{,}0 = 0{,}126
+\end{equation}
+
+Por lo tanto, el coeficiente sísmico de diseño debe satisfacer:
+\begin{equation}
+    0{,}060 \leq C \leq 0{,}126
+\end{equation}
+
+El valor de $C = 0{,}10$ se encuentra dentro del rango admisible, siendo consistente 
+con lo indicado en la Tabla~\ref{tab:parametros_sismicos}, y será el utilizado en 
+el análisis sísmico.
+
+% ---------------------------------------------------------------
+\section{Cálculo del Factor de Corrección $R^*$ para Sismo en X e Y}
+
+Con los valores determinados en las secciones anteriores, se procede a calcular el 
+factor de reducción de la fuerza sísmica $R^*$, mediante la expresión (6-10) de la 
+norma NCh433~\cite{NCh433:1996}:
+
+\begin{equation}
+    R^* = \frac{T^*}{0{,}1 \cdot T_0 + \dfrac{T^*}{R_0}}
+\end{equation}
+
+donde $T^*$ corresponde al período del modo con mayor masa traslacional equivalente, 
+y $T_0$ es el período característico del suelo definido en la 
+Tabla~\ref{tab:parametros_sismicos}.
+
+Para determinar $T^*$, se ejecutó el modelo en ETABS, obteniéndose los períodos de 
+vibración indicados en la Tabla~\ref{tab:periodos}.
+
+\begin{table}[H]
+    \centering
+    \caption{Períodos de los modos de vibración obtenidos en ETABS.}
+    \label{tab:periodos}
+    \begin{tabular}{ccc}
+        \toprule
+        \textbf{Modo} & \textbf{Eje traslacional} & \textbf{Período (s)} \\
+        \midrule
+        1 & Torsional & $1{,}251$ \\
+        2 & Eje X     & $1{,}140$ \\
+        3 & Eje Y     & $0{,}853$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Para el análisis se consideran los modos 2 y 3, correspondientes a los ejes X e Y 
+respectivamente. El $R^*$ se calcula para cada dirección:
 
 \begin{itemize}
-    \item Peso sísmico edificio: $P=8,766.65 ton$
-    \item Periodo aproximado: $T=1.05s$
-    \item Factor de modificación de respuesta modificado: $R^*=10.51$
-    \item Coeficiente sísmico: $C=0.0269$, por lo tanto, $C_{utilizado}=0.01$
-    \item Corte basal mínimo: $Q_0=526 ton$
-    \item Corte basal máximo: $Q_{max}=1,104.6 ton$
-    \item Corte basal utilizado: $Q=526 ton$
+    \item \textbf{Modo 2 (Eje X):}
+    \begin{equation}
+        R^*_X = \frac{1{,}14}{0{,}1 \cdot 0{,}15 + \dfrac{1{,}14}{11}} = 10{,}609
+    \end{equation}
+
+    \item \textbf{Modo 3 (Eje Y):}
+    \begin{equation}
+        R^*_Y = \frac{0{,}853}{0{,}1 \cdot 0{,}15 + \dfrac{0{,}853}{11}} = 10{,}217
+    \end{equation}
 \end{itemize}
+
+Dado que en ETABS el espectro se ingresa mediante el inverso de $R^*$, los 
+factores a utilizar son:
+
+\begin{equation}
+    \frac{1}{R^*_X} = \frac{1}{10{,}609} = 0{,}0943 \qquad
+    \frac{1}{R^*_Y} = \frac{1}{10{,}217} = 0{,}0979
+\end{equation}
+
+Con estos factores ingresados en los espectros respectivos, se obtienen los cortes 
+basales de la Tabla~\ref{tab:corte_basal_inicial}.
+
+\begin{table}[H]
+    \centering
+    \caption{Corte basal inicial por dirección.}
+    \label{tab:corte_basal_inicial}
+    \begin{tabular}{cc}
+        \toprule
+        \textbf{Dirección} & \textbf{Corte basal (tonf)} \\
+        \midrule
+        X & $160{,}34$ \\
+        Y & $201{,}92$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Comparando con los cortes mínimos exigidos por NCh433~\cite{NCh433:1996}, se verifica 
+que ambos valores se encuentran por debajo del mínimo requerido de $766{,}05\ \text{tonf}$. 
+Por lo tanto, se ajusta el $R^*$ para cumplir con la norma, utilizando la siguiente 
+expresión:
+
+\begin{equation}
+    R^*_{\text{ajustado}} = \frac{Q_0}{Q_{\text{norma}}} \cdot R^*_{\text{calculado}}
+\end{equation}
+
+donde $Q_0$ es el corte basal obtenido del modelo, $Q_{\text{norma}}$ es el corte 
+basal mínimo exigido por la norma y $R^*_{\text{calculado}}$ es el factor determinado 
+previamente. Aplicando para cada dirección:
+
+\begin{itemize}
+    \item \textbf{Eje X:}
+    \begin{equation}
+        R^*_X = \frac{160{,}34}{766{,}05} \cdot 10{,}609 = 2{,}22
+    \end{equation}
+
+    \item \textbf{Eje Y:}
+    \begin{equation}
+        R^*_Y = \frac{201{,}92}{766{,}05} \cdot 10{,}217 = 2{,}69
+    \end{equation}
+\end{itemize}
+
+Ingresando los nuevos factores en ETABS, se obtienen los cortes basales definitivos 
+de la Tabla~\ref{tab:corte_basal_final}, los cuales cumplen con los requisitos 
+establecidos en NCh433~\cite{NCh433:1996}.
+
+\begin{table}[H]
+    \centering
+    \caption{Corte basal definitivo por dirección con $R^*$ ajustado.}
+    \label{tab:corte_basal_final}
+    \begin{tabular}{cc}
+        \toprule
+        \textbf{Dirección} & \textbf{Corte basal (tonf)} \\
+        \midrule
+        X & $766{,}06$ \\
+        Y & $765{,}99$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
