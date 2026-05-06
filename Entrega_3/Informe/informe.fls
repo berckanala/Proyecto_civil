@@ -437,6 +437,10 @@ OUTPUT secciones\7coef_max.aux
 INPUT .\secciones\7coef_max.tex
 INPUT .\secciones\7coef_max.tex
 INPUT secciones\7coef_max.tex
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\secciones\8coef_x_y.tex
 OUTPUT secciones\8coef_x_y.aux
 INPUT .\secciones\8coef_x_y.tex
