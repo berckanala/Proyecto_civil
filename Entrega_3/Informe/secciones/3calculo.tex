@@ -1,0 +1,61 @@
+\section{Calculo factor $R^*$ para sismo en X e Y}
+Con el valor calculado en el apartado anterior, se puede determinar el factor de reducción de la fuerza sísmica, $R^*$, utilizando la fórmula (6-10) de la norma NCh 433 \cite{NCh433:1996}:
+
+\begin{equation}
+    R^* = \frac{T*}{0.1 \cdot T_0 + \frac{T*}{R_0}}
+\end{equation}
+
+Donde $T*$ es el período del modo con mayor masa traslaciona equivalente de análisis y $T_0$ es un parámetro de la norma que esta asociado con la ubicación del edificio.
+
+Para poder determinar el $R^*$, se corrió el modelo en ETABS y se obtuvieron los siguientes resultados en cuanto a los períodos de los modos de vibración:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+
+        Modo  & Eje traslacional & Período (s) \\
+        \hline
+        1 & torcional & 1.251 \\
+        2 & eje X & 1.14 \\
+        3 & eje Y & 0.853 \\
+    \end{tabular}
+    \caption{Períodos de los modos de vibración obtenidos en ETABS}
+    \label{tab:periodos}
+\end{table}
+
+Para este análisis, se va a considerar el modo 2 y 3. Para poder calcular el $R^*$ respectivo, se necesita determinar el $T_0$ asociado que se encuentra en la tabla \ref{tab:parametros_sismicos}. Con todos los datos necesarios, se calcula el $R^*$ para cada modo:
+\begin{itemize}
+    \item Para el modo 2 (eje X):
+    \begin{equation}
+        R^* = \frac{1.14}{0.1 \cdot 0.15 + \frac{1.14}{11}} = 10.609
+    \end{equation}
+
+    \item Para el modo 3 (eje Y):
+    \begin{equation}
+        R^* = \frac{0.853}{0.1 \cdot 0.15 + \frac{0.853}{11}} = 10.217
+    \end{equation}
+\end{itemize}
+
+Sin embargo, para el análisis sísmico en ETABS, se ocupa un el inverso del $R^*$, por lo tanto, el valor a ocupar en el análisis sísmico es:
+\begin{equation}
+    \frac{1}{R^*} = \frac{1}{10.609} = 0.0943
+\end{equation}
+\begin{equation}
+    \frac{1}{R^*} = \frac{1}{10.217} = 0.0979
+\end{equation}
+
+Estos datos se ingresan en los espectros respectivos para cada eje y se obtiene el corte basal en cada uno de ellos. Estos resultados se muestran a continuación:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        Eje & Corte basal (ton) \\
+        \hline
+        X & 160.34 \\
+        Y & 201.92 \\
+    \end{tabular}
+    \caption{Corte basal obtenido para cada eje}
+    \label{tab:corte_basal}
+\end{table}
+
+Con estos valores de corte basal, 
