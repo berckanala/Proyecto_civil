@@ -35,92 +35,148 @@ Como se observa en la tabla, los cortes basales finales en ambas direcciones son
 
 \section{Deformaciones del centro de masa por dirección}
 
-Las deformaciones del centro de masa permiten evaluar si la estructura presenta desplazamientos laterales compatibles con los límites admisibles frente a la acción sísmica. Esta verificación se realiza a partir de los desplazamientos del centro de masa de cada nivel, obtenidos desde el modelo estructural en ETABS, para las direcciones X e Y.
+Las deformaciones del centro de masa permiten evaluar si la estructura presenta desplazamientos laterales cdentro de los límites admisibles frente a la acción sísmica. Esta verificación se realiza a partir de los desplazamientos del centro de masa de cada nivel, obtenidos desde el modelo estructural en ETABS para las direcciones principales X e Y.
 
-El análisis se realiza con la deformación relativa de entrepiso. Esta deformación corresponde a la diferencia entre los desplazamientos laterales de dos niveles consecutivos. Luego, dicha diferencia se divide por la altura del entrepiso, obteniéndose la deriva de entrepiso. Este parámetro permite medir qué tanto se deforma lateralmente cada piso respecto del piso inferior.
-
-El desplazamiento absoluto del centro de masa en la dirección X se representa como $U_{x,i}$, mientras que el desplazamiento del nivel inferior se representa como $U_{x,i-1}$. Por lo tanto, la deformación relativa de entrepiso en la dirección X se calcula como:
+Para cada piso, el desplazamiento absoluto del centro de masa en la dirección X se representa como $U_{x,i}$, mientras que el desplazamiento del nivel inferior se representa como $U_{x,i-1}$. La deformación relativa de entrepiso en la dirección X se calcula como:
 
 \begin{equation}
-\Delta_{x,i} = \left| U_{x,i} - U_{x,i-1} \right|
+\Delta_{x,i} =
+\left| U_{x,i} - U_{x,i-1} \right|
 \end{equation}
 
-De forma análoga, para la dirección Y, la deformación relativa de entrepiso se obtiene mediante:
+De forma análoga, para la dirección Y:
 
 \begin{equation}
-\Delta_{y,i} = \left| U_{y,i} - U_{y,i-1} \right|
+\Delta_{y,i} =
+\left| U_{y,i} - U_{y,i-1} \right|
 \end{equation}
 
-Donde $\Delta_{x,i}$ y $\Delta_{y,i}$ representan los desplazamientos relativos de entrepiso en las direcciones X e Y, respectivamente.
+Donde $\Delta_{x,i}$ y $\Delta_{y,i}$ corresponden a las deformaciones relativas de entrepiso en las direcciones X e Y, respectivamente. 
 
-Una vez obtenida la deformación relativa de entrepiso, se calcula la deriva dividiendo dicha deformación por la altura del entrepiso evaluado. Para la dirección X:
+Una vez obtenida la deformación relativa de entrepiso para cada combinación, se calcula la deriva dividiendo dicha deformación por la altura del entrepiso. Para la dirección X:
 
 \begin{equation}
-\theta_{x,i} = \frac{\Delta_{x,i}}{h_i}
+\theta_{x,i} =
+\frac{\Delta_{x,i}}{h_i}
 \end{equation}
 
 Para la dirección Y:
 
 \begin{equation}
-\theta_{y,i} = \frac{\Delta_{y,i}}{h_i}
+\theta_{y,i} =
+\frac{\Delta_{y,i}}{h_i}
 \end{equation}
 
-En estas expresiones, $\theta_{x,i}$ y $\theta_{y,i}$ corresponden a las derivas de entrepiso en las direcciones X e Y, respectivamente, mientras que $h_i$ corresponde a la altura del entrepiso. En el modelo analizado, la altura de entrepiso considerada es:
+En estas expresiones, $\theta_{x,i}$ y $\theta_{y,i}$ corresponden a las derivas de entrepiso en las direcciones X e Y, respectivamente, mientras que $h_i$ corresponde a la altura del entrepiso evaluado. En el modelo analizado, la altura de entrepiso considerada es:
 
 \begin{equation}
 h_i = 2420 \ \text{mm}
 \end{equation}
 
-El criterio de aceptación para la deformación del centro de masa establece que la deriva máxima de entrepiso debe ser menor o igual que el límite admisible:
+Luego, para cada piso se obtiene la envolvente máxima de deformación entre todas las combinaciones sísmicas relevantes. Para la dirección X:
+
+\begin{equation}
+\theta_{x,i}^{env} =
+\max \left( \theta_{x,i} \right)
+\end{equation}
+
+Para la dirección Y:
+
+\begin{equation}
+\theta_{y,i}^{env} =
+\max \left( \theta_{y,i} \right)
+\end{equation}
+
+De esta forma, la tabla final de deformaciones representa la máxima demanda de deriva del centro de masa por piso y por dirección.
+
+A continuación se presenta la tabla final de deformaciones del centro de masa por piso, obtenida de las combinaciones sísmicas relevantes:
+
+\begin{table}[H]
+\centering
+\small
+\caption{Deformaciones finales del centro de masa por piso}
+\begin{tabular}{ccccccc}
+\hline
+Piso & Entrepiso & $h_i$ (mm) & $\Delta_x$ (mm) & $\theta_x$ & $\Delta_y$ (mm) & $\theta_y$ \\
+\hline
+1 & -1--1 & 2420 & 1.080 & 0.000446 & 0.698 & 0.000289 \\
+2 & 1--2 & 2420 & 1.566 & 0.000647 & 1.064 & 0.000440 \\
+3 & 2--3 & 2420 & 1.896 & 0.000784 & 1.590 & 0.000657 \\
+4 & 3--4 & 2420 & 2.243 & 0.000927 & 1.783 & 0.000737 \\
+5 & 4--5 & 2420 & 2.561 & 0.001058 & 1.929 & 0.000797 \\
+6 & 5--6 & 2420 & 2.806 & 0.001159 & 2.003 & 0.000828 \\
+7 & 6--7 & 2420 & 2.996 & 0.001238 & 2.085 & 0.000861 \\
+8 & 7--8 & 2420 & 3.152 & 0.001302 & 2.115 & 0.000874 \\
+9 & 8--9 & 2420 & 3.269 & 0.001351 & 2.158 & 0.000892 \\
+10 & 9--10 & 2420 & 3.361 & 0.001389 & 2.181 & 0.000901 \\
+11 & 10--11 & 2420 & 3.431 & 0.001418 & 2.195 & 0.000907 \\
+12 & 11--12 & 2420 & 3.482 & 0.001439 & 2.200 & 0.000909 \\
+13 & 12--13 & 2420 & 3.519 & 0.001454 & 2.198 & 0.000908 \\
+14 & 13--14 & 2420 & 3.541 & 0.001463 & 2.190 & 0.000905 \\
+15 & 14--15 & 2420 & 3.552 & 0.001468 & 2.175 & 0.000899 \\
+16 & 15--16 & 2420 & 3.551 & 0.001467 & 2.153 & 0.000890 \\
+17 & 16--17 & 2420 & 3.539 & 0.001462 & 2.125 & 0.000878 \\
+18 & 17--18 & 2420 & 3.517 & 0.001453 & 2.090 & 0.000864 \\
+19 & 18--19 & 2420 & 3.486 & 0.001441 & 2.050 & 0.000847 \\
+20 & 19--20 & 2420 & 3.450 & 0.001426 & 2.007 & 0.000829 \\
+21 & 20--21 & 2420 & 3.412 & 0.001410 & 1.963 & 0.000811 \\
+Techo & 21--Techo & 2420 & 3.391 & 0.001401 & 1.922 & 0.000794 \\
+\hline
+\end{tabular}
+\end{table}
+
+El criterio de aceptación establece que la deriva máxima de entrepiso del centro de masa debe ser menor o igual que el límite admisible:
 
 \begin{equation}
 \theta_i = \frac{\Delta_i}{h_i} \leq 0.002
 \end{equation}
 
-Por lo tanto, para cada dirección se identifica la deriva máxima obtenida en todos los pisos del edificio y se compara con el límite anterior. En la dirección X, la máxima deriva del centro de masa obtenida del modelo fue:
+A partir de los resultados obtenidos, la deriva máxima del centro de masa en la dirección X fue:
 
 \begin{equation}
-\theta_{x,\max} = 0.001015
+\theta_{x,\max} = 0.001468
 \end{equation}
 
 La verificación en X queda dada por:
 
 \begin{equation}
-0.001015 \leq 0.002
+0.001468 \leq 0.002
 \end{equation}
 
 Por lo tanto, la dirección X cumple con el límite de deformación del centro de masa.
 
-Para la dirección Y, la máxima deriva del centro de masa obtenida fue:
+Para la dirección Y, la deriva máxima del centro de masa fue:
 
 \begin{equation}
-\theta_{y,\max} = 0.000612
+\theta_{y,\max} = 0.000909
 \end{equation}
 
 La verificación en Y queda dada por:
 
 \begin{equation}
-0.000612 \leq 0.002
+0.000909 \leq 0.002
 \end{equation}
 
 Por lo tanto, la dirección Y también cumple con el límite de deformación del centro de masa.
 
-Adicionalmente, se registraron los desplazamientos máximos de techo obtenidos del modelo. En la dirección X, el desplazamiento máximo de techo fue de $46.43$ mm, mientras que en la dirección Y fue de $28.59$ mm. Estos valores permiten observar la magnitud global del desplazamiento lateral del edificio, pero la verificación normativa se realiza mediante la deriva máxima de entrepiso.
+Adicionalmente, se registraron los desplazamientos máximos de techo obtenidos del modelo. En la dirección X, el desplazamiento máximo de techo fue de $67.18$ mm, mientras que en la dirección Y fue de $43.19$ mm. Estos valores permiten observar la magnitud global del desplazamiento lateral del edificio; sin embargo, la verificación principal se realiza mediante la deriva máxima de entrepiso del centro de masa.
 
 Los resultados principales de la verificación se resumen en la siguiente tabla:
 
 \begin{table}[H]
 \centering
-\caption{Verificación de deformaciones del centro de masa}
+\caption{Resumen de deformaciones máximas del centro de masa}
 \begin{tabular}{cccccc}
 \hline
-Dirección & $U_{\max}$ techo (mm) & $\theta_{\max}$ & Piso crítico & Límite & Verificación \\
+Dirección & $U_{\max}$ techo (mm) & $\Delta_{\max}$ (mm) & $\theta_{\max}$ & Entrepiso crítico & Verificación \\
 \hline
-X & 46.43 & 0.001015 & Piso 15 & 0.002 & Cumple \\
-Y & 28.59 & 0.000612 & Piso 13 & 0.002 & Cumple \\
+X & 67.18 & 3.552 & 0.001468 & 14--15 & Cumple \\
+Y & 43.19 & 2.200 & 0.000909 & 11--12 & Cumple \\
 \hline
 \end{tabular}
 \end{table}
+
+De acuerdo con los resultados obtenidos, la máxima deriva del centro de masa en la dirección X corresponde a $0.001468$, ubicada en el entrepiso 14--15. En la dirección Y, la máxima deriva corresponde a $0.000909$, ubicada en el entrepiso 11--12. Ambas derivas son menores que el límite admisible de $0.002$, por lo que la estructura cumple con el control de deformaciones del centro de masa en ambas direcciones principales de análisis.
 
 \section{Verificación de rigidez}
 
