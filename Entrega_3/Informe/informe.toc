@@ -10,9 +10,13 @@
 \contentsline {subsection}{\numberline {4.1}Coeficiente Sísmico Mínimo}{5}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Coeficiente Sísmico Máximo}{5}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Cálculo del Factor de Corrección $R^*$ para Sismo en X e Y}{5}{section.5}%
-\contentsline {section}{\numberline {6}Cortes basales}{8}{section.6}%
-\contentsline {section}{\numberline {7}Deformaciones del centro de masa por dirección}{8}{section.7}%
-\contentsline {section}{\numberline {8}Verificación de rigidez}{10}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Verificación global de rigidez}{10}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Verificación de rigidez por piso}{11}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Indicador de acoplamiento}{12}{section.9}%
+\contentsline {section}{\numberline {6}Verificación de masas participativa}{8}{section.6}%
+\contentsline {section}{\numberline {7}Cortes basales}{9}{section.7}%
+\contentsline {section}{\numberline {8}Deformaciones del centro de masa por dirección}{9}{section.8}%
+\contentsline {section}{\numberline {9}Verificación de rigidez}{11}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Verificación global de rigidez}{11}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Verificación de rigidez por piso}{12}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Indicador de acoplamiento}{13}{section.10}%
+\contentsline {section}{\numberline {11}Comparación del modelo con los resultados de prediseño}{16}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Período principal de traslación}{16}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Corte basal}{16}{subsection.11.2}%
