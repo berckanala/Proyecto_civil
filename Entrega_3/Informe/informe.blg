@@ -3,39 +3,27 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: informe.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: secciones/1intro.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: secciones/2factores.aux
-Reallocating 'name_of_file' (item size: 1) to 23 items.
-A level-1 auxiliary file: secciones/3calculo.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: secciones/4Espectro.aux
-Reallocating 'name_of_file' (item size: 1) to 23 items.
-A level-1 auxiliary file: secciones/5chequeo.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: secciones/6tablas.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: secciones/7coef_max.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: secciones/8coef_x_y.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: secciones/9cortes_min_max.aux
-Reallocating 'name_of_file' (item size: 1) to 27 items.
-A level-1 auxiliary file: secciones/10cortes_x_y.aux
-Reallocating 'name_of_file' (item size: 1) to 28 items.
-A level-1 auxiliary file: secciones/11control_def.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: secciones/2masas.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
-A level-1 auxiliary file: secciones/12verificacion_rig.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
-A level-1 auxiliary file: secciones/13acoplamiento.aux
-Reallocating 'name_of_file' (item size: 1) to 23 items.
-A level-1 auxiliary file: secciones/15conclu.aux
+A level-1 auxiliary file: secciones/3parametros_diseno.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: secciones/4espectro_dis.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: secciones/5verificacion.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: secciones/6resultados_modelo.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: secciones/7comparacion.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: secciones/8conclu.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: biblio.bib
 You've used 1 entry,
             2118 wiz_defined-function locations,
-            519 strings with 4487 characters,
+            513 strings with 4351 characters,
 and the built_in function-call counts, 220 in all, are:
 = -- 22
 > -- 7

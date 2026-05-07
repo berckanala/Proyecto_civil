@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  6 MAY 2026 20:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  6 MAY 2026 20:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -616,7 +616,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (informe.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (secciones/1intro.aux) (secciones/2factores.aux) (secciones/3calculo.aux) (secciones/4Espectro.aux) (secciones/5chequeo.aux) (secciones/6tablas.aux) (secciones/7coef_max.aux) (secciones/8coef_x_y.aux) (secciones/9cortes_min_max.aux) (secciones/10cortes_x_y.aux) (secciones/11control_def.aux) (secciones/12verificacion_rig.aux) (secciones/13acoplamiento.aux) (secciones/15conclu.aux))
+ (secciones/1intro.aux) (secciones/2masas.aux) (secciones/3parametros_diseno.aux) (secciones/4espectro_dis.aux) (secciones/5verificacion.aux) (secciones/6resultados_modelo.aux) (secciones/7comparacion.aux) (secciones/8conclu.aux))
 \openout1 = `informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -699,7 +699,7 @@ Package hyperref Info: Link coloring ON on input line 62.
 \openout4 = `informe.out'.
 
 \c@lstlisting=\count337
-<LOGO_UNIVERSIDAD.jpg, id=26, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=74, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 73.
@@ -726,14 +726,14 @@ l.111 \newpage
 \openout2 = `secciones/1intro.aux'.
 
  (secciones/1intro.tex
-<IMG/Espectro_NCh433_Grupo1.png, id=48, 650.43pt x 433.62pt>
+<IMG/Espectro_NCh433_Grupo1.png, id=113, 650.43pt x 433.62pt>
 File: IMG/Espectro_NCh433_Grupo1.png Graphic file (type png)
 <use IMG/Espectro_NCh433_Grupo1.png>
-Package pdftex.def Info: IMG/Espectro_NCh433_Grupo1.png  used on input line 36.
+Package pdftex.def Info: IMG/Espectro_NCh433_Grupo1.png  used on input line 53.
 (pdftex.def)             Requested size: 354.86412pt x 236.57956pt.
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 45.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 57.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [2
 
@@ -741,21 +741,46 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 45.
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.45     \item F
-                actor de modificación de respuesta modificado: $R^*=10.51$
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.45     \item F
-                actor de modificación de respuesta modificado: $R^*=10.51$ <./IMG/Espectro_NCh433_Grupo1.png>])
+l.57 
+     ])
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 114.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [3]
-\openout2 = `secciones/2factores.aux'.
+ [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.114 \include{secciones/1intro.tex}
+                                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.114 \include{secciones/1intro.tex}
+                                     <./IMG/Espectro_NCh433_Grupo1.png>]
+\openout2 = `secciones/2masas.aux'.
 
- (secciones/2factores.tex
+ (secciones/2masas.tex)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 115.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [4
+
+
+
+]
+\openout2 = `secciones/3parametros_diseno.aux'.
+
+ (secciones/3parametros_diseno.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -768,117 +793,64 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-)
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 115.
-(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [4
-
-
-
-]
-\openout2 = `secciones/3calculo.aux'.
-
- (secciones/3calculo.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
+(hyperref)                removing `math shift' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1.
+(hyperref)                removing `superscript' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
+(hyperref)                removing `math shift' on input line 50.
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 66.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 81.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
 [5
 
 
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.66 \end{equation}
-                   
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.66 \end{equation}
-                   ])
+])
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 116.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [6
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.116 \include{secciones/3parametros_diseno.tex}
+                                                
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.116 \include{secciones/3calculo.tex}
-                                      ]
-\openout2 = `secciones/4Espectro.aux'.
-
- (secciones/4Espectro.tex)
-\openout2 = `secciones/5chequeo.aux'.
-
-
-No file secciones/5chequeo.tex.
-\openout2 = `secciones/6tablas.aux'.
-
-(secciones/6tablas.tex)
-\openout2 = `secciones/7coef_max.aux'.
-
- (secciones/7coef_max.tex)
+l.116 \include{secciones/3parametros_diseno.tex}
+                                                ]
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 120.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 116.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [7
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.116 \include{secciones/3parametros_diseno.tex}
+                                                ]
+\openout2 = `secciones/4espectro_dis.aux'.
 
+ (secciones/4espectro_dis.tex)
+\openout2 = `secciones/5verificacion.aux'.
 
+ (secciones/5verificacion.tex)
+\openout2 = `secciones/6resultados_modelo.aux'.
 
-
-
-
-
-
-
-
-
-
-]
-\openout2 = `secciones/8coef_x_y.aux'.
-
- (secciones/8coef_x_y.tex)
-\openout2 = `secciones/9cortes_min_max.aux'.
-
- (secciones/9cortes_min_max.tex)
-\openout2 = `secciones/10cortes_x_y.aux'.
-
- (secciones/10cortes_x_y.tex)
-\openout2 = `secciones/11control_def.aux'.
-
- (secciones/11control_def.tex)
-\openout2 = `secciones/12verificacion_rig.aux'.
-
- (secciones/12verificacion_rig.tex)
-\openout2 = `secciones/13acoplamiento.aux'.
-
-
-No file secciones/13acoplamiento.tex.
-\openout2 = `secciones/15conclu.aux'.
-
-No file secciones/15conclu.tex.
-(informe.bbl)
+ (secciones/6resultados_modelo.tex
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 134.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 57.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [8
 
@@ -891,11 +863,77 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 134.
 
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 
+     ]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 124.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [9]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 190.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [10
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.190 \end{table}
+                 ]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 232.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [11
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.232 \end{equation}
+                    ]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 287.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.287 L
+       os tres períodos principales obtenidos del modelo modal son los sigu...]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 352.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{table.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.352 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.352 
+      ])
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 119.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [14]
+\openout2 = `secciones/7comparacion.aux'.
 
+ (secciones/7comparacion.tex)
+\openout2 = `secciones/8conclu.aux'.
 
-
-
-
+ (secciones/8conclu.tex) (informe.bbl)
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 129.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [15
 
 
 
@@ -907,26 +945,26 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 134.
 ] (informe.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (secciones/1intro.aux) (secciones/2factores.aux) (secciones/3calculo.aux) (secciones/4Espectro.aux) (secciones/5chequeo.aux) (secciones/6tablas.aux) (secciones/7coef_max.aux) (secciones/8coef_x_y.aux) (secciones/9cortes_min_max.aux) (secciones/10cortes_x_y.aux) (secciones/11control_def.aux) (secciones/12verificacion_rig.aux) (secciones/13acoplamiento.aux) (secciones/15conclu.aux))
+ (secciones/1intro.aux) (secciones/2masas.aux) (secciones/3parametros_diseno.aux) (secciones/4espectro_dis.aux) (secciones/5verificacion.aux) (secciones/6resultados_modelo.aux) (secciones/7comparacion.aux) (secciones/8conclu.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: 1BFEA74615712C86D35E59A0977D59CD;931.
+(rerunfilecheck)             Checksum: 9A1CB65A1A717C8C4EFF38DD006B1CBD;3685.
  ) 
 Here is how much of TeX's memory you used:
- 24590 strings out of 474485
- 460328 string characters out of 5745150
- 1940542 words of memory out of 5000000
- 46339 multiletter control sequences out of 15000+600000
- 561821 words of font info for 49 fonts, out of 8000000 for 9000
+ 24542 strings out of 474485
+ 455726 string characters out of 5745150
+ 1941542 words of memory out of 5000000
+ 46258 multiletter control sequences out of 15000+600000
+ 562167 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,93p,649b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on informe.pdf (9 pages, 454131 bytes).
+ 84i,17n,93p,650b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on informe.pdf (16 pages, 506069 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

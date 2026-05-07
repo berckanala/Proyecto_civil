@@ -1,6 +1,18 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Información General del Edificio}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Factores \textbf {R} y \textbf {$R_0$}, materiales}{4}{section.2}%
-\contentsline {section}{\numberline {3}Calculo factor $R^*$ para sismo en X e Y}{5}{section.3}%
-\contentsline {section}{\numberline {4}Coeficientes Sísmicos}{7}{section.4}%
+\contentsline {section}{\numberline {1}Información General del Edificio y Parámetros Sísmicos}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Antecedentes Generales}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Parámetros Sísmicos de Diseño}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Espectro de Diseño}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Resumen de Resultados del Prediseño Sísmico}{3}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Masas y pesos sísmicos}{4}{section.2}%
+\contentsline {section}{\numberline {3}Factores $R$ y $R_0$}{5}{section.3}%
+\contentsline {section}{\numberline {4}Coeficientes Sísmicos Máximo y Mínimo}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Coeficiente Sísmico Mínimo}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Coeficiente Sísmico Máximo}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Cálculo del Factor de Corrección $R^*$ para Sismo en X e Y}{5}{section.5}%
+\contentsline {section}{\numberline {6}Cortes basales}{8}{section.6}%
+\contentsline {section}{\numberline {7}Deformaciones del centro de masa por dirección}{8}{section.7}%
+\contentsline {section}{\numberline {8}Verificación de rigidez}{10}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Verificación global de rigidez}{10}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Verificación de rigidez por piso}{11}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Indicador de acoplamiento}{12}{section.9}%

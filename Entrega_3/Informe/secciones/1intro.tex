@@ -1,50 +1,89 @@
-\section{Introducción}
+%--- Requiere en el preámbulo: \usepackage{booktabs} ---
 
-El proyecto consiste en el análisis y diseño estructural de un edificio residencial ubicado en Antofagasta, Chile. El diseño se ajusta a la normativa vigente según los siguientes parámetros:
+\section{Información General del Edificio y Parámetros Sísmicos}
 
-\subsection{Información General del Edificio}
+El proyecto corresponde al análisis y diseño estructural de un edificio residencial 
+ubicado en Antofagasta, Chile, ajustado a la normativa sísmica vigente.
+
+\subsection{Antecedentes Generales}
+
 \begin{itemize}
-    \item Ubicación: Antofagasta, Chile.
-    \item Uso: Habitacional (Residencial).
-    \item Categoría de Ocupación: Categoría II (Estructuras de ocupación normal), según NCh433 \cite{NCh433:1996}.
-    \item Zonificación Sísmica: Zona 3 (Alta sismicidad costera).
+    \item \textbf{Ubicación:} Antofagasta, Chile.
+    \item \textbf{Uso:} Habitacional (Residencial).
+    \item \textbf{Categoría de Ocupación:} Categoría II --- Estructuras de ocupación 
+          normal, según NCh433~\cite{NCh433:1996}.
+    \item \textbf{Zonificación Sísmica:} Zona 3 (Alta sismicidad costera).
 \end{itemize}
+
+\subsection{Parámetros Sísmicos de Diseño}
+
+Los parámetros sísmicos de diseño, determinados según la norma NCh433~\cite{NCh433:1996} 
+y el DS N°61, se resumen en la Tabla~\ref{tab:parametros_sismicos}.
 
 \begin{table}[H]
     \centering
     \caption{Parámetros sísmicos de diseño según NCh433 y DS N°61.}
     \label{tab:parametros_sismicos}
     \begin{tabular}{lc}
-        \hline
+        \toprule
         \textbf{Parámetro} & \textbf{Valor} \\
-        \hline
-        Zona sísmica                                    & Zona 3 \\
-        Aceleración efectiva máxima $A_0$               & $0{,}40\,g$ \\
-        Tipo de suelo                                   & Tipo A \\
-        Categoría de Ocupación                         & II \\
-        Factor de importancia $I_0$                    & $1{,}0$ \\
-        Coeficiente sísmico $C$                        & $0{,}10$ \\
-        Sistema estructural                             & Muros de corte de hormigón armado \\
-        Factor de modificación de respuesta $R$        & $7$ \\
-        Período característico del suelo $T^*$         & $0{,}20\ \text{s}$ \\
-        \hline
+        \midrule
+        Zona sísmica                                        & Zona 3 \\
+        Tipo de suelo                                       & Tipo A \\
+        Aceleración efectiva máxima $A_0$                   & $0{,}40\,g$ \\
+        Período característico del suelo $T_0$              & $0{,}20\ \text{s}$ \\
+        Factor de amplificación del suelo $S$               & $0{,}9$ \\
+        Categoría de Ocupación                              & II \\
+        Factor de importancia $I$                           & $1{,}0$ \\
+        Sistema estructural                                 & Muros de corte de hormigón armado \\
+        Factor de modificación de respuesta $R_0$           & $11$ \\
+        Factor de modificación de respuesta $R$             & $7$ \\
+        \bottomrule
     \end{tabular}
 \end{table}
+
+\subsection{Espectro de Diseño}
+
+En la Figura~\ref{fig:espectro} se presenta el espectro de diseño elástico obtenido 
+según NCh433~\cite{NCh433:1996}, considerando los parámetros de la 
+Tabla~\ref{tab:parametros_sismicos}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{IMG/Espectro_NCh433_Grupo1.png}
-    \caption{Espectro de diseño NCh433}
+    \caption{Espectro de diseño elástico según NCh433.}
+    \label{fig:espectro}
 \end{figure}
 
-Los resultados obtenidos para el análisis sísmico se presentan a continuación:
+\subsection{Resumen de Resultados del Prediseño Sísmico}
 
-\begin{itemize}
-    \item Peso sísmico edificio: $P=8,766.65 ton$
-    \item Periodo aproximado: $T=1.05s$
-    \item Factor de modificación de respuesta modificado: $R^*=10.51$
-    \item Coeficiente sísmico: $C=0.0269$, por lo tanto, $C_{utilizado}=0.01$
-    \item Corte basal mínimo: $Q_0=526 ton$
-    \item Corte basal máximo: $Q_{max}=1,104.6 ton$
-    \item Corte basal utilizado: $Q=526 ton$
-\end{itemize}
+A modo de referencia, la Tabla~\ref{tab:resumen_prediseno} presenta los principales 
+resultados del prediseño sísmico del edificio, los cuales serán contrastados con los 
+obtenidos del modelo en secciones posteriores.
+
+\begin{table}[H]
+    \centering
+    \caption{Resultados del prediseño sísmico.}
+    \label{tab:resumen_prediseno}
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Parámetro}                                  & \textbf{Valor} \\
+        \midrule
+        Peso sísmico del edificio $P$                       & $8{.}766{,}65\ \text{tonf}$ \\
+        Período aproximado $T$                              & $1{,}05\ \text{s}$ \\
+        Factor de reducción modificado $R^*$                & $10{,}51$ \\
+        Coeficiente sísmico calculado $C$                   & $0{,}0269$ \\
+        Coeficiente sísmico utilizado $C_{\min}$            & $0{,}10$ \\
+        Corte basal mínimo $Q_{\min}$                       & $526\ \text{tonf}$ \\
+        Corte basal máximo $Q_{\max}$                       & $1{.}104{,}6\ \text{tonf}$ \\
+        Corte basal de prediseño $Q$                        & $526\ \text{tonf}$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+
+
+
+
+% ---------------------------------------------------------------
