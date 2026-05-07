@@ -13,12 +13,13 @@
 \contentsline {subsection}{\numberline {6.1}Espectro Elástico}{7}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Espectro Reducido}{7}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Verificación de masas participativa}{8}{section.7}%
-\contentsline {section}{\numberline {8}Cortes basales}{9}{section.8}%
-\contentsline {section}{\numberline {9}Deformaciones del centro de masa por dirección}{9}{section.9}%
-\contentsline {section}{\numberline {10}Verificación de rigidez}{11}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Verificación global de rigidez}{12}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Verificación de rigidez por piso}{13}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Indicador de acoplamiento}{14}{section.11}%
-\contentsline {section}{\numberline {12}Comparación del modelo con los resultados de prediseño}{16}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Período principal de traslación}{16}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Corte basal}{16}{subsection.12.2}%
+\contentsline {section}{\numberline {8}Resultados del modelo sísmico}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Cortes basales}{9}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Deformaciones del centro de masa por dirección}{9}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Verificación de rigidez}{11}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Verificación global de rigidez}{12}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Verificación de rigidez por piso}{13}{subsubsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.4}Indicador de acoplamiento}{14}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Comparación del modelo con los resultados de prediseño}{16}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Período principal de traslación}{16}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Corte basal}{16}{subsection.9.2}%

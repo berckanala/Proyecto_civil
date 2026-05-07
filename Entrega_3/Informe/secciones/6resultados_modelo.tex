@@ -1,4 +1,5 @@
-\section{Cortes basales}
+\section{Resultados del modelo sísmico}
+\subsection{Cortes basales}
 
 El corte basal corresponde a la fuerza sísmica total que actúa en la base de la estructura para cada dirección de análisis. Para verificar si el modelo cumple, los cortes obtenidos en ETABS deben compararse con el corte mínimo, el corte máximo y el corte objetivo adoptado.
 
@@ -33,7 +34,7 @@ Y & 510.70 & 965.23 & 764.28 & 0.23 \\
 
 Como se observa en la tabla, los cortes basales finales en ambas direcciones son prácticamente iguales al corte basal objetivo y se encuentran dentro del rango permitido entre el corte mínimo y el corte máximo. En consecuencia, el modelo sísmico final cumple con la verificación de corte basal.
 
-\section{Deformaciones del centro de masa por dirección}
+\subsection{Deformaciones del centro de masa por dirección}
 
 Las deformaciones del centro de masa permiten evaluar si la estructura presenta desplazamientos laterales cdentro de los límites admisibles frente a la acción sísmica. Esta verificación se realiza a partir de los desplazamientos del centro de masa de cada nivel, obtenidos desde el modelo estructural en ETABS para las direcciones principales X e Y.
 
@@ -178,11 +179,11 @@ Y & 43.19 & 2.200 & 0.000909 & 11--12 & Cumple \\
 
 De acuerdo con los resultados obtenidos, la máxima deriva del centro de masa en la dirección X corresponde a $0.001468$, ubicada en el entrepiso 14--15. En la dirección Y, la máxima deriva corresponde a $0.000909$, ubicada en el entrepiso 11--12. Ambas derivas son menores que el límite admisible de $0.002$, por lo que la estructura cumple con el control de deformaciones del centro de masa en ambas direcciones principales de análisis.
 
-\section{Verificación de rigidez}
+\subsection{Verificación de rigidez}
 
 La verificación de rigidez permite evaluar si la estructura presenta una respuesta lateral adecuada frente a la acción sísmica. Primero, se realiza una verificación global mediante la relación entre la altura total del edificio y el período fundamental de vibración. Luego, se revisa la rigidez por piso, con el objetivo de identificar posibles reducciones bruscas de rigidez en altura.
 
-\subsection{Verificación global de rigidez}
+\subsubsection{Verificación global de rigidez}
 
 Para una misma altura, un período mayor indica una estructura más flexible, mientras que un período menor indica una estructura más rígida.
 
@@ -247,7 +248,7 @@ Y & 0.853 & 64.22 & Mayor rigidez global \\
 
 De acuerdo con los resultados obtenidos, la dirección X presenta el mayor período fundamental, por lo que corresponde a la dirección más flexible del edificio. En cambio, la dirección Y presenta un período menor y, en consecuencia, una mayor rigidez global. Además, la razón $H/T$ debe estar entre $50$ y $70$, la dirección Y se encuentra dentro del rango, mientras que la dirección X queda levemente por debajo, lo que confirma que esta dirección presenta una mayor flexibilidad lateral.
 
-\subsection{Verificación de rigidez por piso}
+\subsubsection{Verificación de rigidez por piso}
 
 Esta verificación permite identificar si existe una disminución brusca de rigidez en algún piso, lo que podría indicar la presencia de un piso blando o una discontinuidad importante en la distribución de elementos resistentes.
 
@@ -328,7 +329,7 @@ Y & 1542.59 & 56.01 & $K_{2}/K_{1} \approx 0.69$ & Disminución progresiva \\
 
 De acuerdo con los resultados obtenidos, la rigidez lateral disminuye hacia los niveles superiores, lo cual es esperable debido a que los cortes de piso también disminuyen en altura. La mayor reducción se concentra entre los pisos 1 y 2, pero no se identifica una caída brusca aislada. Por lo tanto, no se evidencia la presencia de un piso blando en los niveles superiores.
 
-\section{Indicador de acoplamiento}
+\subsection{Indicador de acoplamiento}
 
 El indicador de acoplamiento permite evaluar si los modos principales de vibración del edificio se encuentran suficientemente separados entre sí. Esta verificación es importante porque, cuando dos períodos principales son muy cercanos, sus modos pueden interactuar, generando una respuesta acoplada entre traslación y torsión.
 
