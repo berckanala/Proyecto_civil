@@ -10,23 +10,15 @@ apartado \textit{Mass Source} de ETABS se asignan los siguientes factores de
 combinación:
 
 \begin{itemize}
-    \item Cargas permanentes (CM): factor $1{,}0$
-    \item Sobrecargas de uso (CV): factor $0{,}25$
+    \item Peso propio (PP): factor $1{,}0$
+    \item Sobrecargas (SC): factor $0{,}25$
 \end{itemize}
 
-Las cargas totales consideradas en el modelo son:
-
-\begin{equation}
-    P_{\text{CM}} = 8{.}218\ \text{tonf} \qquad P_{\text{CV}} = 2{.}093\ \text{tonf}
-\end{equation}
-
-El peso sísmico total resulta de la combinación $P = 1{,}0\cdot P_{\text{CM}} 
-+ 0{,}25\cdot P_{\text{CV}}$, obteniéndose del modelo:
-
+Sumando la masa de todos los pisos y multiplicandolos por la aceleración de gravedad, se obtiene el peso sísmico de la estructura:
 \begin{equation}
     P = 7{.}660{,}05\ \text{tonf}
 \end{equation}
 
 Comparado con el valor de prediseño ($P_{\text{pred}} = 8{.}766{,}65\ \text{tonf}$), 
-la diferencia es de un \textbf{X\%}, valor que se encuentra dentro de los márgenes 
+la diferencia es de un \textbf{12.6\%}, valor que se encuentra dentro de los márgenes 
 esperados para esta etapa del análisis.

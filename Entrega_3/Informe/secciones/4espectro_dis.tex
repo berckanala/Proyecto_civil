@@ -19,25 +19,14 @@ La aceleración espectral elástica $S_a(T)$ se define como:
 donde $\alpha(T)$ es el coeficiente de amplificación espectral dado por:
 
 \begin{equation}
-    \alpha(T) =
-    \begin{cases}
-        1 + (2{,}75\,S - 1)\,\dfrac{T}{T_0} & 0 \leq T \leq T_0 \\[10pt]
-        2{,}75\,S\left(\dfrac{T_0}{T}\right)^{n}   & T > T_0
-    \end{cases}
+    \alpha(T) = \frac{1+4.5 \left(\frac{T_n}{T_0} \right)^p}{1 +\left( \frac{T_n}{T_0}\right)^3}
 \end{equation}
 
-Para suelo Tipo A, los parámetros son $S = 0{,}9$, $T_0 = 0{,}15\ \text{s}$ y 
-$n = 1{,}0$. La aceleración espectral máxima resulta:
-
-\begin{equation}
-    S_{a,\max} = A_0 \cdot I \cdot 2{,}75 \cdot S 
-    = 0{,}40 \cdot 1{,}0 \cdot 2{,}75 \cdot 0{,}9 = 0{,}99\,g
-\end{equation}
 
 \subsection{Espectro Reducido}
 
 El espectro reducido se obtiene dividiendo el espectro elástico por el factor 
-de corrección $R^*$ calculado en la Sección~\ref{sec:Rstar}, siendo distinto 
+de corrección $R^*$ calculado en la Sección~\ref{sec:factores R}, siendo distinto 
 para cada dirección de análisis:
 
 \begin{equation}
@@ -53,7 +42,7 @@ mínimo exigido por la norma, son:
 
 En la Figura~\ref{fig:espectros} se presentan el espectro elástico y los espectros 
 reducidos para ambas direcciones. Se indican además los períodos fundamentales de 
-traslación ($T^*_X = 1{,}14\ \text{s}$, $T^*_Y = 0{,}853\ \text{s}$), 
+traslación ($T_X = 1{,}14\ \text{s}$, $T_Y = 0{,}853\ \text{s}$), 
 utilizados en el cálculo de $R^*$.
 
 \begin{figure}[H]
