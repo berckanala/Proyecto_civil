@@ -3,11 +3,4 @@
 \contentsline {subsection}{\numberline {1.1}Información General del Edificio}{2}{subsection.1.1}%
 \contentsline {section}{\numberline {2}Factores \textbf {R} y \textbf {$R_0$}, materiales}{4}{section.2}%
 \contentsline {section}{\numberline {3}Calculo factor $R^*$ para sismo en X e Y}{5}{section.3}%
-\contentsline {section}{\numberline {4}Cortes basales}{7}{section.4}%
-\contentsline {section}{\numberline {5}Deformaciones del centro de masa por dirección}{7}{section.5}%
-\contentsline {section}{\numberline {6}Verificación de rigidez}{9}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Verificación global de rigidez}{9}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Verificación de rigidez por piso}{10}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Indicador de acoplamiento}{11}{section.7}%
-\contentsline {section}{\numberline {8}Coeficientes Sísmicos}{14}{section.8}%
-\contentsline {section}{\numberline {9}Indicador de acoplamiento}{15}{section.9}%
+\contentsline {section}{\numberline {4}Coeficientes Sísmicos}{7}{section.4}%
