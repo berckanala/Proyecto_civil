@@ -1,0 +1,65 @@
+% ============================================================
+% SECCIÓN 4
+% ============================================================
+\section{Espectro de Diseño según NCh433}
+\label{sec:espectro}
+
+El espectro de diseño se construye conforme al artículo 6.3 de la norma 
+NCh433~\cite{NCh433:1996}, utilizando los parámetros de la 
+Tabla~\ref{tab:parametros_sismicos}.
+
+\subsection{Espectro Elástico}
+
+La aceleración espectral elástica $S_a(T)$ se define como:
+
+\begin{equation}
+    S_a(T) = A_0 \cdot I \cdot \alpha(T)
+\end{equation}
+
+donde $\alpha(T)$ es el coeficiente de amplificación espectral dado por:
+
+\begin{equation}
+    \alpha(T) =
+    \begin{cases}
+        1 + (2{,}75\,S - 1)\,\dfrac{T}{T_0} & 0 \leq T \leq T_0 \\[10pt]
+        2{,}75\,S\left(\dfrac{T_0}{T}\right)^{n}   & T > T_0
+    \end{cases}
+\end{equation}
+
+Para suelo Tipo A, los parámetros son $S = 0{,}9$, $T_0 = 0{,}15\ \text{s}$ y 
+$n = 1{,}0$. La aceleración espectral máxima resulta:
+
+\begin{equation}
+    S_{a,\max} = A_0 \cdot I \cdot 2{,}75 \cdot S 
+    = 0{,}40 \cdot 1{,}0 \cdot 2{,}75 \cdot 0{,}9 = 0{,}99\,g
+\end{equation}
+
+\subsection{Espectro Reducido}
+
+El espectro reducido se obtiene dividiendo el espectro elástico por el factor 
+de corrección $R^*$ calculado en la Sección~\ref{sec:Rstar}, siendo distinto 
+para cada dirección de análisis:
+
+\begin{equation}
+    S_{a,\text{red}}(T) = \frac{S_a(T)}{R^*}
+\end{equation}
+
+Los factores de reducción definitivos, ajustados para cumplir con el corte basal 
+mínimo exigido por la norma, son:
+
+\begin{equation}
+    R^*_X = 2{,}22 \qquad R^*_Y = 2{,}69
+\end{equation}
+
+En la Figura~\ref{fig:espectros} se presentan el espectro elástico y los espectros 
+reducidos para ambas direcciones. Se indican además los períodos fundamentales de 
+traslación ($T^*_X = 1{,}14\ \text{s}$, $T^*_Y = 0{,}853\ \text{s}$), 
+utilizados en el cálculo de $R^*$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{IMG/Espectro_NCh433_Grupo1.png}
+    \caption{Espectro elástico y espectros reducidos para las direcciones X e Y, 
+             según NCh433~\cite{NCh433:1996}.}
+    \label{fig:espectros}
+\end{figure}

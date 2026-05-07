@@ -1,6 +1,8 @@
-%--- Requiere en el preámbulo: \usepackage{booktabs} ---
-
+% ============================================================
+% SECCIÓN 1
+% ============================================================
 \section{Información General del Edificio y Parámetros Sísmicos}
+\label{sec:info_general}
 
 El proyecto corresponde al análisis y diseño estructural de un edificio residencial 
 ubicado en Antofagasta, Chile, ajustado a la normativa sísmica vigente.
@@ -17,7 +19,7 @@ ubicado en Antofagasta, Chile, ajustado a la normativa sísmica vigente.
 
 \subsection{Parámetros Sísmicos de Diseño}
 
-Los parámetros sísmicos de diseño, determinados según la norma NCh433~\cite{NCh433:1996} 
+Los parámetros sísmicos de diseño, determinados según NCh433~\cite{NCh433:1996} 
 y el DS N°61, se resumen en la Tabla~\ref{tab:parametros_sismicos}.
 
 \begin{table}[H]
@@ -26,12 +28,12 @@ y el DS N°61, se resumen en la Tabla~\ref{tab:parametros_sismicos}.
     \label{tab:parametros_sismicos}
     \begin{tabular}{lc}
         \toprule
-        \textbf{Parámetro} & \textbf{Valor} \\
+        \textbf{Parámetro}                                  & \textbf{Valor} \\
         \midrule
         Zona sísmica                                        & Zona 3 \\
         Tipo de suelo                                       & Tipo A \\
         Aceleración efectiva máxima $A_0$                   & $0{,}40\,g$ \\
-        Período característico del suelo $T_0$              & $0{,}20\ \text{s}$ \\
+        Período característico del suelo $T_0$              & $0{,}15\ \text{s}$ \\
         Factor de amplificación del suelo $S$               & $0{,}9$ \\
         Categoría de Ocupación                              & II \\
         Factor de importancia $I$                           & $1{,}0$ \\
@@ -42,24 +44,11 @@ y el DS N°61, se resumen en la Tabla~\ref{tab:parametros_sismicos}.
     \end{tabular}
 \end{table}
 
-\subsection{Espectro de Diseño}
-
-En la Figura~\ref{fig:espectro} se presenta el espectro de diseño elástico obtenido 
-según NCh433~\cite{NCh433:1996}, considerando los parámetros de la 
-Tabla~\ref{tab:parametros_sismicos}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{IMG/Espectro_NCh433_Grupo1.png}
-    \caption{Espectro de diseño elástico según NCh433.}
-    \label{fig:espectro}
-\end{figure}
-
 \subsection{Resumen de Resultados del Prediseño Sísmico}
 
 A modo de referencia, la Tabla~\ref{tab:resumen_prediseno} presenta los principales 
-resultados del prediseño sísmico del edificio, los cuales serán contrastados con los 
-obtenidos del modelo en secciones posteriores.
+resultados del prediseño sísmico, los cuales serán contrastados con los resultados 
+del modelo en secciones posteriores.
 
 \begin{table}[H]
     \centering
@@ -80,10 +69,3 @@ obtenidos del modelo en secciones posteriores.
         \bottomrule
     \end{tabular}
 \end{table}
-
-
-
-
-
-
-% ---------------------------------------------------------------
