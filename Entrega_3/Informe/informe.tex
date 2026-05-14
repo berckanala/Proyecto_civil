@@ -5,6 +5,7 @@
 \addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
 \usepackage{chngcntr}
 \counterwithin{table}{section}
+\counterwithin{figure}{section}
 \usepackage[usenames]{color} % Permite el uso de colores definidos por nombre en el documento
 \usepackage{hyperref} % Habilita enlaces y referencias dentro del documento
 \hypersetup{colorlinks=true, linkcolor = black, citecolor= black} % Configura el color de los enlaces y citas
@@ -128,5 +129,10 @@
 \newpage
 \bibliographystyle{agsm} % Estilo de la cita (puedes usar 'ieeetr', 'apalike', etc.)
 \bibliography{biblio.bib} % Nombre de tu archivo .bib 
+
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
 
 \end{document}
