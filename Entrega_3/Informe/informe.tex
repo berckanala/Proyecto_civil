@@ -2,6 +2,9 @@
 \usepackage[letterpaper,margin=3cm]{geometry} % Configura el tamaño del papel y los márgenes del documento
 \usepackage{graphicx} % Permite la inserción de imágenes
 \usepackage[spanish]{babel}% Activar esta configuración para informes en español, ajusta el idioma del documento
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+\usepackage{chngcntr}
+\counterwithin{table}{section}
 \usepackage[usenames]{color} % Permite el uso de colores definidos por nombre en el documento
 \usepackage{hyperref} % Habilita enlaces y referencias dentro del documento
 \hypersetup{colorlinks=true, linkcolor = black, citecolor= black} % Configura el color de los enlaces y citas
@@ -123,7 +126,7 @@
 
 
 \newpage
-\bibliographystyle{plain} % Estilo de la cita (puedes usar 'ieeetr', 'apalike', etc.)
+\bibliographystyle{agsm} % Estilo de la cita (puedes usar 'ieeetr', 'apalike', etc.)
 \bibliography{biblio.bib} % Nombre de tu archivo .bib 
 
 \end{document}

@@ -1,22 +1,22 @@
 
 
  ETABS Ultimate 64-bit 23.2.0 Build 4400 (Analysis Build 10002/64)
- File: C:\Users\pedro\OneDrive...oyecto Civil\Proyecto_civil\modelo\Modelo_1.LOG
+ File: C:\Users\HP\Desktop\Uan...avo_semestre\Proyecto_civil\modelo\Modelo_1.LOG
 
 
 
 
- B E G I N   A N A L Y S I S                                2026/05/07  20:37:11
+ B E G I N   A N A L Y S I S                                2026/05/14  14:19:31
 
 
  RUNNING ANALYSIS AS A SEPARATE PROCESS
  USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
 
- NUMBER OF JOINTS                          =       18057
+ NUMBER OF JOINTS                          =       18076
     WITH RESTRAINTS                        =          86
-    WITH MASS                              =        1727
- NUMBER OF FRAME/TENDON ELEMENTS           =       25861
- NUMBER OF SHELL ELEMENTS                  =       16191
+    WITH MASS                              =        1746
+ NUMBER OF FRAME/TENDON ELEMENTS           =       25925
+ NUMBER OF SHELL ELEMENTS                  =       16203
  NUMBER OF CONSTRAINTS/WELDS               =          86
  NUMBER OF LOAD PATTERNS                   =           3
  NUMBER OF ACCELERATION LOADS              =          12
@@ -26,20 +26,20 @@
  UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = lb, in, °F, sec
  GRAVITATIONAL ACCELERATION                =  386.088583
 
- ADDRESSABLE PHYSICAL MEMORY (RAM)         =      15.192 GB
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =      31.783 GB
 
  PARALLELIZATION OF ANALYSIS OPERATIONS:
   (Env. variable SAPFIRE_NUM_THREADS not set)
- NUMBER OF THREADS: STATE (AUTOMATIC)      =           8
- NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           8
- NUMBER OF THREADS: EVENT (AUTOMATIC)      =           8
- NUMBER OF THREADS: MOVE (AUTOMATIC)       =           8
- NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           8
- NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           8
- NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           4
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           4
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           4
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           4
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           4
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           4
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           4
 
 
- E L E M E N T   F O R M A T I O N                                      20:37:11
+ E L E M E N T   F O R M A T I O N                                      14:19:32
 
 
  NUMBER OF COUPLED CONSTRAINT EQUATIONS    =         348
@@ -50,12 +50,12 @@
    CONSTRAINT MASTER DOF AFTER REDUCTION   =         186
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        20:37:15
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        14:19:35
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
- TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =       58791
- NUMBER OF NON-ZERO STIFFNESS TERMS        =     1138191
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =       58905
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =     1140912
 
  ---------------------------------
  BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
@@ -67,7 +67,7 @@
  ---------------------------------
 
 
- L I N E A R   S T A T I C   C A S E S                                  20:37:17
+ L I N E A R   S T A T I C   C A S E S                                  14:19:36
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -81,7 +81,7 @@
  CASE: ~LLRF
 
 
- C E N T E R   O F   R I G I D I T Y  A N A L Y S I S                   20:37:18
+ C E N T E R   O F   R I G I D I T Y  A N A L Y S I S                   14:19:38
 
  CASE: ~CENTER OF RIGIDITY
 
@@ -94,14 +94,14 @@
  NUMBER OF LOADS SAVED                     =          69
 
 
- E I G E N   M O D A L   A N A L Y S I S                                20:37:19
+ E I G E N   M O D A L   A N A L Y S I S                                14:19:39
 
  CASE: MODAL
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
- NUMBER OF STIFFNESS DEGREES OF FREEDOM    =       58791
- NUMBER OF MASS DEGREES OF FREEDOM         =        3348
+ NUMBER OF STIFFNESS DEGREES OF FREEDOM    =       58905
+ NUMBER OF MASS DEGREES OF FREEDOM         =        3386
  MAXIMUM NUMBER OF EIGEN MODES SOUGHT      =          30
  MINIMUM NUMBER OF EIGEN MODES SOUGHT      =           1
  NUMBER OF RESIDUAL-MASS MODES SOUGHT      =           0
@@ -115,43 +115,43 @@
 
  Original stiffness at shift : EV= 0.0000000E+00, f=     .000000, T=  -INFINITY-
  Number of eigenvalues below shift =      0
- Found mode      1 of     30:  EV= 2.4899903E+01, f=    0.794180, T=    1.259160
- Found mode      2 of     30:  EV= 3.0333024E+01, f=    0.876553, T=    1.140833
- Found mode      3 of     30:  EV= 5.4124635E+01, f=    1.170894, T=    0.854048
- Found mode      4 of     30:  EV= 3.6707805E+02, f=    3.049294, T=    0.327945
- Found mode      5 of     30:  EV= 5.5246257E+02, f=    3.740861, T=    0.267318
- Found mode      6 of     30:  EV= 9.0560650E+02, f=    4.789497, T=    0.208790
- Found mode      7 of     30:  EV= 1.7050658E+03, f=    6.571896, T=    0.152163
- Found mode      8 of     30:  EV= 2.8215057E+03, f=    8.453968, T=    0.118288
- Found mode      9 of     30:  EV= 4.1101729E+03, f=   10.203524, T=    0.098005
- Found mode     10 of     30:  EV= 4.5744190E+03, f=   10.764357, T=    0.092899
- Found mode     11 of     30:  EV= 5.8874512E+03, f=   12.211916, T=    0.081887
- Found mode     12 of     30:  EV= 7.8806425E+03, f=   14.128659, T=    0.070778
- Found mode     13 of     30:  EV= 9.3456069E+03, f=   15.385935, T=    0.064994
- Found mode     14 of     30:  EV= 1.0414516E+04, f=   16.242007, T=    0.061569
- Found mode     15 of     30:  EV= 1.6116141E+04, f=   20.204619, T=    0.049494
- Found mode     16 of     30:  EV= 1.6338402E+04, f=   20.343465, T=    0.049156
- Found mode     17 of     30:  EV= 2.0683378E+04, f=   22.889213, T=    0.043689
- Found mode     18 of     30:  EV= 2.5227436E+04, f=   25.278814, T=    0.039559
- Found mode     19 of     30:  EV= 2.7518895E+04, f=   26.401927, T=    0.037876
- Found mode     20 of     30:  EV= 3.2007435E+04, f=   28.473809, T=    0.035120
- Found mode     21 of     30:  EV= 3.5448936E+04, f=   29.965514, T=    0.033372
- Found mode     22 of     30:  EV= 3.6092769E+04, f=   30.236410, T=    0.033073
- Found mode     23 of     30:  EV= 3.8127469E+04, f=   31.077002, T=    0.032178
- Found mode     24 of     30:  EV= 4.3518078E+04, f=   33.201292, T=    0.030119
- Found mode     25 of     30:  EV= 4.7454789E+04, f=   34.670504, T=    0.028843
- Found mode     26 of     30:  EV= 4.9244644E+04, f=   35.318287, T=    0.028314
- Found mode     27 of     30:  EV= 5.0098883E+04, f=   35.623300, T=    0.028072
- Found mode     28 of     30:  EV= 5.2663671E+04, f=   36.523778, T=    0.027379
- Found mode     29 of     30:  EV= 5.7574522E+04, f=   38.188738, T=    0.026186
- Found mode     30 of     30:  EV= 6.2588166E+04, f=   39.816790, T=    0.025115
+ Found mode      1 of     30:  EV= 2.5119773E+01, f=    0.797679, T=    1.253638
+ Found mode      2 of     30:  EV= 3.3294494E+01, f=    0.918346, T=    1.088914
+ Found mode      3 of     30:  EV= 6.0682147E+01, f=    1.239797, T=    0.806584
+ Found mode      4 of     30:  EV= 3.5880591E+02, f=    3.014740, T=    0.331704
+ Found mode      5 of     30:  EV= 5.6251568E+02, f=    3.774744, T=    0.264919
+ Found mode      6 of     30:  EV= 9.3141304E+02, f=    4.857259, T=    0.205877
+ Found mode      7 of     30:  EV= 1.6437000E+03, f=    6.452550, T=    0.154977
+ Found mode      8 of     30:  EV= 2.7653657E+03, f=    8.369440, T=    0.119482
+ Found mode      9 of     30:  EV= 4.0738862E+03, f=   10.158383, T=    0.098441
+ Found mode     10 of     30:  EV= 4.3976719E+03, f=   10.554351, T=    0.094748
+ Found mode     11 of     30:  EV= 5.8874015E+03, f=   12.211864, T=    0.081888
+ Found mode     12 of     30:  EV= 7.6117684E+03, f=   13.885544, T=    0.072017
+ Found mode     13 of     30:  EV= 8.9746077E+03, f=   15.077449, T=    0.066324
+ Found mode     14 of     30:  EV= 1.0207988E+04, f=   16.080154, T=    0.062188
+ Found mode     15 of     30:  EV= 1.5480203E+04, f=   19.801973, T=    0.050500
+ Found mode     16 of     30:  EV= 1.5649803E+04, f=   19.910152, T=    0.050226
+ Found mode     17 of     30:  EV= 2.0127733E+04, f=   22.579668, T=    0.044288
+ Found mode     18 of     30:  EV= 2.4115947E+04, f=   24.715664, T=    0.040460
+ Found mode     19 of     30:  EV= 2.6381999E+04, f=   25.850800, T=    0.038684
+ Found mode     20 of     30:  EV= 3.1416449E+04, f=   28.209714, T=    0.035449
+ Found mode     21 of     30:  EV= 3.4220376E+04, f=   29.441676, T=    0.033965
+ Found mode     22 of     30:  EV= 3.6043302E+04, f=   30.215683, T=    0.033095
+ Found mode     23 of     30:  EV= 3.6377700E+04, f=   30.355525, T=    0.032943
+ Found mode     24 of     30:  EV= 4.1627955E+04, f=   32.472271, T=    0.030796
+ Found mode     25 of     30:  EV= 4.6792295E+04, f=   34.427644, T=    0.029046
+ Found mode     26 of     30:  EV= 4.8606709E+04, f=   35.088778, T=    0.028499
+ Found mode     27 of     30:  EV= 4.9932513E+04, f=   35.564102, T=    0.028118
+ Found mode     28 of     30:  EV= 5.0493990E+04, f=   35.763497, T=    0.027961
+ Found mode     29 of     30:  EV= 5.5465221E+04, f=   37.482669, T=    0.026679
+ Found mode     30 of     30:  EV= 5.9487825E+04, f=   38.818091, T=    0.025761
 
  NUMBER OF EIGEN MODES FOUND               =          30
- NUMBER OF ITERATIONS PERFORMED            =          24
+ NUMBER OF ITERATIONS PERFORMED            =          22
  NUMBER OF STIFFNESS SHIFTS                =           0
 
 
- R E S P O N S E - S P E C T R U M   A N A L Y S I S                    20:37:42
+ R E S P O N S E - S P E C T R U M   A N A L Y S I S                    14:20:05
 
  CASE: SX
 
@@ -161,7 +161,7 @@
  NUMBER OF DYNAMIC MODES TO BE USED        =          30
 
 
- R E S P O N S E - S P E C T R U M   A N A L Y S I S                    20:37:42
+ R E S P O N S E - S P E C T R U M   A N A L Y S I S                    14:20:05
 
  CASE: SY
 
@@ -171,4 +171,4 @@
  NUMBER OF DYNAMIC MODES TO BE USED        =          30
 
 
- A N A L Y S I S   C O M P L E T E                          2026/05/07  20:37:42
+ A N A L Y S I S   C O M P L E T E                          2026/05/14  14:20:05
