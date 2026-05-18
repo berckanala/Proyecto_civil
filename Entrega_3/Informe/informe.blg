@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: informe.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: secciones/0resumen.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: secciones/1intro.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
@@ -23,7 +25,7 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: biblio.bib
 You've used 1 entry,
             2909 wiz_defined-function locations,
-            654 strings with 5094 characters,
+            655 strings with 5116 characters,
 and the built_in function-call counts, 6470 in all, are:
 = -- 1120
 > -- 24
