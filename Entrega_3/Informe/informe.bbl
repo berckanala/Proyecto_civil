@@ -1,8 +1,8 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{xx}
 
-\bibitem{NCh433:1996}
-{Instituto Nacional de Normalización}.
-\newblock {NCh433:1996 Mod.2009 - Diseño sísmico de edificios}.
-\newblock Norma chilena, INN, Santiago, Chile, 2009.
+\harvarditem{{Instituto Nacional de Normalización}}{2009}{NCh433:1996}
+{Instituto Nacional de Normalización}  \harvardyearleft 2009\harvardyearright
+  , {NCh433:1996 Mod.2009 - Diseño sísmico de edificios}, Norma chilena, INN,
+  Santiago, Chile.
 
 \end{thebibliography}

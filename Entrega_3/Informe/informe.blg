@@ -1,6 +1,8 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: informe.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: secciones/0resumen.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: secciones/1intro.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
@@ -17,48 +19,48 @@ Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: secciones/7comparacion.aux
 Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: secciones/8conclu.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+The style file: agsm.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: biblio.bib
 You've used 1 entry,
-            2118 wiz_defined-function locations,
-            513 strings with 4351 characters,
-and the built_in function-call counts, 220 in all, are:
-= -- 22
-> -- 7
+            2909 wiz_defined-function locations,
+            655 strings with 5116 characters,
+and the built_in function-call counts, 6470 in all, are:
+= -- 1120
+> -- 24
 < -- 0
-+ -- 3
-- -- 2
-* -- 10
-:= -- 50
-add.period$ -- 3
++ -- 539
+- -- 7
+* -- 554
+:= -- 1274
+add.period$ -- 1
 call.type$ -- 1
-change.case$ -- 5
-chr.to.int$ -- 0
+change.case$ -- 15
+chr.to.int$ -- 1
 cite$ -- 1
-duplicate$ -- 8
-empty$ -- 16
-format.name$ -- 2
-if$ -- 41
-int.to.chr$ -- 0
-int.to.str$ -- 1
+duplicate$ -- 11
+empty$ -- 23
+format.name$ -- 9
+if$ -- 1157
+int.to.chr$ -- 5
+int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 2
+newline$ -- 6
+num.names$ -- 10
+pop$ -- 3
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 15
 quote$ -- 0
-skip$ -- 5
+skip$ -- 11
 stack$ -- 0
-substring$ -- 5
+substring$ -- 1627
 swap$ -- 0
-text.length$ -- 0
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 4
 warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 14
+while$ -- 21
+width$ -- 0
+write$ -- 16

@@ -1,6 +1,6 @@
 \section{Factores $R$ y $R_0$}
 \label{sec:factores R}
-Para determinar los factores $R_0$ y $R$ correspondientes al sistema estructural 
+Con la finalidad de determinar los factores $R_0$ y $R$ correspondientes al sistema estructural 
 del edificio, se recurre a la Tabla 5.1 de la norma NCh433~\cite{NCh433:1996}, la 
 cual especifica dichos valores en función del material y del sistema resistente a 
 las cargas sísmicas. Dado que el sistema estructural corresponde a muros de corte 
@@ -14,7 +14,7 @@ de hormigón armado, los factores a utilizar son:
 \section{Coeficientes Sísmicos Máximo y Mínimo}
 
 Previo al análisis sísmico, la norma NCh433~\cite{NCh433:1996} establece rangos 
-admisibles para el coeficiente sísmico $C$. A continuación se determinan el valor 
+admisibles para el coeficiente sísmico $C$. A continuación, se determinan el valor 
 mínimo y máximo permitidos.
 
 \subsection{Coeficiente Sísmico Mínimo}
@@ -61,7 +61,7 @@ donde $T^*$ corresponde al período del modo con mayor masa traslacional equival
 y $T_0$ es el período característico del suelo definido en la 
 Tabla~\ref{tab:parametros_sismicos}.
 
-Para determinar $T^*$, se ejecutó el modelo en ETABS, obteniéndose los períodos de 
+Con el objetivo de determinar $T^*$, se ejecutó el modelo en ETABS, obteniéndose los períodos de 
 vibración indicados en la Tabla~\ref{tab:periodos}.
 
 \begin{table}[H]
@@ -76,10 +76,13 @@ vibración indicados en la Tabla~\ref{tab:periodos}.
         2 & Eje X     & $1{,}140$ \\
         3 & Eje Y     & $0{,}853$ \\
         \bottomrule
+        \vspace{0.001cm}
     \end{tabular}
+
+    \text{Fuente: Elaboración propia}
 \end{table}
 
-Para el análisis se consideran los modos 2 y 3, correspondientes a los ejes X e Y 
+El análisis se consideran los modos 2 y 3, correspondientes a los ejes X e Y 
 respectivamente. El $R^*$ se calcula para cada dirección:
 
 \begin{itemize}
@@ -116,7 +119,10 @@ basales de la Tabla~\ref{tab:corte_basal_inicial}.
         X & $160{,}34$ \\
         Y & $201{,}92$ \\
         \bottomrule
+        \vspace{0.001cm}
     \end{tabular}
+
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 Comparando con los cortes mínimos exigidos por NCh433~\cite{NCh433:1996}, se verifica 
@@ -159,5 +165,8 @@ establecidos en NCh433~\cite{NCh433:1996}.
         X & $766{,}06$ \\
         Y & $765{,}99$ \\
         \bottomrule
+        \vspace{0.001cm}
     \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}

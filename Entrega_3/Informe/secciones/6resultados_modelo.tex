@@ -20,16 +20,19 @@ Q_{obj} = C \cdot I \cdot P = 766.05 \text{tonf}
 Con estos valores, se comparan los cortes basales obtenidos en ETABS con los límites normativos para verificar si el modelo sísmico final cumple con la verificación de corte basal.
 
 \begin{table}[H]
-\centering
-\caption{Comparación de cortes basales obtenidos en ETABS con los límites normativos}
-\begin{tabular}{ccccc}
-\toprule
-Dirección & $Q_{\min}$ (tonf) & $Q_{\max}$ (tonf) & $Q$ obtenido (tonf) & Error (\%) \\
-\midrule
-X & 510.70 & 965.23 & 763.60 & 0.32 \\
-Y & 510.70 & 965.23 & 764.28 & 0.23 \\
-\bottomrule
-\end{tabular}
+    \centering
+    \caption{Comparación de cortes basales obtenidos en ETABS con los límites normativos}
+    \begin{tabular}{ccccc}
+    \toprule
+    Dirección & $Q_{\min}$ (tonf) & $Q_{\max}$ (tonf) & $Q$ obtenido (tonf) & Error (\%) \\
+    \midrule
+    X & 510.70 & 965.23 & 763.60 & 0.32 \\
+    Y & 510.70 & 965.23 & 764.28 & 0.23 \\
+    \bottomrule
+    \vspace{0.001cm}
+    \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 Como se observa en la tabla, los cortes basales finales en ambas direcciones son prácticamente iguales al corte basal objetivo y se encuentran dentro del rango permitido entre el corte mínimo y el corte máximo. En consecuencia, el modelo sísmico final cumple con la verificación de corte basal.
@@ -93,37 +96,40 @@ De esta forma, la tabla final de deformaciones representa la máxima demanda de 
 A continuación se presenta la tabla final de deformaciones del centro de masa por piso, obtenida de las combinaciones sísmicas relevantes:
 
 \begin{table}[H]
-\centering
-\small
-\caption{Deformaciones finales del centro de masa por piso}
-\begin{tabular}{ccccccc}
-\hline
-Piso & Entrepiso & $h_i$ (mm) & $\Delta_x$ (mm) & $\theta_x$ & $\Delta_y$ (mm) & $\theta_y$ \\
-\hline
-1 & -1--1 & 2420 & 1.080 & 0.000446 & 0.698 & 0.000289 \\
-2 & 1--2 & 2420 & 1.566 & 0.000647 & 1.064 & 0.000440 \\
-3 & 2--3 & 2420 & 1.896 & 0.000784 & 1.590 & 0.000657 \\
-4 & 3--4 & 2420 & 2.243 & 0.000927 & 1.783 & 0.000737 \\
-5 & 4--5 & 2420 & 2.561 & 0.001058 & 1.929 & 0.000797 \\
-6 & 5--6 & 2420 & 2.806 & 0.001159 & 2.003 & 0.000828 \\
-7 & 6--7 & 2420 & 2.996 & 0.001238 & 2.085 & 0.000861 \\
-8 & 7--8 & 2420 & 3.152 & 0.001302 & 2.115 & 0.000874 \\
-9 & 8--9 & 2420 & 3.269 & 0.001351 & 2.158 & 0.000892 \\
-10 & 9--10 & 2420 & 3.361 & 0.001389 & 2.181 & 0.000901 \\
-11 & 10--11 & 2420 & 3.431 & 0.001418 & 2.195 & 0.000907 \\
-12 & 11--12 & 2420 & 3.482 & 0.001439 & 2.200 & 0.000909 \\
-13 & 12--13 & 2420 & 3.519 & 0.001454 & 2.198 & 0.000908 \\
-14 & 13--14 & 2420 & 3.541 & 0.001463 & 2.190 & 0.000905 \\
-15 & 14--15 & 2420 & 3.552 & 0.001468 & 2.175 & 0.000899 \\
-16 & 15--16 & 2420 & 3.551 & 0.001467 & 2.153 & 0.000890 \\
-17 & 16--17 & 2420 & 3.539 & 0.001462 & 2.125 & 0.000878 \\
-18 & 17--18 & 2420 & 3.517 & 0.001453 & 2.090 & 0.000864 \\
-19 & 18--19 & 2420 & 3.486 & 0.001441 & 2.050 & 0.000847 \\
-20 & 19--20 & 2420 & 3.450 & 0.001426 & 2.007 & 0.000829 \\
-21 & 20--21 & 2420 & 3.412 & 0.001410 & 1.963 & 0.000811 \\
-Techo & 21--Techo & 2420 & 3.391 & 0.001401 & 1.922 & 0.000794 \\
-\hline
-\end{tabular}
+    \centering
+    \small
+    \caption{Deformaciones finales del centro de masa por piso}
+    \begin{tabular}{ccccccc}
+    \hline
+    Piso & Entrepiso & $h_i$ (mm) & $\Delta_x$ (mm) & $\theta_x$ & $\Delta_y$ (mm) & $\theta_y$ \\
+    \hline
+    1 & -1--1 & 2420 & 1.080 & 0.000446 & 0.698 & 0.000289 \\
+    2 & 1--2 & 2420 & 1.566 & 0.000647 & 1.064 & 0.000440 \\
+    3 & 2--3 & 2420 & 1.896 & 0.000784 & 1.590 & 0.000657 \\
+    4 & 3--4 & 2420 & 2.243 & 0.000927 & 1.783 & 0.000737 \\
+    5 & 4--5 & 2420 & 2.561 & 0.001058 & 1.929 & 0.000797 \\
+    6 & 5--6 & 2420 & 2.806 & 0.001159 & 2.003 & 0.000828 \\
+    7 & 6--7 & 2420 & 2.996 & 0.001238 & 2.085 & 0.000861 \\
+    8 & 7--8 & 2420 & 3.152 & 0.001302 & 2.115 & 0.000874 \\
+    9 & 8--9 & 2420 & 3.269 & 0.001351 & 2.158 & 0.000892 \\
+    10 & 9--10 & 2420 & 3.361 & 0.001389 & 2.181 & 0.000901 \\
+    11 & 10--11 & 2420 & 3.431 & 0.001418 & 2.195 & 0.000907 \\
+    12 & 11--12 & 2420 & 3.482 & 0.001439 & 2.200 & 0.000909 \\
+    13 & 12--13 & 2420 & 3.519 & 0.001454 & 2.198 & 0.000908 \\
+    14 & 13--14 & 2420 & 3.541 & 0.001463 & 2.190 & 0.000905 \\
+    15 & 14--15 & 2420 & 3.552 & 0.001468 & 2.175 & 0.000899 \\
+    16 & 15--16 & 2420 & 3.551 & 0.001467 & 2.153 & 0.000890 \\
+    17 & 16--17 & 2420 & 3.539 & 0.001462 & 2.125 & 0.000878 \\
+    18 & 17--18 & 2420 & 3.517 & 0.001453 & 2.090 & 0.000864 \\
+    19 & 18--19 & 2420 & 3.486 & 0.001441 & 2.050 & 0.000847 \\
+    20 & 19--20 & 2420 & 3.450 & 0.001426 & 2.007 & 0.000829 \\
+    21 & 20--21 & 2420 & 3.412 & 0.001410 & 1.963 & 0.000811 \\
+    Techo & 21--Techo & 2420 & 3.391 & 0.001401 & 1.922 & 0.000794 \\
+    \hline
+        \vspace{0.001cm}
+    \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 El criterio de aceptación establece que la deriva máxima de entrepiso del centro de masa debe ser menor o igual que el límite admisible:
@@ -165,16 +171,19 @@ Adicionalmente, se registraron los desplazamientos máximos de techo obtenidos d
 Los resultados principales de la verificación se resumen en la siguiente tabla:
 
 \begin{table}[H]
-\centering
-\caption{Resumen de deformaciones máximas del centro de masa}
-\begin{tabular}{cccccc}
-\hline
-Dirección & $U_{\max}$ techo (mm) & $\Delta_{\max}$ (mm) & $\theta_{\max}$ & Entrepiso crítico & Verificación \\
-\hline
-X & 67.18 & 3.552 & 0.001468 & 14--15 & Cumple \\
-Y & 43.19 & 2.200 & 0.000909 & 11--12 & Cumple \\
-\hline
-\end{tabular}
+    \centering
+    \caption{Resumen de deformaciones máximas del centro de masa}
+    \begin{tabular}{cccccc}
+    \hline
+    Dirección & $U_{\max}$ techo (mm) & $\Delta_{\max}$ (mm) & $\theta_{\max}$ & Entrepiso crítico & Verificación \\
+    \hline
+    X & 67.18 & 3.552 & 0.001468 & 14--15 & Cumple \\
+    Y & 43.19 & 2.200 & 0.000909 & 11--12 & Cumple \\
+    \hline
+        \vspace{0.001cm}
+    \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 De acuerdo con los resultados obtenidos, la máxima deriva del centro de masa en la dirección X corresponde a $0.001468$, ubicada en el entrepiso 14--15. En la dirección Y, la máxima deriva corresponde a $0.000909$, ubicada en el entrepiso 11--12. Ambas derivas son menores que el límite admisible de $0.002$, por lo que la estructura cumple con el control de deformaciones del centro de masa en ambas direcciones principales de análisis.
@@ -234,16 +243,19 @@ Para la dirección Y, se obtiene:
 Los resultados se resumen en la siguiente tabla:
 
 \begin{table}[H]
-\centering
-\caption{Verificación global de rigidez mediante la razón $H/T$}
-\begin{tabular}{cccc}
-\hline
-Dirección & Período $T$ (s) & $H/T$ (m/s) & Interpretación \\
-\hline
-X & 1.14 & 48.05 & Dirección más flexible \\
-Y & 0.853 & 64.22 & Mayor rigidez global \\
-\hline
-\end{tabular}
+    \centering
+    \caption{Verificación global de rigidez mediante la razón $H/T$}
+    \begin{tabular}{cccc}
+    \hline
+    Dirección & Período $T$ (s) & $H/T$ (m/s) & Interpretación \\
+    \hline
+    X & 1.14 & 48.05 & Dirección más flexible \\
+    Y & 0.853 & 64.22 & Mayor rigidez global \\
+    \hline
+        \vspace{0.001cm}
+    \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 De acuerdo con los resultados obtenidos, la dirección X presenta el mayor período fundamental, por lo que corresponde a la dirección más flexible del edificio. En cambio, la dirección Y presenta un período menor y, en consecuencia, una mayor rigidez global. Además, la razón $H/T$ debe estar entre $50$ y $70$, la dirección Y se encuentra dentro del rango, mientras que la dirección X queda levemente por debajo, lo que confirma que esta dirección presenta una mayor flexibilidad lateral.
@@ -315,23 +327,26 @@ Estos valores indican que existe una reducción de rigidez entre los primeros ni
 Los resultados principales de la verificación de rigidez por piso se resumen en la siguiente tabla:
 
 \begin{table}[H]
-\centering
-\caption{Resumen de la verificación de rigidez por piso}
-\begin{tabular}{ccccc}
-\hline
-Dirección & $K_1$ (tonf/mm) & $K_{\text{techo}}$ (tonf/mm) & Mayor variación & Interpretación \\
-\hline
-X & 1035.88 & 35.65 & $K_{2}/K_{1} \approx 0.66$ & Disminución progresiva \\
-Y & 1542.59 & 56.01 & $K_{2}/K_{1} \approx 0.69$ & Disminución progresiva \\
-\hline
-\end{tabular}
+    \centering
+    \caption{Resumen de la verificación de rigidez por piso}
+    \begin{tabular}{ccccc}
+    \hline
+    Dirección & $K_1$ (tonf/mm) & $K_{\text{techo}}$ (tonf/mm) & Mayor variación & Interpretación \\
+    \hline
+    X & 1035.88 & 35.65 & $K_{2}/K_{1} \approx 0.66$ & Disminución progresiva \\
+    Y & 1542.59 & 56.01 & $K_{2}/K_{1} \approx 0.69$ & Disminución progresiva \\
+    \hline
+        \vspace{0.001cm}
+    \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 De acuerdo con los resultados obtenidos, la rigidez lateral disminuye hacia los niveles superiores, lo cual es esperable debido a que los cortes de piso también disminuyen en altura. La mayor reducción se concentra entre los pisos 1 y 2, pero no se identifica una caída brusca aislada. Por lo tanto, no se evidencia la presencia de un piso blando en los niveles superiores.
 
 \subsection{Indicador de acoplamiento}
 
-El indicador de acoplamiento permite evaluar si los modos principales de vibración del edificio se encuentran suficientemente separados entre sí. Esta verificación es importante porque, cuando dos períodos principales son muy cercanos, sus modos pueden interactuar, generando una respuesta acoplada entre traslación y torsión.
+El indicador de acoplamiento permite evaluar si los modos principales de vibración del edificio se encuentran suficientemente separados entre sí. Esta verificación es importante, porque cuando dos períodos principales son muy cercanos, sus modos pueden interactuar, generando una respuesta acoplada entre traslación y torsión.
 
 El indicador de acoplamiento se expresa como el cociente entre los tres períodos principales del edificio: período traslacional en X, período traslacional en Y y período torsional. Para que no exista acoplamiento significativo entre modos, se debe cumplir que el cociente entre períodos principales sea mayor que $1.2$.
 
@@ -344,17 +359,20 @@ donde $T_i$ y $T_j$ corresponden a dos de los tres períodos principales del edi
 Los tres períodos principales obtenidos del modelo modal son los siguientes:
 
 \begin{table}[H]
-\centering
-\caption{Períodos principales del edificio}
-\begin{tabular}{ccc}
-\hline
-Modo & Eje traslacional & Período (s) \\
-\hline
-1 & Torsional & 1.251 \\
-2 & Eje X & 1.140 \\
-3 & Eje Y & 0.853 \\
-\hline
-\end{tabular}
+    \centering
+    \caption{Períodos principales del edificio}
+    \begin{tabular}{ccc}
+    \hline
+    Modo & Eje traslacional & Período (s) \\
+    \hline
+    1 & Torsional & 1.251 \\
+    2 & Eje X & 1.140 \\
+    3 & Eje Y & 0.853 \\
+    \hline
+        \vspace{0.001cm}
+    \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 A partir de estos valores, se comparan los períodos principales entre sí.
@@ -388,17 +406,20 @@ Finalmente, se comparan los períodos traslacionales principales en X e Y:
 \end{equation}
 
 \begin{table}[H]
-\centering
-\caption{Verificación del indicador de acoplamiento entre períodos principales}
-\begin{tabular}{cccc}
-\hline
-Comparación & Cociente entre períodos & Límite & Verificación \\
-\hline
-$T_{\text{tors}}/T_x$ & 1.10 & $> 1.2$ & No cumple \\
-$T_{\text{tors}}/T_y$ & 1.47 & $> 1.2$ & Cumple \\
-$T_x/T_y$ & 1.34 & $> 1.2$ & Cumple \\
-\hline
-\end{tabular}
+    \centering
+    \caption{Verificación del indicador de acoplamiento entre períodos principales}
+    \begin{tabular}{cccc}
+    \hline
+    Comparación & Cociente entre períodos & Límite & Verificación \\
+    \hline
+    $T_{\text{tors}}/T_x$ & 1.10 & $> 1.2$ & No cumple \\
+    $T_{\text{tors}}/T_y$ & 1.47 & $> 1.2$ & Cumple \\
+    $T_x/T_y$ & 1.34 & $> 1.2$ & Cumple \\
+    \hline
+        \vspace{0.001cm}
+    \end{tabular}
+    
+    \text{Fuente: Elaboración propia}
 \end{table}
 
 De los tres cocientes evaluados, se observa que la relación entre el período torsional y el período traslacional en X es igual a $1.10$, por lo que existe acoplamiento entre torsión y traslación en dicha dirección.

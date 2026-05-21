@@ -1,25 +1,26 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Información General del Edificio y Parámetros Sísmicos}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Antecedentes Generales}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Parámetros Sísmicos de Diseño}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Resumen de Resultados del Prediseño Sísmico}{2}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Masas y Pesos Sísmicos}{3}{section.2}%
-\contentsline {section}{\numberline {3}Factores $R$ y $R_0$}{4}{section.3}%
-\contentsline {section}{\numberline {4}Coeficientes Sísmicos Máximo y Mínimo}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Coeficiente Sísmico Mínimo}{4}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Coeficiente Sísmico Máximo}{4}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Cálculo del Factor de Corrección $R^*$ para Sismo en X e Y}{4}{section.5}%
-\contentsline {section}{\numberline {6}Espectro de Diseño según NCh433}{7}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Espectro Elástico}{7}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Espectro Reducido}{7}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Verificación de masas participativa}{8}{section.7}%
-\contentsline {section}{\numberline {8}Resultados del modelo sísmico}{9}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Cortes basales}{9}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Deformaciones del centro de masa por dirección}{9}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Verificación de rigidez}{11}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Verificación global de rigidez}{12}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8.3.2}Verificación de rigidez por piso}{13}{subsubsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.4}Indicador de acoplamiento}{14}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Comparación del modelo con los resultados de prediseño}{16}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Período principal de traslación}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Corte basal}{16}{subsection.9.2}%
+\contentsline {section}{\numberline {1}Introducción: Antecedentes y Parámetros Sísmicos de Diseño}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Antecedentes Generales}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Parámetros Sísmicos de Diseño}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Resumen de Resultados del Prediseño Sísmico}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Masas y Pesos Sísmicos}{4}{section.2}%
+\contentsline {section}{\numberline {3}Factores $R$ y $R_0$}{5}{section.3}%
+\contentsline {section}{\numberline {4}Coeficientes Sísmicos Máximo y Mínimo}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Coeficiente Sísmico Mínimo}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Coeficiente Sísmico Máximo}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Cálculo del Factor de Corrección $R^*$ para Sismo en X e Y}{5}{section.5}%
+\contentsline {section}{\numberline {6}Espectro de Diseño según NCh433}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Espectro Elástico}{8}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Espectro Reducido}{8}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Verificación de masas participativa}{10}{section.7}%
+\contentsline {section}{\numberline {8}Resultados del modelo sísmico}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Cortes basales}{11}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Deformaciones del centro de masa por dirección}{11}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Verificación de rigidez}{14}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Verificación global de rigidez}{14}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Verificación de rigidez por piso}{15}{subsubsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.4}Indicador de acoplamiento}{17}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Comparación del modelo con los resultados de prediseño}{19}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Período principal de traslación}{19}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Corte basal}{19}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Conclusiones y Comentarios}{20}{section.10}%

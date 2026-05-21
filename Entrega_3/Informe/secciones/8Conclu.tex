@@ -1,0 +1,40 @@
+\section{Conclusiones y Comentarios}
+
+En términos generales, el modelo sísmico desarrollado en ETABS es consistente con las bases de 
+cálculo del prediseño y cumple con los requisitos establecidos en la NCh433.
+
+En cuanto a las deformaciones, ambas direcciones cumplen con el límite admisible de 
+deriva de entrepiso $\theta \leq 0{,}002$. La dirección X presenta la mayor demanda con 
+$\theta_{x,\text{máx}} = 0{,}001468$ en el entrepiso 14--15, y la dirección Y alcanza un máximo 
+de $\theta_{y,\text{máx}} = 0{,}000909$ en el entrepiso 11--12. Los desplazamientos de techo 
+son 67,18~mm y 43,19~mm en X e Y respectivamente, valores que se consideran como un comportamiento 
+lateral adecuado para un edificio de esta altura.
+
+Respecto de la rigidez, la verificación global mediante la razón $H/T$ muestra que la 
+dirección Y (64,22~m/s) se encuentra dentro del rango esperado de 50 a 70~m/s, mientras que 
+la dirección X (48,05~m/s) queda levemente por debajo, lo que es coherente con su mayor 
+período fundamental. Por piso, la rigidez lateral disminuye de forma progresiva en altura, 
+concentrándose la mayor variación entre los pisos 1 y 2 ($K_{x,2}/K_{x,1} \approx 0{,}66$ 
+y $K_{y,2}/K_{y,1} \approx 0{,}69$), sin que se identifique un piso blando.
+
+En lo que respecta al acoplamiento, el edificio no cumple completamente la 
+verificación de desacoplamiento modal. La relación $T_{\text{tors}}/T_x = 1{,}10$ no supera 
+el límite de 1,2, lo que indica que el modo torsional y el traslacional en X están 
+relativamente cercanos entre sí, con períodos de 1,251~s y 1,140~s, respectivamente. Esto 
+sugiere que la respuesta sísmica en esa dirección podría verse influenciada por efectos 
+torsionales. Las otras dos relaciones sí cumplen: $T_{\text{tors}}/T_y = 1{,}47$ y 
+$T_x/T_y = 1{,}34$.
+
+En cuanto a los cortes basales y pesos sísmicos, el peso sísmico obtenido del modelo 
+es $P = 7.660{,}05$~tonf, lo que representa una diferencia del 12,6\% respecto del valor de 
+prediseño de 8.766,65~tonf, diferencia que se encuentra dentro de los márgenes esperados para 
+esta etapa del análisis. Los cortes basales obtenidos en el nivel 1 son 746,41~tonf en X y 
+753,54~tonf en Y, frente al corte objetivo de 766,05~tonf. Las diferencias son de un 2,6\% 
+y 1,6\%, respectivamente, lo que indica que el modelo es consistente con las bases de cálculo.
+
+
+Finalmente, respecto del período principal de traslación, el modelo entrega 
+$T_X = 1{,}141$~s en dirección X y $T_Y = 0{,}854$~s en dirección Y. La diferencia con el 
+período de prediseño ($T = 1{,}05$~s) es de un 8,7\% en la dirección X, lo cual es razonable 
+dado que la expresión empírica utilizada en el prediseño no distingue dirección de análisis 
+ni incorpora la rigidez real de los muros modelados.
