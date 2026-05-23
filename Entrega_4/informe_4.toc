@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Determinación del espesor de losa}{2}{section.1}%
+\contentsline {section}{\numberline {2}Materiales}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Hormigón}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Acero de refuerzo}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Armadura mínima de losas}{3}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Cargas de diseño}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Cargas características}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Combinación de carga última}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Análisis de losas}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Método y geometría}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Momentos de diseño por losa}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Compensación de momentos negativos}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Diseño de armadura por flexión simple}{4}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Plano de armadura del piso tipo}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Verificación de deformaciones}{6}{subsection.5.1}%
