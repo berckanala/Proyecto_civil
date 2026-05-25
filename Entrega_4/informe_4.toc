@@ -1,16 +1,34 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Determinación del espesor de losa}{2}{section.1}%
-\contentsline {section}{\numberline {2}Materiales}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Hormigón}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Acero de refuerzo}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Armadura mínima de losas}{3}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Cargas de diseño}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Cargas características}{3}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Combinación de carga última}{3}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Análisis de losas}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Método y geometría}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Momentos de diseño por losa}{4}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Compensación de momentos negativos}{4}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Diseño de armadura por flexión simple}{4}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Plano de armadura del piso tipo}{5}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Verificación de deformaciones}{6}{subsection.5.1}%
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Determinación del espesor de losa}{4}{section.2}%
+\contentsline {section}{\numberline {3}Materiales}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Hormigón}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Acero de refuerzo}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Armadura mínima de losas}{4}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Cargas de diseño}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Cargas características}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Combinación de carga última}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Análisis de losas}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Método y geometría}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Momentos de diseño por losa}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Compensación de momentos negativos}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Diseño de armadura por flexión simple}{6}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Plano de armadura del piso tipo}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Verificación de deformaciones}{9}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Viga estática continua B4, B8, B15 y B16}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Geometría y ubicación}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Cargas tributarias}{11}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Esfuerzos de diseño}{11}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Diseño a flexión}{12}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Armadura mínima y máxima}{12}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Armadura adoptada y verificaciones}{12}{subsubsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.5}Diseño a corte}{12}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Resumen del diseño}{13}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Esquema de sección transversal mas desfavorable L4}{13}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Diagramas de esfuerzos}{14}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Deformación y verificación de flechas}{15}{subsection.7.9}%
+\contentsline {subsubsection}{\numberline {7.9.1}Momento de inercia efectivo}{15}{subsubsection.7.9.1}%
+\contentsline {subsubsection}{\numberline {7.9.2}Flecha instantánea}{15}{subsubsection.7.9.2}%
+\contentsline {subsubsection}{\numberline {7.9.3}Flecha diferida por fluencia lenta}{15}{subsubsection.7.9.3}%
+\contentsline {subsubsection}{\numberline {7.9.4}Verificación de deflexiones admisibles}{16}{subsubsection.7.9.4}%
+\contentsline {section}{\numberline {8}Conclusión}{17}{section.8}%

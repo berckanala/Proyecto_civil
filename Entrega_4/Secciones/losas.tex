@@ -1,14 +1,14 @@
 \section{Determinación del espesor de losa}
 \label{sec:espesor-losa}
-
+ 
 El espesor de losa se predimensiona aplicando el criterio del método de coeficientes, que relaciona el lado menor $l_x$ con el coeficiente $\lambda$ del caso de apoyo correspondiente:
-
+ 
 \begin{equation}
     e = \frac{\lambda \cdot l_x}{35} + 2 \quad [\text{cm}]
 \end{equation}
-
+ 
 El análisis se realiza sobre las tres losas de mayor dimensión del piso tipo, por ser las que imponen las condiciones más desfavorables de deformación. Los resultados se resumen en la Tabla~\ref{tab:espesor-losa}.
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Predimensionamiento de espesor sobre las losas de mayor dimensión del piso tipo.}
@@ -23,16 +23,16 @@ Losa & Caso & $l_x$ (cm) & $l_y$ (cm) & $\lambda$ & $e_{\text{calc}}$ (cm) & $e_
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 El espesor más exigente corresponde a la losa 308 con 12{,}5~cm. Se adopta $e = 15$~cm como espesor único para toda la planta del piso tipo, con margen respecto al valor calculado. Este espesor queda confirmado en las secciones siguientes a partir de las armaduras y las deformaciones resultantes.
-
+ 
 \section{Materiales}
 \label{sec:materiales}
-
+ 
 \subsection{Hormigón}
-
+ 
 El edificio utiliza dos grados de hormigón en función de la altura. Los pisos inferiores están sometidos a mayores cargas de compresión acumulada, lo que justifica emplear un hormigón de mayor resistencia en esa zona; a partir del piso~4, las solicitaciones axiales son menores y se adopta un grado inferior. Ambos grados se especifican según NCh170.
-
+ 
 \begin{itemize}
     \item \textbf{Pisos 1 al 3:} Hormigón G35, con $f'_c = 350\ \text{kg/cm}^2$ y módulo de elasticidad:
     \begin{equation}
@@ -43,41 +43,35 @@ El edificio utiliza dos grados de hormigón en función de la altura. Los pisos 
         E_{c,\text{G25}} = 15100\,\sqrt{250} = 238{.}734\ \text{kg/cm}^2
     \end{equation}
 \end{itemize}
-
-El módulo de elasticidad se calcula mediante la expresión para hormigones de peso normal:
-
-\begin{equation}
-    E_c = 15100\,\sqrt{f'_c} \quad [\text{kg/cm}^2]
-\end{equation}
-
+ 
 \subsection{Acero de refuerzo}
-
+ 
 El acero de refuerzo es A630-420H según NCh204, empleado en la totalidad del edificio independientemente del nivel. Sus propiedades de diseño son:
-
+ 
 \begin{itemize}
     \item Tensión de fluencia: $f_y = 4200\ \text{kg/cm}^2$
     \item Módulo de elasticidad: $E_s = 2{.}000{.}000\ \text{kg/cm}^2$
 \end{itemize}
-
+ 
 \subsection{Armadura mínima de losas}
-
-Conforme a ACI~318-19, la cuantía mínima de armadura para losas en dos direcciones es:
-
+ 
+Según la ACI~318-19, la cuantía mínima de armadura para losas en dos direcciones es:
+ 
 \begin{equation}
     A_{s,\min} = \frac{1{,}8}{1000} \cdot b \cdot e
     = \frac{1{,}8}{1000} \cdot 100\ \text{cm} \cdot 15\ \text{cm}
     = 2{,}70\ \text{cm}^2/\text{m}
 \end{equation}
-
-Esta cuantía gobierna en las zonas donde el cálculo por flexión arroja valores inferiores, particularmente en las losas de menor dimensión (305i y 305ii) y en ciertas direcciones de las losas intermedias.
-
+ 
+Esta cuantía manda en las zonas donde segun el cálculo por flexión se obtienen valores inferiores, particularmente en las losas de menor dimensión (305i y 305ii) y en ciertas direcciones de las losas intermedias.
+ 
 \section{Cargas de diseño}
 \label{sec:cargas}
-
+ 
 \subsection{Cargas características}
-
+ 
 Las cargas características se determinan diferenciando las zonas de uso del piso tipo. Los valores de sobrecarga corresponden a los establecidos en NCh1537 para uso habitacional.
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Cargas características por zona de uso del piso tipo.}
@@ -92,21 +86,21 @@ Escalera                 & 0{,}23 & 0{,}50 & NCh1537 \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 El valor de 0{,}23~t/m$^2$ corresponde a cargas muertas adicionales —pavimentos, tabiques livianos e instalaciones—, dado que el peso propio estructural de la losa ($\gamma_H \cdot e = 2{,}4 \cdot 0{,}15 = 0{,}36$~t/m$^2$) es contabilizado directamente por la losa.
-
-La losa 304, con una relación $l_y/l_x \approx 9{,}7$, presenta un comportamiento esencialmente unidireccional y queda fuera del alcance del método de coeficientes bidireccional; no se incluye en el diseño de armadura.
-
+ 
+La losa 304, con una relación $l_y/l_x \approx 9{,}7$, presenta un comportamiento esencialmente unidireccional y queda fuera del alcance del método de coeficientes bidireccional. Es decir, no se incluye en el diseño de armadura, ya que, su esbeltez no entra en ninguna categoria.
+ 
 \subsection{Combinación de carga última}
-
+ 
 La combinación de carga última para cargas gravitacionales se aplica conforme a ACI~318-19:
-
+ 
 \begin{equation}
     q_u = 1{,}2\,PP + 1{,}6\,SC
 \end{equation}
-
+ 
 Aplicando la expresión para cada zona de uso se obtienen los valores de la Tabla~\ref{tab:qu}.
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Carga última de diseño por zona.}
@@ -120,14 +114,14 @@ Departamentos    & 0{,}596 & $1{,}2 \cdot 0{,}23 + 1{,}6 \cdot 0{,}20$ \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 \section{Análisis de losas}
 \label{sec:analisis-losas}
-
+ 
 \subsection{Método y geometría}
-
+ 
 Cada losa del piso tipo se analiza mediante el método de coeficientes, asignando un caso de apoyo según las condiciones de borde de cada paño. A partir de los coeficientes $m_x$, $m_y$, $m_{ex}$, $m_{ey}$ y $m_{xy}$ del caso correspondiente, los momentos se calculan como $M = K/m$, donde $K = q_u \cdot l_x \cdot l_y$. Los efectos de alternancia de cargas quedan incorporados en el caso de apoyo seleccionado.
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Geometría y caso de apoyo por losa del piso tipo.}
@@ -148,13 +142,13 @@ Losa & Caso & $l_x$ (m) & $l_y$ (m) & $l_y/l_x$ \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 La losa 304 queda excluida del análisis bidireccional por las razones indicadas en la sección anterior.
-
+ 
 \subsection{Momentos de diseño por losa}
-
-Con los coeficientes de cada caso se obtienen los momentos positivos en el centro del paño, los negativos en los bordes empotrados y el momento de torsión en las esquinas libres. Los resultados se presentan en la Tabla~\ref{tab:momentos}. Los guiones indican borde libre o no empotrado en esa dirección.
-
+ 
+Con los coeficientes de cada caso se obtienen los momentos positivos en el centro del panel, los negativos en los bordes empotrados y el momento de torsión en las esquinas libres. Los resultados se presentan en la Tabla~\ref{tab:momentos}. Los guiones indican borde libre o no empotrado en esa dirección.
+ 
 \begin{table}[h!]
 \centering
 \caption{Momentos de diseño por losa (t$\cdot$m/m).}
@@ -174,18 +168,18 @@ Losa  & $M_x^{+}$ & $M_y^{+}$ & $M_{ex}^{-}$ & $M_{ey}^{-}$ & $M_{xy}$ \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 \subsection{Compensación de momentos negativos}
-
+ 
 Cuando dos losas comparten un borde, cada una entrega un momento negativo distinto a ese apoyo. Para compatibilizarlos se aplica el siguiente criterio, donde $\Delta = |M_1 - M_2|/\max(M_1, M_2)$:
-
+ 
 \begin{itemize}
     \item Si $\Delta \leq 20\%$: \quad $M_{\text{diseño}} = \dfrac{(M_1 + M_2)\cdot 0{,}9}{2}$
     \item Si $\Delta > 20\%$: \quad $M_{\text{diseño}} = 0{,}7 \cdot \max(M_1, M_2)$
 \end{itemize}
-
+ 
 Los resultados de la compensación se resumen en la Tabla~\ref{tab:compensacion}.
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Compensación de momentos negativos en bordes compartidos (t$\cdot$m/m).}
@@ -205,30 +199,30 @@ Borde compartido & $M_1$ & $M_2$ & $\Delta$ (\%) & $M_{\text{diseño}}$ & Dir. \
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 \subsection{Diseño de armadura por flexión simple}
-
+ 
 Con los momentos definitivos de diseño se calcula el área de acero mediante la expresión de flexión simple de ACI~318-19:
-
+ 
 \begin{equation}
 A_s = \frac{0{,}85\,f'_c\,b\,d}{f_y}
       \left(1 - \sqrt{1 - \frac{2\,M_u}{\varphi\cdot 0{,}85\,f'_c\,b\,d^{2}}}\right)
 \end{equation}
-
+ 
 donde $\varphi = 0{,}9$, $b = 100$~cm, $r = 2$~cm y $d = 13$~cm. El valor de $f'_c$ corresponde al grado de hormigón del nivel analizado. El área de acero final en cada zona resulta de:
-
+ 
 \begin{equation}
     A_s^{\text{final}} = \max\!\left(A_s^{\text{calc}},\ A_{s,\min}\right)
 \end{equation}
-
+ 
 El espaciamiento con barras $\phi 8$ ($A_\phi = 0{,}503$~cm$^2$) se obtiene como:
-
+ 
 \begin{equation}
     s = \left\lceil \frac{A_\phi \cdot 100}{A_s^{\text{final}}} \right\rceil \quad [\text{cm}]
 \end{equation}
-
+ 
 Dado que el grado de hormigón varía entre el piso~3 (G35) y los pisos~4 en adelante (G25), los resultados se presentan por separado en las Tablas~\ref{tab:arm-p3} y~\ref{tab:arm-p4}.
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Separación $\phi 8$ (cm) --- Piso 3, hormigón G35 ($f'_c = 350$~kg/cm$^2$).}
@@ -248,7 +242,7 @@ Losa & $s_{x}^{+}$ & $s_{y}^{+}$ & $s_{x}^{-}$ & $s_{y}^{-}$ \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Separación $\phi 8$ (cm) --- Pisos 4 en adelante, hormigón G25 ($f'_c = 250$~kg/cm$^2$).}
@@ -268,22 +262,22 @@ Losa & $s_{x}^{+}$ & $s_{y}^{+}$ & $s_{x}^{-}$ & $s_{y}^{-}$ \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 La totalidad del piso tipo se resuelve con diámetro único $\phi 8$, con separaciones entre 10 y 19~cm. En las losas 305i y 305ii la armadura mínima gobierna en todas las direcciones. La losa más exigente es la 302, que en G25 alcanza $\phi 8$~@~10~cm en los momentos negativos.
-
+ 
 \section{Plano de armadura del piso tipo}
 \label{sec:plano-armadura}
-
+ 
 El plano de armadura rotula cada losa con su espesor, recubrimiento y las separaciones de armadura para cada dirección y signo de momento. Los datos generales a indicar en el plano son los siguientes:
-
+ 
 \begin{itemize}
     \item Espesor único: $e = 15$~cm para todas las losas del piso tipo.
     \item Recubrimiento: $r = 2$~cm; altura útil: $d = 13$~cm.
     \item Diámetro único: $\phi 8$ con área unitaria $A_\phi = 0{,}503$~cm$^2$.
 \end{itemize}
-
+ 
 La Tabla~\ref{tab:plano} consolida los espaciamientos por losa, dirección y nivel de hormigón.
-
+ 
 \begin{table}[h!]
 \centering
 \caption{Resumen de espaciamientos $\phi 8$ por losa, dirección y nivel de hormigón.}
@@ -321,32 +315,49 @@ Losa & $l_x \times l_y$ (m) & Hormigón & $s_{x}^{+}$ & $s_{y}^{+}$ & $s_{x}^{-}
 \bottomrule
 \end{tabular}
 \end{table}
-
+ 
 \noindent La losa 304 no se incluye en el plano de armadura bidireccional.
+ 
+Los planos de armadura del piso tipo se presentan en las Figuras~\ref{fig:armadura-p3} y~\ref{fig:armadura-p4}, correspondientes al piso~3 (G35) y a los pisos~4 en adelante (G25) respectivamente.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Secciones/imagenes/armaduraLosaP3.png}
+    \caption{Plano de armadura del piso tipo --- Piso 3, hormigón G35.}
+    \label{fig:armadura-p3}
+\end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Secciones/imagenes/armaduraLosaP4.png}
+    \caption{Plano de armadura del piso tipo --- Pisos 4 en adelante, hormigón G25.}
+    \label{fig:armadura-p4}
+\end{figure}
+ 
 \subsection{Verificación de deformaciones}
-
+ 
 La deformación se evalúa a partir de la flecha total, que combina la componente elástica instantánea con la deformación diferida por fluencia lenta. La losa más desfavorable es la 302 en los pisos con G25, por ser la de mayor dimensión y menor resistencia del hormigón.
-
+ 
 La flecha elástica instantánea se estima mediante:
-
+ 
 \begin{equation}
     f_i = \frac{w_m \cdot q \cdot l_x^4}{E_c \cdot d^3}
 \end{equation}
-
+ 
 y la flecha total incorpora el efecto diferido según:
-
+ 
 \begin{equation}
     f_{\text{total}} = f_i \cdot \left(1 + \lambda_\Delta\right)
 \end{equation}
-
+ 
 Para la losa 302 en pisos 4 en adelante (G25) se obtiene:
-
+ 
 \begin{itemize}
     \item Flecha total: $f_{\text{total}} = 1{,}421$~cm
     \item Límite admisible: $L/500 = \min(6{,}18;\,8{,}43)/500 = 1{,}236$~cm
     \item La losa \textbf{no cumple} el límite en este nivel: $1{,}421 > 1{,}236$~cm
     \item Se requiere contraflecha de $\Delta f = 1{,}421 - 1{,}236 \approx 1{,}85$~mm
 \end{itemize}
-
-En el resto de las losas la flecha total se encuentra dentro del límite $L/500$ sin necesidad de contraflecha. A modo de referencia, la losa 308 presenta $f_{\text{total}} = 0{,}577$~cm frente a un límite de 1{,}242~cm, lo que indica que el margen es amplio en los paños de menor relación de aspecto.
+ 
+En el resto de las losas la flecha total se encuentra dentro del límite $L/500$ sin necesidad de contraflecha. A modo de referencia, la losa 308 presenta $f_{\text{total}} = 0{,}577$~cm frente a un límite de 1{,}242~cm, lo que indica que el margen es amplio.
+ 

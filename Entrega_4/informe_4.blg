@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: informe_4.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Secciones/resumen.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: Secciones/intro.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: Secciones/losas.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: Secciones/viga.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: Secciones/conclu.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+The style file: agsm.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Database file #1: bibliio.bib
+You've used 6 entries,
+            2909 wiz_defined-function locations,
+            672 strings with 5484 characters,
+and the built_in function-call counts, 37256 in all, are:
+= -- 6464
+> -- 144
+< -- 0
++ -- 3109
+- -- 42
+* -- 3208
+:= -- 7278
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 78
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 78
+empty$ -- 133
+format.name$ -- 54
+if$ -- 6683
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 21
+num.names$ -- 60
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 90
+quote$ -- 0
+skip$ -- 56
+stack$ -- 0
+substring$ -- 9384
+swap$ -- 8
+text.length$ -- 84
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 126
+width$ -- 0
+write$ -- 80
