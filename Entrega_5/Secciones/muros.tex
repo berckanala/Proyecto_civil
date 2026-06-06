@@ -1,0 +1,270 @@
+\section{Diseño de muros sísmicos}
+
+\subsection{Geometría y ubicación}
+
+Los muros en estudio corresponden al Pier~C y al Pier~J del edificio, identificados mediante la
+asignación de \textit{Pier labels} en el modelo de ETABS. Ambos muros se extienden en toda la
+altura del edificio, desde el subterráneo hasta el piso 21, con altura total $H_w = 50{,}82$ m.
+Sus dimensiones en planta y espesor se presentan en la Tabla~\ref{tab:muro_geometria}.
+
+\begin{table}[H]
+\centering
+\caption{Geometría de los muros sísmicos en estudio.}
+\label{tab:muro_geometria}
+\begin{tabular}{lcccc}
+\hline
+Muro & $l_w$ (m) & $b_w$ (m) & $H_w$ (m) & $H_w / l_w$ \\
+\hline
+Pier~C & 5,40 & 0,25 & 50,82 & 9,41 \\
+Pier~J & 5,76 & 0,25 & 50,82 & 8,82 \\
+\hline
+\end{tabular}
+\end{table}
+
+La razón de aspecto $H_w/l_w > 2$ en ambos casos confirma que se trata de muros esbeltos,
+por lo que aplican los requisitos de curvatura última del DS~60.
+
+\subsection{Materiales}
+
+Los muros emplean los mismos materiales definidos para el resto del edificio. En los pisos 1 al 3
+se utiliza hormigón G35 ($f_c' = 35\;\text{MPa}$) y en los pisos 4 en adelante, G25
+($f_c' = 25\;\text{MPa}$), ambos según NCh170. El acero de refuerzo es A630-420H según NCh204,
+con $f_y = 420\;\text{MPa}$ y $E_s = 200\;\text{GPa}$.
+
+\subsection{Armaduras mínimas}
+
+Las cuantías mínimas de armadura distribuida en el plano del muro se determinan conforme a
+ACI~318-19 (sección 11.6):
+\begin{equation}
+    \rho_{l,\text{mín}} = 0{,}0025 \qquad \rho_{t,\text{mín}} = 0{,}0025
+\end{equation}
+
+El área de acero mínima por metro lineal en cada dirección resulta:
+\begin{equation}
+    A_{s,\text{mín}} = \rho_{\text{mín}} \cdot b_w \cdot 1\;\text{m}
+    = 0{,}0025 \times 25 \times 100 = 6{,}25\;\text{cm}^2/\text{m}
+\end{equation}
+
+Esto corresponde a malla doble $\phi10$ @ $250\;\text{mm}$ ($A_s = 6{,}28\;\text{cm}^2/\text{m}$)
+en ambas caras del muro.
+
+\subsection{Esfuerzos de diseño}
+
+Los esfuerzos de diseño se obtienen de la envolvente de combinaciones de carga última (ENVC)
+del modelo en ETABS. Se extraen los valores de fuerza axial $P$, cortante en el plano $V_2$ y
+momento flector $M_3$ en la base de cada muro, que corresponde a la sección crítica. Los
+esfuerzos determinantes se presentan en la Tabla~\ref{tab:muro_esfuerzos}.
+
+\begin{table}[H]
+\centering
+\caption{Esfuerzos de diseño en la sección crítica (base del muro), envolvente ENVC.}
+\label{tab:muro_esfuerzos}
+\begin{tabular}{lcccccc}
+\hline
+Muro & $P_{\text{mín}}$ (tonf) & $P_{\text{máx}}$ (tonf) & $V_{u,\text{máx}}$ (tonf) & $V_{u,\text{mín}}$ (tonf) & $M_{u,\text{máx}}$ (tonf$\cdot$m) & $M_{u,\text{mín}}$ (tonf$\cdot$m) \\
+\hline
+Pier~C & $-954{,}4$ & $+221{,}9$ & $+140{,}2$ & $-160{,}1$ & $+691{,}9$ & $-888{,}9$ \\
+Pier~J & $-938{,}8$ & $+179{,}7$ & $+106{,}6$ & $-182{,}1$ & $+779{,}6$ & $-653{,}4$ \\
+\hline
+\end{tabular}
+\end{table}
+
+El momento de diseño crítico corresponde al mayor valor absoluto de $M_3$: $M_u = 888{,}9$
+tonf$\cdot$m para Pier~C y $M_u = 779{,}6$ tonf$\cdot$m para Pier~J. El cortante de diseño
+es $V_u = 160{,}1$ tonf (Pier~C) y $V_u = 182{,}1$ tonf (Pier~J).
+
+\subsection{Verificación de compresión máxima}
+
+La tensión de compresión media en la sección bruta del muro se verifica conforme al DS~60:
+\begin{equation}
+    \sigma_u = \frac{P_u}{l_w \cdot b_w} \leq 0{,}35\,f_c'
+\end{equation}
+
+Aplicando la carga axial de compresión máxima en cada muro:
+
+\textbf{Pier~C:}
+\begin{equation}
+    \sigma_u = \frac{954{,}4 \times 10^3}{540 \times 25} = 70{,}7\;\text{kg/cm}^2
+    < 0{,}35 \times 350 = 122{,}5\;\text{kg/cm}^2 \qquad \checkmark
+\end{equation}
+
+\textbf{Pier~J:}
+\begin{equation}
+    \sigma_u = \frac{938{,}8 \times 10^3}{576 \times 25} = 65{,}2\;\text{kg/cm}^2
+    < 0{,}35 \times 350 = 122{,}5\;\text{kg/cm}^2 \qquad \checkmark
+\end{equation}
+
+Ambos muros cumplen el límite de compresión máxima. En caso de no cumplirse, la medida
+correctiva sería aumentar el espesor del muro o emplear un hormigón de mayor resistencia en
+los pisos inferiores.
+
+\subsection{Verificación de esbeltez mínima}
+
+La condición de espesor mínimo respecto a la altura de entrepiso se verifica conforme a
+ACI~318-19:
+\begin{equation}
+    b_w \geq \frac{H_u}{16}
+\end{equation}
+
+Con altura de entrepiso $H_u = 2{,}65$ m (piso tipo) y $b_w = 0{,}25$ m:
+\begin{equation}
+    \frac{H_u}{16} = \frac{265}{16} = 16{,}6\;\text{cm} < 25\;\text{cm} \qquad \checkmark
+\end{equation}
+
+El espesor adoptado cumple la condición de esbeltez mínima en toda la altura del edificio.
+
+\subsection{Verificación de corte máximo admisible}
+
+La resistencia máxima admisible a corte del muro limita la tensión nominal para evitar
+aplastamiento del hormigón (ACI~318-19, sección 11.5.4.3):
+\begin{equation}
+    \varphi V_{n,\text{máx}} = \varphi \cdot 0{,}83\,\sqrt{f_c'}\,A_{cv}
+\end{equation}
+
+donde $A_{cv} = b_w \cdot l_w$ y $\varphi = 0{,}75$.
+
+\textbf{Pier~C} ($f_c' = 350\;\text{kg/cm}^2$):
+\begin{equation}
+    \varphi V_{n,\text{máx}} = 0{,}75 \times 0{,}83\,\sqrt{350}\times 25 \times 540
+    = 157{,}2\;\text{tonf} \approx V_u = 160{,}1\;\text{tonf}
+\end{equation}
+
+\textbf{Pier~J:}
+\begin{equation}
+    \varphi V_{n,\text{máx}} = 0{,}75 \times 0{,}83\,\sqrt{350}\times 25 \times 576
+    = 167{,}8\;\text{tonf} < V_u = 182{,}1\;\text{tonf}
+\end{equation}
+
+\subsection{Armadura de corte}
+
+La resistencia al corte del hormigón en muros esbeltos ($H_w/l_w > 2$) se calcula conforme
+a ACI~318-19 (sección 11.5.4.6) con $\alpha_c = 0{,}17$:
+\begin{equation}
+    V_c = 0{,}17\,\sqrt{f_c'}\,A_{cv}
+    = 0{,}17\,\sqrt{f_c'}\,b_w\,l_w
+\end{equation}
+
+La cuantía de armadura transversal requerida se determina a partir de:
+\begin{equation}
+    \varphi\,(V_c + \rho_t\,f_y\,A_{cv}) \geq V_u
+    \quad \Rightarrow \quad
+    \rho_{t,\text{req}} = \frac{V_u/\varphi - V_c}{f_y \cdot A_{cv}}
+\end{equation}
+
+Los resultados para la sección crítica de cada muro se presentan en la
+Tabla~\ref{tab:muro_corte}.
+
+\begin{table}[H]
+\centering
+\caption{Diseño de armadura de corte en la sección crítica de cada muro.}
+\label{tab:muro_corte}
+\begin{tabular}{lccccc}
+\hline
+Muro & $V_u$ (tonf) & $V_c$ (tonf) & $\rho_{t,\text{req}}$ & Armadura adoptada & $\varphi V_n$ (tonf) \\
+\hline
+Pier~C & 160,1 & & & & \\
+Pier~J & 182,1 & & & & \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Desplazamiento máximo de techo y curvatura última}
+
+El desplazamiento de demanda sísmica de techo se obtiene a partir del espectro de diseño
+elástico de NCh433. El factor de amplificación espectral para $T_n > T'$ es:
+\begin{equation}
+    \alpha = \frac{1 + 4{,}5\,\left(\dfrac{T_n}{T_0}\right)^p}
+                  {1 + \left(\dfrac{T_n}{T_0}\right)^3}
+\end{equation}
+
+El desplazamiento espectral se calcula empleando el período amplificado $T_{ag} = 1{,}5\,T_n$:
+\begin{equation}
+    S_d = \frac{T_{ag}^2}{4\pi^2}\cdot\alpha\cdot A_0\cdot C_d\cdot g
+\end{equation}
+
+El desplazamiento último de demanda incorpora el factor de ductilidad establecido en el DS~60:
+\begin{equation}
+    \delta_u = 1{,}3\cdot S_d
+\end{equation}
+
+La deriva última resulta:
+\begin{equation}
+    \theta_u = \frac{\delta_u}{H_w}
+\end{equation}
+
+Los resultados para cada modo de vibración se presentan en la
+Tabla~\ref{tab:muro_desplazamiento}.
+
+\begin{table}[H]
+\centering
+\caption{Desplazamiento último de techo por modo de vibración.}
+\label{tab:muro_desplazamiento}
+\begin{tabular}{lcccccc}
+\hline
+Modo & $T_n$ (s) & $T_{ag}$ (s) & $\alpha$ & $S_d$ (cm) & $\delta_u$ (cm) & $\theta_u$ \\
+\hline
+1 (dirección X) & 1,202 & 1,803 & 0,562 & 23,73 & 30,85 & 0,00607 \\
+2 (dirección Y) & 0,940 & 1,410 & 0,719 & 18,56 & 24,13 & 0,00475 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Curvatura última en la sección crítica}
+
+La curvatura última en la base del muro se determina mediante el modelo simplificado de
+rótula plástica del DS~60, que supone rotación concentrada en la base y comportamiento de
+cuerpo rígido sobre ella:
+\begin{equation}
+    \phi_u = \frac{2\,\delta_u}{H_w\cdot l_w}
+\end{equation}
+
+\textbf{Pier~C} (modo X):
+\begin{equation}
+    \phi_u = \frac{2 \times 30{,}85}{5082 \times 540} = 2{,}248 \times 10^{-3}\;\text{m}^{-1}
+\end{equation}
+
+\textbf{Pier~J} (modo Y):
+\begin{equation}
+    \phi_u = \frac{2 \times 24{,}13}{5082 \times 576} = 1{,}648 \times 10^{-3}\;\text{m}^{-1}
+\end{equation}
+
+\subsection{Verificación de necesidad de confinamiento}
+
+La longitud de compresión requerida para satisfacer la demanda de curvatura, sin necesidad
+de confinamiento especial, se obtiene del DS~60:
+\begin{equation}
+    C_c = \frac{l_w}{600 \cdot 1{,}5 \cdot \theta_u}
+\end{equation}
+
+\textbf{Pier~C:}
+\begin{equation}
+    C_c = \frac{540}{600 \times 1{,}5 \times 0{,}00607} = 98{,}8\;\text{cm}
+\end{equation}
+
+\textbf{Pier~J:}
+\begin{equation}
+    C_c = \frac{576}{600 \times 1{,}5 \times 0{,}00475} = 126{,}4\;\text{cm}
+\end{equation}
+
+La profundidad del eje neutro $c$ se estima mediante la expresión aproximada de Moehle,
+con armadura uniforme distribuida:
+\begin{equation}
+    c = \frac{P_u + \rho_l\,f_y\,A_w}
+             {0{,}85\,f_c'\,b_w\,\beta_1 + 2\,\rho_l\,b_w\,f_y}
+\end{equation}
+
+donde $A_w = b_w \cdot l_w$. Si $c > C_c$, el muro requiere elemento especial de borde
+confinado sobre esa longitud.
+
+\subsection{Deformación máxima de compresión}
+
+La deformación unitaria máxima en la fibra más comprimida se obtiene a partir de la
+curvatura última y la profundidad del eje neutro:
+\begin{equation}
+    \varepsilon_{c,\text{máx}} = \phi_u \cdot c
+\end{equation}
+
+El DS~60 establece el límite $\varepsilon_{c,\text{máx}} \leq 0{,}008$ en la sección crítica.
+La verificación se completa una vez determinada la profundidad $c$ del diseño a
+flexo-compresión.
+

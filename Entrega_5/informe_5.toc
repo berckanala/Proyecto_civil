@@ -1,10 +1,23 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Vigas sísmicas}{2}{section.1}%
+\contentsline {section}{\numberline {1}Diseño de muros sísmicos}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Geometría y ubicación}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Materiales}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Esfuerzos de diseño}{2}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Diseño a flexión}{3}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}Armadura mínima y máxima}{3}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Armadura adoptada y verificaciones}{3}{subsubsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.5}Diseño a corte}{3}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Resumen del diseño}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.3}Armaduras mínimas}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Esfuerzos de diseño}{2}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Verificación de compresión máxima}{3}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Verificación de esbeltez mínima}{3}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Verificación de corte máximo admisible}{3}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Armadura de corte}{4}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Desplazamiento máximo de techo y curvatura última}{4}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Curvatura última en la sección crítica}{5}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Verificación de necesidad de confinamiento}{5}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}Deformación máxima de compresión}{5}{subsection.1.12}%
+\contentsline {section}{\numberline {2}Vigas sísmicas}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Geometría y ubicación}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Materiales}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Esfuerzos de diseño}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Diseño a flexión}{7}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Armadura mínima y máxima}{7}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Armadura adoptada y verificaciones}{7}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Diseño a corte}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Resumen del diseño}{8}{subsection.2.6}%

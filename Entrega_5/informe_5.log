@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.3)  6 JUN 2026 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.3)  6 JUN 2026 18:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,7 +726,7 @@ Package hyperref Info: Link coloring ON on input line 69.
 \openout4 = `informe_5.out'.
 
 \c@lstlisting=\count359
-<LOGO_UNIVERSIDAD.jpg, id=42, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=94, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 80.
@@ -769,18 +769,16 @@ l.122 \newpage
  (Secciones/intro.tex)
 \openout2 = `Secciones/muros.aux'.
 
- (Secciones/muros.tex)
-\openout2 = `Secciones/viga.aux'.
+ (Secciones/muros.tex
+Overfull \hbox (25.26544pt too wide) in paragraph at lines 62--70
+ [][] 
+ []
 
- (Secciones/viga.tex
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 81.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [2
-
-
-
+[2
 
 
 
@@ -798,10 +796,57 @@ l.81 \end{equation}
                    ]
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 169.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [3]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 224.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [4
+pdfTeX warning (ext4): destination with the same identifier (name{table.1.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.224 \end{equation}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.1.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.224 \end{equation}
+                    ])
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 126.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [5]
+\openout2 = `Secciones/viga.aux'.
+
+ (Secciones/viga.tex
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 81.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [6
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 \end{equation}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 \end{equation}
+                   ]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 156.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [3
-pdfTeX warning (ext4): destination with the same identifier (name{table.1.3}) has been already used, duplicate ignored
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.156 \end{equation}
@@ -810,13 +855,13 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 127.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [4
-pdfTeX warning (ext4): destination with the same identifier (name{table.1.4}) has been already used, duplicate ignored
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.127 \include{Secciones/viga.tex}
                                   
-pdfTeX warning (ext4): destination with the same identifier (name{table.1.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.127 \include{Secciones/viga.tex}
@@ -825,7 +870,7 @@ l.127 \include{Secciones/viga.tex}
 
  (Secciones/conclu.tex)
 No file informe_5.bbl.
-[5
+[9
 
 
 
@@ -840,20 +885,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `informe_5.out' has not changed.
-(rerunfilecheck)             Checksum: 86D23904DBC2233D3E3A29432398F7FE;1450.
+(rerunfilecheck)             Checksum: 4469A67D8812D77F238D7BC59FE8144F;4228.
  ) 
 Here is how much of TeX's memory you used:
- 24984 strings out of 467871
- 458456 string characters out of 5418377
+ 25060 strings out of 467871
+ 459439 string characters out of 5418377
  1056952 words of memory out of 5000000
- 53368 multiletter control sequences out of 15000+600000
- 631544 words of font info for 55 fonts, out of 8000000 for 9000
+ 53398 multiletter control sequences out of 15000+600000
+ 631890 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,17n,104p,665b,553s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on informe_5.pdf (6 pages, 362042 bytes).
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on informe_5.pdf (10 pages, 407992 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
