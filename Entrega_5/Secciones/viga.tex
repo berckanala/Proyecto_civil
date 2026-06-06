@@ -1,0 +1,225 @@
+\section{Vigas sísmicas}
+ 
+\subsection{Geometría y ubicación}
+ 
+Las vigas sísmicas B7, B8 y B39 son elementos de hormigón armado que forman parte del sistema
+resistente a cargas laterales del edificio. Los esfuerzos de diseño se obtienen de la modelación en
+SAP2000 a partir de la envolvente de combinaciones de carga última sobre los 20 pisos del edificio.
+La geometría varía en función del nivel: en pisos 1 al 3 se emplea ancho $b = 0{,}25$ m, mientras
+que en pisos 4 al 20 se adopta $b = 0{,}20$ m. La altura total es constante por tipo de viga en
+toda la altura del edificio. Las dimensiones se resumen en la Tabla~\ref{tab:viga_geometria}.
+ 
+\begin{table}[H]
+\centering
+\caption{Geometría de las vigas sísmicas por zona del edificio.}
+\label{tab:viga_geometria}
+\begin{tabular}{lcccc}
+\hline
+Viga & $h$ (m) & $b$ (m), pisos 1--3 & $b$ (m), pisos 4--20 & $d$ (m) \\
+\hline
+B7  & 0,74 & 0,25 & 0,20 & 0,69 \\
+B8  & 0,74 & 0,25 & 0,20 & 0,69 \\
+B39 & 1,64 & 0,25 & 0,20 & 1,59 \\
+\hline
+\end{tabular}
+\end{table}
+ 
+La altura útil se calcula como $d = h - r_\text{ec}$, con recubrimiento $r_\text{ec} = 0{,}05$ m.
+ 
+\subsection{Materiales}
+ 
+Las vigas sísmicas emplean los mismos materiales que el resto de los elementos del edificio en los
+niveles correspondientes:
+ 
+Hormigón G35 en pisos 1 al 3 ($f_c' = 35\;\text{MPa}$) y G25 en pisos 4 en adelante ($f_c' = 25\;\text{MPa}$), especificados según NCh170.
+ 
+Acero de refuerzo A630-420H según NCh204, con $f_y = 420\;\text{MPa}$ y $E_s = 200\;\text{GPa}$.
+ 
+Los factores de reducción de resistencia aplicados son $\varphi_\text{flex} = 0{,}90$ y
+$\varphi_\text{corte} = 0{,}75$, conforme a ACI 318-19.
+ 
+\subsection{Esfuerzos de diseño}
+ 
+Los esfuerzos de diseño corresponden a la envolvente de valores máximos absolutos de momento
+flector $M_3$ y cortante $V_2$ entre todos los casos de carga del modelo:
+\begin{equation}
+    M_u = \max\!\left(|M_{3,\text{máx}}^+|,\;|M_{3,\text{mín}}^-|\right)
+\end{equation}
+\begin{equation}
+    V_u = \max\!\left(|V_{2,\text{máx}}^+|,\;|V_{2,\text{mín}}^-|\right)
+\end{equation}
+ 
+Los esfuerzos aumentan progresivamente desde los pisos superiores hacia los inferiores, con los
+valores más críticos concentrados en los pisos 1 al 3. Los esfuerzos máximos por viga se presentan
+en la Tabla~\ref{tab:viga_esfuerzos}.
+ 
+\begin{table}[H]
+\centering
+\caption{Esfuerzos de diseño máximos por viga (piso crítico = piso 1).}
+\label{tab:viga_esfuerzos}
+\begin{tabular}{lccc}
+\hline
+Viga & Piso crítico & $M_u$ (tonf$\cdot$m) & $V_u$ (tonf) \\
+\hline
+B7  & 1 & 23,43 & 28,13 \\
+B8  & 1 & 18,75 & 50,68 \\
+B39 & 1 & 29,21 & 77,79 \\
+\hline
+\end{tabular}
+\end{table}
+ 
+La viga B39 en piso 1 es el elemento más solicitado de la estructura, con $V_u = 77{,}79$ tonf y
+$M_u = 29{,}21$ tonf$\cdot$m.
+ 
+\subsection{Diseño a flexión}
+ 
+\subsubsection{Armadura mínima y máxima}
+ 
+Las cuantías límite se determinan conforme a ACI 318-19 (sección 9.6.1.2):
+\begin{equation}
+    A_{s,\text{mín}} = \max\!\left(\frac{0{,}25\sqrt{f_c'}}{f_y}\,b\,d\;,\;\frac{1{,}4}{f_y}\,b\,d\right)
+\end{equation}
+ 
+La profundidad máxima del bloque de compresión corresponde al límite de zona controlada por
+tracción ($\varepsilon_s \geq 0{,}004$):
+\begin{equation}
+    c_{\text{máx}} = \frac{\varepsilon_{cu}}{\varepsilon_{cu} + 0{,}004}\,d = 0{,}375\,d
+    \qquad \Rightarrow \qquad
+    a_{\text{máx}} = \beta_1\,c_{\text{máx}}
+\end{equation}
+\begin{equation}
+    A_{s,\text{máx}} = \frac{0{,}85\,f_c'\,a_{\text{máx}}\,b}{f_y}
+\end{equation}
+ 
+con $\beta_1 = 0{,}80$ para $f_c' > 28\;\text{MPa}$ y $\beta_1 = 0{,}85$ para $f_c' \leq 28\;\text{MPa}$.
+ 
+\subsubsection{Armadura adoptada y verificaciones}
+ 
+El área de acero requerida se obtiene a partir del equilibrio de la sección fisurada:
+\begin{equation}
+    a = \frac{A_s\,f_y}{0{,}85\,f_c'\,b}
+    \qquad
+    c = \frac{a}{\beta_1}
+    \qquad
+    \varepsilon_s = \varepsilon_{cu}\,\frac{d - c}{c} \geq \varepsilon_y
+\end{equation}
+\begin{equation}
+    \varphi M_n = \varphi\,A_s\,f_y\!\left(d - \frac{a}{2}\right) \geq M_u
+\end{equation}
+ 
+Los resultados del diseño a flexión se presentan en la Tabla~\ref{tab:viga_flexion}. La armadura
+adoptada en cada zona cumple los límites de cuantía mínima y máxima, y la sección opera en
+régimen controlado por tracción en todos los casos.
+ 
+\begin{table}[H]
+\centering
+\caption{Armadura longitudinal adoptada por zona del edificio.}
+\label{tab:viga_flexion}
+\begin{tabular}{llccc}
+\hline
+Zona (pisos) & Viga & Armadura & $A_s$ (cm$^2$) & Verificación \\
+\hline
+20--12 & B7  & 2\,\(\phi\)22 & 7,60  & Cumple \\
+20--12 & B8  & 2\,\(\phi\)22 & 7,60  & Cumple \\
+20--12 & B39 & 3\,\(\phi\)22 & 11,40 & Cumple \\
+\hline
+11--5  & B7  & 3\,\(\phi\)22 & 11,40 & Cumple \\
+11--5  & B8  & 2\,\(\phi\)22 & 7,60  & Cumple \\
+11--5  & B39 & 3\,\(\phi\)22 & 11,40 & Cumple \\
+\hline
+4      & B7  & 2\,\(\phi\)25 & 9,82  & Cumple \\
+4      & B8  & 2\,\(\phi\)25 & 9,82  & Cumple \\
+4      & B39 & 3\,\(\phi\)25 & 14,73 & Cumple \\
+\hline
+3--1   & B7  & 2\,\(\phi\)25 & 9,82  & Cumple \\
+3--1   & B8  & 2\,\(\phi\)25 & 9,82  & Cumple \\
+3--1   & B39 & 3\,\(\phi\)25 & 14,73 & Cumple \\
+\hline
+\end{tabular}
+\end{table}
+ 
+\subsection{Diseño a corte}
+ 
+La resistencia del hormigón al corte se calcula conforme a ACI 318-19 (sección 22.5.5.1):
+\begin{equation}
+    V_c = 0{,}17\,\sqrt{f_c'}\,b\,d
+\end{equation}
+ 
+Se verifica si se requiere armadura transversal:
+\begin{equation}
+    V_u > \tfrac{1}{2}\,\varphi\,V_c \quad \Rightarrow \quad \text{se requiere armadura de corte}
+\end{equation}
+ 
+El aporte requerido del acero transversal es:
+\begin{equation}
+    V_s = \frac{V_u}{\varphi} - V_c
+\end{equation}
+ 
+El espaciamiento máximo de estribos se limita según ACI 318-19:
+\begin{equation}
+    s_{\text{máx}} = \min\!\left(\frac{d}{2},\;600\;\text{mm}\right)
+\end{equation}
+y se reduce a $\min(d/4,\;300\;\text{mm})$ cuando $V_s > 0{,}33\sqrt{f_c'}\,b\,d$.
+ 
+El área de estribo requerida y el área mínima son:
+\begin{equation}
+    A_{v,\text{req}} = \frac{V_s\,s}{f_y\,d}
+    \qquad
+    A_{v,\text{mín}} = \max\!\left(\frac{0{,}062\,\sqrt{f_c'}}{f_y}\,b\,s\;,\;\frac{0{,}35}{f_y}\,b\,s\right)
+\end{equation}
+ 
+La resistencia de diseño a corte se verifica como:
+\begin{equation}
+    \varphi V_n = \varphi\,(V_c + V_s) \geq V_u \qquad \checkmark
+\end{equation}
+ 
+Los resultados se presentan en la Tabla~\ref{tab:viga_corte}. En todos los casos la resistencia de
+diseño supera la demanda y el área de estribo provista es mayor que la mínima requerida.
+ 
+\begin{table}[H]
+\centering
+\caption{Armadura transversal adoptada por zona del edificio.}
+\label{tab:viga_corte}
+\begin{tabular}{llccc}
+\hline
+Zona (pisos) & Viga & Estribos & $s$ (m) & Verificación \\
+\hline
+20--1  & B7  & \(\phi\)8,  1 rama  & 0,15 & Cumple \\
+20--1  & B8  & \(\phi\)8,  1 rama  & 0,15 & Cumple \\
+20--12 & B39 & \(\phi\)8,  1 rama  & 0,30 & Cumple \\
+11--5  & B39 & \(\phi\)8,  1 rama  & 0,30 & Cumple \\
+4--3   & B39 & \(\phi\)10, 1 rama  & 0,30 & Cumple \\
+2--1   & B39 & \(\phi\)12, 1 rama  & 0,30 & Cumple \\
+\hline
+\end{tabular}
+\end{table}
+ 
+\subsection{Resumen del diseño}
+ 
+La Tabla~\ref{tab:viga_resumen} consolida la armadura definitiva para las tres vigas sísmicas,
+diferenciando entre la zona de pisos altos y la zona de pisos bajos. Todos los elementos verifican
+resistencia a flexión y a corte conforme a ACI 318-19.
+ 
+\begin{table}[H]
+\centering
+\caption{Resumen de enfierradura de vigas sísmicas.}
+\label{tab:viga_resumen}
+\begin{tabular}{llcc}
+\hline
+Viga & Zona (pisos) & Armadura longitudinal & Estribos \\
+\hline
+B7  & 20--12 & 2\,\(\phi\)22 & \(\phi\)8 @ 0,15 m \\
+B7  & 11--5  & 3\,\(\phi\)22 & \(\phi\)8 @ 0,15 m \\
+B7  & 4--1   & 2\,\(\phi\)25 & \(\phi\)8 @ 0,15 m \\
+\hline
+B8  & 20--5  & 2\,\(\phi\)22 & \(\phi\)8 @ 0,15 m \\
+B8  & 4--1   & 2\,\(\phi\)25 & \(\phi\)8 @ 0,15 m \\
+\hline
+B39 & 20--12 & 3\,\(\phi\)22 & \(\phi\)8  @ 0,30 m \\
+B39 & 11--5  & 3\,\(\phi\)22 & \(\phi\)8  @ 0,30 m \\
+B39 & 4--3   & 3\,\(\phi\)25 & \(\phi\)10 @ 0,30 m \\
+B39 & 2--1   & 3\,\(\phi\)25 & \(\phi\)12 @ 0,30 m \\
+\hline
+\end{tabular}
+\end{table}
+ 
