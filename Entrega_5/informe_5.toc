@@ -1,45 +1,47 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Diseño de muros sísmicos}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Geometría y ubicación}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Materiales}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Armaduras mínimas}{2}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Esfuerzos de diseño}{2}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Verificación de compresión máxima}{3}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Verificación de esbeltez mínima}{3}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Verificación de corte máximo admisible}{3}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}Armadura de corte}{4}{subsection.1.8}%
-\contentsline {subsection}{\numberline {1.9}Desplazamiento máximo de techo y curvatura última}{4}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}Curvatura última en la sección crítica}{5}{subsection.1.10}%
-\contentsline {subsection}{\numberline {1.11}Verificación de necesidad de confinamiento}{5}{subsection.1.11}%
-\contentsline {subsection}{\numberline {1.12}Deformación máxima de compresión}{5}{subsection.1.12}%
-\contentsline {section}{\numberline {2}Resultados Diseño de muros sísmicos}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Información general}{5}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Muros Pier C}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Piso $-1$}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Piso 1 (Sección crítica)}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Piso 2}{9}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Piso 3}{10}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Piso 5}{11}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Piso 8}{11}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Piso 11}{11}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Piso 15}{11}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Resumen Muro PC}{12}{subsection.3.9}%
-\contentsline {section}{\numberline {4}Muros Pier J}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Piso $-1$ (Sección crítica)}{13}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Piso 1}{15}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Piso 2}{16}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Piso 3}{17}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Piso 5}{17}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Piso 8}{17}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Piso 11}{18}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Piso 15}{18}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Resumen Muro PJ}{19}{subsection.4.9}%
-\contentsline {section}{\numberline {5}Vigas sísmicas}{20}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Geometría y ubicación}{20}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Materiales}{20}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Esfuerzos de diseño}{20}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Diseño a flexión}{21}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Armadura mínima y máxima}{21}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Armadura adoptada y verificaciones}{21}{subsubsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.5}Diseño a corte}{21}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Resumen del diseño}{22}{subsection.5.6}%
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Diseño de muros sísmicos}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Geometría y ubicación}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Materiales}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Armaduras mínimas}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Esfuerzos de diseño}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Verificación de compresión máxima}{5}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Verificación de esbeltez mínima}{5}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Verificación de corte máximo admisible}{5}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Armadura de corte}{5}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Desplazamiento máximo de techo y curvatura última}{6}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Curvatura última en la sección crítica}{6}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Verificación de necesidad de confinamiento}{6}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Deformación máxima de compresión}{7}{subsection.2.12}%
+\contentsline {section}{\numberline {3}Resultados Diseño de muros sísmicos}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Información general}{7}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Muros Pier C}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Piso $-1$}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Piso 1 (Sección crítica)}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Piso 2}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Piso 3}{12}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Piso 5}{12}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Piso 8}{12}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Piso 11}{13}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Piso 15}{13}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Resumen Muro PC}{14}{subsection.4.9}%
+\contentsline {section}{\numberline {5}Muros Pier J}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Piso $-1$ (Sección crítica)}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Piso 1}{17}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Piso 2}{18}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Piso 3}{19}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Piso 5}{19}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Piso 8}{19}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Piso 11}{20}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Piso 15}{20}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Resumen Muro PJ}{21}{subsection.5.9}%
+\contentsline {section}{\numberline {6}Vigas sísmicas}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Geometría y ubicación}{22}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Materiales}{22}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Esfuerzos de diseño}{22}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Diseño a flexión}{23}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Armadura mínima y máxima}{23}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Armadura adoptada y verificaciones}{23}{subsubsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.5}Diseño a corte}{23}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Resumen del diseño}{24}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Conclusión}{25}{section.7}%
