@@ -24,6 +24,29 @@
 \usepackage{natbib}
 \newcommand{\xmark}{\ensuremath{\times}}
 
+% Paquetes adicionales para muros.tex
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{colortbl}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Colores
+\definecolor{azul}{RGB}{0,70,127}
+\definecolor{rojono}{RGB}{180,0,0}
+\definecolor{gris}{RGB}{100,100,100}
+\definecolor{fondotabla}{RGB}{235,242,252}
+
+% Caja de verificación
+\newtcolorbox{verbox}[1][]{
+  colback=fondotabla, colframe=azul, fonttitle=\bfseries\small,
+  title=#1, breakable, left=4pt, right=4pt, top=4pt, bottom=4pt
+}
+
+% Macros de estado
+\newcommand{\ok}{(\checkmark\;\text{OK})}
+\newcommand{\noconf}{No requiere confinamiento~$\checkmark$}
+
 \pagestyle{fancy} % Usa el estilo fancyhdr
 \fancyhf{} % Borra todos los encabezados y pies de página
 \renewcommand{\headrulewidth}{0pt}

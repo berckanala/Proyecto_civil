@@ -268,3 +268,751 @@ El DS~60 establece el límite $\varepsilon_{c,\text{máx}} \leq 0{,}008$ en la s
 La verificación se completa una vez determinada la profundidad $c$ del diseño a
 flexo-compresión.
 
+%---------------------------------------------------------------------
+\section{Resultados Diseño de muros sísmicos}
+
+\subsection{Información general}
+
+Para el cálculo de la enfierradura se utiliza la sección determinada, la cual, en el caso de
+Pier~C, $l_w$ cambia de 5.9\,m a 5.4\,m en el piso~2, mientras que en Pier~J se mantiene
+constante a 5.76\,m. El espesor del muro se mantiene constante a 25\,cm en ambos casos.
+
+\begin{itemize}
+  \item \textbf{Muro PC}: $l_w=5.40$\,m en pisos $-1$ y $1$; $l_w=5.90$\,m en pisos 2--15;
+        $e_w=25$\,cm.
+  \item \textbf{Muro PJ}: $l_w=5.76$\,m constante. $e_w=25$\,cm.
+  \item Ambos muros son \textbf{esbeltos}: $H_w/l_w > 3$ (aplica curvatura DS60).
+  \item $e_w=25$\,cm $<30$\,cm: no se pueden colocar estribos cerrados de confinamiento
+        convencional.
+\end{itemize}
+
+% ============================================================
+%  MURO PC
+% ============================================================
+\section{Muros Pier C}
+
+\begin{itemize}
+    \item Esbeltez P.$-1$/P.1: $H_w/l_w=50.82/5.40=9.41>3\;\Rightarrow$ \textbf{Muro esbelto}
+    \item Esbeltez P.2--15: $H_w/l_w=50.82/5.90=8.61>3\;\Rightarrow$ \textbf{Muro esbelto}
+    \item Piso 1 tiene $M_u$ y $N_u$ máximos
+    \item $\delta_u = 19.57$\,cm;\quad $\varphi_u = 1.427\times10^{-3}$\,m$^{-1}$
+          (constante en toda la altura)
+\end{itemize}
+
+% -------------------------------------------------------
+\subsection{Piso $-1$}
+% -------------------------------------------------------
+
+\subsubsection*{a) Geometría}
+$l_w=5.40$\,m,\; $e_w=0.25$\,m,\; $A_{cv}=1.35$\,m$^2=13\,500$\,cm$^2$
+
+\subsubsection*{b) Esfuerzos de diseño}
+\begin{center}
+\begin{tabular}{lrrl}\toprule
+Parámetro & Valor & Unidad & Nota\\\midrule
+$V_u$ & 47.83  & tf         & Corte último\\
+$M_u$ & 482.63 & tf$\cdot$m & Momento último\\
+$N_u$ & 152.54 & tf         & Axial (flexión)\\
+$P_u$ & 785.27 & tf         & Axial máx.\ (compresión)\\\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection*{c) Compresión máxima $\sigma_u \leq 0.35f'_c$}
+\begin{equation*}
+\sigma_u = \frac{P_u}{l_w\cdot e_w}
+         = \frac{785\,270}{540\times25}
+         = 58.17\,\text{kg/cm}^2
+\;\leq\; 0.35\times350 = 122.5\,\text{kg/cm}^2
+\end{equation*}
+
+\subsubsection*{d) Esbeltez mínima de entrepiso $e_w \geq H_u/16$}
+\begin{equation*}
+e_{\min}=\frac{H_u}{16}=\frac{242}{16}=15.1\,\text{cm}
+\;\leq\; e_w=25\,\text{cm}
+\end{equation*}
+
+\subsubsection*{e) Corte máximo admisible $V_u \leq V_{max}$}
+\begin{align*}
+V_{max} &= 2.12\cdot e_w\cdot l_w\cdot\sqrt{f'_c}
+         = 2.12\times25\times540\times\sqrt{350} = 535.4\,\text{tf}\\
+V_u     &= 47.83\,\text{tf} \leq 535.4\,\text{tf}
+\end{align*}
+
+\subsubsection*{f) Armadura de corte (sobrerresistencia $\Omega_v=2.0$)}
+\begin{align*}
+V_e   &= \Omega_v\cdot V_u = 2.0\times47.83=95.65\,\text{tf}\\
+V_c   &= 0.53\cdot e_w\cdot l_w\cdot\sqrt{f'_c}
+       = 0.53\times25\times540\times\sqrt{350}=133.86\,\text{tf}\\
+V_s   &= \frac{V_e}{\phi}-V_c
+       = \frac{95.65}{0.75}-133.86=0\,\text{tf}
+       \quad(V_c\text{ absorbe todo})\\
+\rho_t &= 0.0025\quad(\text{mínimo normativo})\\
+A_h   &= \rho_t\cdot e_w\cdot\frac{100}{2}
+       = 0.0025\times25\times50 = 3.13\,\text{cm}^2/\text{m por cara}
+\end{align*}
+
+\subsubsection*{g) Armadura de Flexo-Compresión (Cárdenas-Magura)}
+\begin{align*}
+\alpha &= \frac{N_u}{l_w\cdot e_w\cdot f'_c}
+        = \frac{152\,537}{540\times25\times350}=0.0323\\
+\omega &= \frac{\rho_v\cdot f_y}{f'_c}
+        = \frac{0.0035\times4200}{350}=0.042\\
+\frac{c}{l_w} &= \frac{\alpha+\omega}{2\omega+0.85\beta_1}
+               = \frac{0.0323+0.042}{2\times0.042+0.85\times0.80}
+               = 0.0972 < \tfrac{3}{8}\\
+c       &= 0.0972\times540=52.5\,\text{cm}\\
+A_{s,w} &= \rho_v\cdot l_w\cdot e_w=0.0035\times540\times25=47.25\,\text{cm}^2\\
+\phi M_n &= 770.0\,\text{tf}\cdot\text{m}
+           \geq M_u=482.6\,\text{tf}\cdot\text{m} \quad(\checkmark~\text{OK})
+\end{align*}
+
+\subsubsection*{h) Desplazamiento máximo de techo (DS60)}
+\begin{equation*}
+\delta_u = 1.3\cdot S_{de} = 0.1957\,\text{m}=19.57\,\text{cm}
+\qquad \left(\frac{\delta_u}{H_w}=0.005\geq0.005\right)
+\end{equation*}
+
+\subsubsection*{i) Curvatura última $\varphi_u$ (DS60)}
+\begin{equation*}
+\varphi_u = \frac{\delta_u/H_w}{l_w\cdot C_w}=1.427\times10^{-3}\,\text{m}^{-1}
+\end{equation*}
+
+\subsubsection*{j) Verificación de confinamiento}
+\begin{align*}
+c_{lim} &= \frac{l_w}{600\cdot(\delta_u/H_w)}
+         = \frac{540}{600\times0.005}=180\,\text{cm}
+         \;\rightarrow\; c_{lim}=120\,\text{cm}\text{ (según cálculo)}\\
+c       &= 52.5\,\text{cm}<c_{lim}=120\,\text{cm}
+         \quad\text{(No requiere por eje neutro)}
+\end{align*}
+\begin{equation*}
+\sigma = \frac{N_u/A_g + M_u/S_g}{10}
+       = \frac{152.54/1.35 + 482.63/1.215}{10}
+       = 51.02\,\text{kg/cm}^2
+       < 0.15f'_c = 52.5\,\text{kg/cm}^2
+       \quad\text{(No requiere confinamiento)}
+\end{equation*}
+
+\subsubsection*{k) Deformación máxima de compresión $\xi_u$}
+\begin{equation*}
+\xi_u = \varphi_u\cdot c
+      = 1.427\times10^{-3}\times0.525
+      = 7.49\times10^{-4}<0.003
+\end{equation*}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/C_1.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $-1$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 1 (Sección crítica)}
+% -------------------------------------------------------
+
+\subsubsection*{Esfuerzos de diseño}
+$V_u=122.95$\,tf,\;
+$M_u=888.91$\,tf$\cdot$m,\;
+$N_u=221.86$\,tf,\;
+$P_u=954.44$\,tf
+
+\subsubsection*{Verificaciones previas}
+\begin{align*}
+\sigma_u &= \frac{954\,444}{540\times25}=70.70\,\text{kg/cm}^2\leq122.5\\
+e_w      &= 25\,\text{cm}\geq15.1\,\text{cm}\\
+V_u      &= 122.95\,\text{tf}\leq535.4\,\text{tf}
+\end{align*}
+
+\subsubsection*{Armadura de corte}
+\begin{align*}
+V_e    &= 2.0\times122.95=245.90\,\text{tf}\\
+V_s    &= 245.90/0.75-133.86=193.99\,\text{tf}\\
+\rho_t &= 0.00342\geq0.0025\\
+A_h    &= 4.28\,\text{cm}^2/\text{m por cara}
+\end{align*}
+
+\subsubsection*{Flexo-Compresión}
+\begin{align*}
+\alpha   &= 0.04695,\quad\omega=0.042\\
+c/l_w    &= 0.1164<3/8\quad(\text{dúctil})\\
+c        &= 62.87\,\text{cm},\quad A_{s,w}=47.25\,\text{cm}^2\\
+\phi M_n &= 902.4\,\text{tf}\cdot\text{m}\geq888.9\,\text{tf}\cdot\text{m}
+\end{align*}
+
+\subsubsection*{Confinamiento y deformación}
+
+Verificación por eje neutro:
+\begin{equation*}
+c = 62.87\,\text{cm} < c_{lim} = 120\,\text{cm}
+\quad\text{(No requiere por eje neutro)}
+\end{equation*}
+
+Verificación por tensiones, con $S_g = e_w\cdot l_w^2/6 = 0.25\times5.40^2/6 = 1.215\,\text{m}^3$:
+\begin{equation*}
+\sigma = \frac{N_u/A_g + M_u/S_g}{10}
+       = \frac{221.86/1.35 + 888.91/1.215}{10}
+       = 89.60\,\text{kg/cm}^2
+       > 0.2f'_c = 70\,\text{kg/cm}^2
+       \quad\Rightarrow\;\textbf{Requiere confinamiento}
+\end{equation*}
+
+Determinación de la longitud y separación de confinamiento:
+\begin{align*}
+C_c      &= \max(0;\; c-c_{lim}) = \max(0;\; 0.6287-1.20) = 0\,\text{m}\\
+l_{c,\min} &= \max\!\left(c-0.1\,l_w;\;\frac{c}{2};\;e_w;\;0.30\right)
+            = \max(0.089;\;0.314;\;0.25;\;0.30) = 31.4\,\text{cm}\\
+l_{conf} &= \max(C_c;\;l_{c,\min}) = 31.4\,\text{cm}\\
+s_0      &= 10+\frac{35-h_x}{3} = 10+\frac{35-15}{3} = 16.7\,\text{cm}\\
+s_{max}  &= \min(6\phi_\ell;\;e_w/2;\;s_0)
+          = \min(7.2;\;12.5;\;16.7) = 7.2\,\text{cm}
+\end{align*}
+
+La extensión vertical del confinamiento es $\max(l_w;\;M_u/4V_u)=\max(5.40;\;1.81)=5.40$\,m.
+
+Deformación de compresión:
+\begin{equation*}
+\xi_u = \varphi_u\cdot c
+      = 1.427\times10^{-3}\times0.629
+      = 8.97\times10^{-4}<0.003
+\end{equation*}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/C-1.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $1$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 2}
+% -------------------------------------------------------
+
+$l_w=5.90$\,m,\; $A_{cv}=14\,750$\,cm$^2$,\; $V_{max}=585.0$\,tf
+
+\subsubsection*{Esfuerzos de diseño}
+$V_u=160.08$\,tf,\; $M_u=691.89$\,tf$\cdot$m,\; $N_u=204.63$\,tf,\; $P_u=854.94$\,tf
+
+\subsubsection*{Verificaciones previas}
+$\sigma_u=57.96\,\text{kg/cm}^2\leq122.5$;\quad
+$V_u\leq585.0$\,tf
+
+\subsubsection*{Armadura de corte}
+$V_e=320.16$\,tf;\;
+$V_s=280.62$\,tf;\;
+$\rho_t=0.00453$;\;
+$A_h=5.66$\,cm$^2$/m por cara
+
+\subsubsection*{Flexo-Compresión}
+$c=63.05$\,cm;\;
+$\phi M_n=999.4\,\text{tf}\cdot\text{m}\geq691.9$
+
+\subsubsection*{Confinamiento y deformación}
+$c=63.05$\,cm $<120$\,cm\quad\text{(No requiere por eje neutro)}\\[4pt]
+$\sigma=(204.63/1.475+691.89/1.4504)/10=61.58\,\text{kg/cm}^2$;\quad
+$0.15f'_c=52.5 < \sigma \leq 0.2f'_c=70\,\text{kg/cm}^2$ (Intermedio, no confinar)\\[4pt]
+$\xi_u=8.99\times10^{-4}<0.003$
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/C2.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $2$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 3}
+% -------------------------------------------------------
+
+$V_u=140.19$\,tf,\; $M_u=635.35$\,tf$\cdot$m,\;
+$N_u=211.92$\,tf,\; $P_u=856.81$\,tf
+
+$\sigma_u=58.09\leq122.5$;\quad
+$V_e=280.37$\,tf;\;
+$\rho_t=0.00367$;\;
+$A_h=4.59$\,cm$^2$/m/cara
+
+$c=64.14$\,cm $<120$\,cm;\quad
+$\sigma=(211.92/1.475+635.35/1.4504)/10=58.17\,\text{kg/cm}^2$
+(Intermedio, no confinar);\quad
+$\xi_u=9.15\times10^{-4}<0.003$;\quad
+$\phi M_n=1\,014.6\geq635.4$\,tf$\cdot$m
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/C3.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $3$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 5}
+% -------------------------------------------------------
+
+$V_u=119.57$\,tf,\; $M_u=455.92$\,tf$\cdot$m,\;
+$N_u=179.75$\,tf,\; $P_u=749.18$\,tf
+
+$\sigma_u=50.79\leq122.5$;\quad
+$V_e=239.14$\,tf;\;
+$\rho_t=0.00279$;\;
+$A_h=3.48$\,cm$^2$/m/cara
+
+$c=59.32$\,cm $<120$\,cm;\quad
+$\sigma=43.62\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=8.46\times10^{-4}<0.003$;\quad
+$\phi M_n=947.0\geq455.9$
+
+% -------------------------------------------------------
+\subsection{Piso 8}
+% -------------------------------------------------------
+
+$V_u=92.34$\,tf,\; $M_u=297.25$\,tf$\cdot$m,\;
+$N_u=135.91$\,tf,\; $P_u=601.75$\,tf
+
+$\sigma_u=40.80\leq122.5$;\quad
+$V_e=184.68$\,tf;\;
+$\rho_t=0.0025$ (mín);\;
+$A_h=3.13$\,cm$^2$/m/cara
+
+$c=52.77$\,cm $<120$\,cm;\quad
+$\sigma=29.71\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=7.53\times10^{-4}<0.003$;\quad
+$\phi M_n=852.8\geq297.3$
+
+% -------------------------------------------------------
+\subsection{Piso 11}
+% -------------------------------------------------------
+
+$V_u=75.31$\,tf,\; $M_u=233.31$\,tf$\cdot$m,\;
+$N_u=97.44$\,tf,\; $P_u=459.31$\,tf
+
+$\sigma_u=31.14\leq122.5$;\quad
+$V_e=150.63$\,tf;\;
+$\rho_t=0.0025$ (mín);\;
+$A_h=3.13$\,cm$^2$/m/cara
+
+$c=47.01$\,cm $<120$\,cm;\quad
+$\sigma=22.69\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=6.71\times10^{-4}<0.003$;\quad
+$\phi M_n=767.9\geq233.3$
+
+% -------------------------------------------------------
+\subsection{Piso 15}
+% -------------------------------------------------------
+
+$V_u=66.07$\,tf,\; $M_u=169.97$\,tf$\cdot$m,\;
+$N_u=51.23$\,tf,\; $P_u=274.84$\,tf
+
+$\sigma_u=18.63\leq122.5$;\quad
+$V_e=132.15$\,tf;\;
+$\rho_t=0.0025$ (mín);\;
+$A_h=3.13$\,cm$^2$/m/cara
+
+$c=40.10$\,cm $<120$\,cm;\quad
+$\sigma=15.19\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=5.72\times10^{-4}<0.003$;\quad
+$\phi M_n=663.3\geq170.0$
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/C5.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Pisos $5$, $8$, $11$ y $15$.}
+\end{figure}
+
+\newpage
+
+% -------------------------------------------------------
+\subsection{Resumen Muro PC}
+% -------------------------------------------------------
+
+\begin{longtable}{lcccccccccc}
+\caption{Resumen de diseño Muro PC --- Dirección X}\label{tab:resumenPC}\\
+\toprule
+\textbf{P.} & $l_w$ & $V_u$ & $M_u$ & $N_u$ & $\sigma_u$
+            & $V_e$ & $\rho_t$ & $A_h$ & $c$ & $\xi_u$\\
+ & (m) & (tf) & (tf$\cdot$m) & (tf) & (kg/cm$^2$)
+ & (tf) & -- & (cm$^2$/m) & (cm) & ($\times10^{-4}$)\\
+\midrule
+\endfirsthead
+\multicolumn{11}{c}{\textit{Continuación Tabla~\ref{tab:resumenPC}}}\\
+\toprule
+\textbf{P.} & $l_w$ & $V_u$ & $M_u$ & $N_u$ & $\sigma_u$
+            & $V_e$ & $\rho_t$ & $A_h$ & $c$ & $\xi_u$\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+$-1$  & 5.40 & 47.8  & 482.6 & 152.5 & 58.2 &  95.7 & 0.0025 & 3.13 & 52.5 & 7.49\\
+$1$   & 5.40 & 123.0 & 888.9 & 221.9 & 70.7 & 245.9 & 0.0034 & 4.28 & 62.9 & 8.97\\
+$2$   & 5.90 & 160.1 & 691.9 & 204.6 & 58.0 & 320.2 & 0.0045 & 5.66 & 63.0 & 8.99\\
+$3$   & 5.90 & 140.2 & 635.3 & 211.9 & 58.1 & 280.4 & 0.0037 & 4.59 & 64.1 & 9.15\\
+$5$   & 5.90 & 119.6 & 455.9 & 179.7 & 50.8 & 239.1 & 0.0028 & 3.48 & 59.3 & 8.46\\
+$8$   & 5.90 &  92.3 & 297.3 & 135.9 & 40.8 & 184.7 & 0.0025 & 3.13 & 52.8 & 7.53\\
+$11$  & 5.90 &  75.3 & 233.3 &  97.4 & 31.1 & 150.6 & 0.0025 & 3.13 & 47.0 & 6.71\\
+$15$  & 5.90 &  66.1 & 170.0 &  51.2 & 18.6 & 132.1 & 0.0025 & 3.13 & 40.1 & 5.72\\
+\bottomrule
+\multicolumn{11}{l}{\scriptsize
+  $e_w=25$\,cm (todos los pisos).\quad
+  $\varphi_u=1.427\times10^{-3}$\,m$^{-1}$ (cte.)}
+\end{longtable}
+
+\begin{itemize}
+    \item \textbf{Desplazamiento de techo:} $\delta_u=19.57$\,cm
+    \item \textbf{Curvatura última:} $\varphi_u=1.427\times10^{-3}$\,m$^{-1}$
+    \item \textbf{Confinamiento:} Solo Piso~1 requiere confinamiento por tensiones
+          ($\sigma=89.60\,\text{kg/cm}^2>0.2f'_c=70\,\text{kg/cm}^2$),
+          con $l_{conf}=31.4$\,cm y $s_{max}=7.2$\,cm.
+          Los demás pisos no requieren confinamiento.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+%  MURO PJ
+% ============================================================
+\section{Muros Pier J}
+
+\begin{itemize}
+    \item Esbeltez: $H_w/l_w=50.82/5.76=8.82>3\;\Rightarrow$ \textbf{Muro esbelto}
+    \item $l_w=5.76$\,m constante en toda la altura
+    \item Piso $-1$ tiene $M_u$ y $P_u$ máximos (sección crítica)
+    \item $\delta_u = 19.57$\,cm;\quad $\varphi_u = 1.337\times10^{-3}$\,m$^{-1}$
+          (constante en toda la altura)
+\end{itemize}
+
+% -------------------------------------------------------
+\subsection{Piso $-1$ (Sección crítica)}
+% -------------------------------------------------------
+
+\subsubsection*{a) Geometría}
+$l_w=5.76$\,m,\; $e_w=0.25$\,m,\; $A_{cv}=1.44$\,m$^2=14\,400$\,cm$^2$
+
+\subsubsection*{b) Esfuerzos de diseño}
+\begin{center}
+\begin{tabular}{lrrl}\toprule
+Parámetro & Valor & Unidad & Nota\\\midrule
+$V_u$ & 109.75 & tf         & Corte último\\
+$M_u$ & 779.65 & tf$\cdot$m & Momento último\\
+$N_u$ & 178.62 & tf         & Axial (flexión)\\
+$P_u$ & 898.14 & tf         & Axial máx.\ (compresión)\\\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection*{c) Compresión máxima $\sigma_u \leq 0.35f'_c$}
+\begin{equation*}
+\sigma_u = \frac{P_u}{l_w\cdot e_w}
+         = \frac{898\,143}{576\times25}
+         = 62.37\,\text{kg/cm}^2
+\;\leq\; 0.35\times350 = 122.5\,\text{kg/cm}^2
+\end{equation*}
+
+\subsubsection*{d) Esbeltez mínima de entrepiso $e_w \geq H_u/16$}
+\begin{equation*}
+e_{\min}=\frac{H_u}{16}=\frac{242}{16}=15.1\,\text{cm}
+\;\leq\; e_w=25\,\text{cm}
+\end{equation*}
+
+\subsubsection*{e) Corte máximo admisible $V_u \leq V_{max}$}
+\begin{align*}
+V_{max} &= 2.12\cdot e_w\cdot l_w\cdot\sqrt{f'_c}
+         = 2.12\times25\times576\times\sqrt{350} = 571.1\,\text{tf}\\
+V_u     &= 109.75\,\text{tf} \leq 571.1\,\text{tf}
+\end{align*}
+
+\subsubsection*{f) Armadura de corte (sobrerresistencia $\Omega_v=2.0$)}
+\begin{align*}
+V_e   &= \Omega_v\cdot V_u = 2.0\times109.75=219.50\,\text{tf}\\
+V_c   &= 0.53\cdot e_w\cdot l_w\cdot\sqrt{f'_c}
+       = 0.53\times25\times576\times\sqrt{350}=142.78\,\text{tf}\\
+V_s   &= \frac{V_e}{\phi}-V_c
+       = \frac{219.50}{0.75}-142.78=149.89\,\text{tf}\\
+\rho_t &= 0.0025\quad(\text{mínimo normativo})\\
+A_h   &= \rho_t\cdot e_w\cdot\frac{100}{2}
+       = 0.0025\times25\times50 = 3.13\,\text{cm}^2/\text{m por cara}
+\end{align*}
+
+\subsubsection*{g) Armadura de Flexo-Compresión (Cárdenas-Magura)}
+\begin{align*}
+\alpha &= \frac{N_u}{l_w\cdot e_w\cdot f'_c}
+        = \frac{178\,624}{576\times25\times350}=0.03544\\
+\omega &= \frac{\rho_v\cdot f_y}{f'_c}
+        = \frac{0.0035\times4200}{350}=0.042\\
+\frac{c}{l_w} &= \frac{\alpha+\omega}{2\omega+0.85\beta_1}
+               = \frac{0.03544+0.042}{2\times0.042+0.85\times0.80}
+               = 0.1014 < \tfrac{3}{8}\\
+c       &= 0.1014\times576=58.4\,\text{cm}\\
+A_{s,w} &= \rho_v\cdot l_w\cdot e_w=0.0035\times576\times25=50.40\,\text{cm}^2\\
+\phi M_n &= 909.1\,\text{tf}\cdot\text{m}
+           \geq M_u=779.6\,\text{tf}\cdot\text{m} \quad(\checkmark~\text{OK})
+\end{align*}
+
+\subsubsection*{h) Desplazamiento máximo de techo (DS60)}
+\begin{equation*}
+\delta_u = 1.3\cdot S_{de} = 0.1957\,\text{m}=19.57\,\text{cm}
+\qquad \left(\frac{\delta_u}{H_w}=0.005\geq0.005\right)
+\end{equation*}
+
+\subsubsection*{i) Curvatura última $\varphi_u$ (DS60)}
+\begin{equation*}
+\varphi_u = \frac{\delta_u/H_w}{l_w\cdot C_w}=1.337\times10^{-3}\,\text{m}^{-1}
+\end{equation*}
+
+\subsubsection*{j) Verificación de confinamiento}
+\begin{align*}
+c_{lim} &= \frac{l_w}{600\cdot(\delta_u/H_w)}
+         = \frac{576}{600\times0.005}=192\,\text{cm}
+         \;\rightarrow\; c_{lim}=128\,\text{cm}\\
+c       &= 58.4\,\text{cm}<c_{lim}=128\,\text{cm}
+         \quad\text{(No requiere por eje neutro)}
+\end{align*}
+Con $S_g = e_w\cdot l_w^2/6 = 0.25\times5.76^2/6 = 1.3824\,\text{m}^3$:
+\begin{equation*}
+\sigma = \frac{N_u/A_g + M_u/S_g}{10}
+       = \frac{178.62/1.44 + 779.65/1.3824}{10}
+       = 68.80\,\text{kg/cm}^2
+\end{equation*}
+$0.15f'_c=52.5 < \sigma=68.80 \leq 0.2f'_c=70\,\text{kg/cm}^2$
+\quad(Intermedio, no requiere confinamiento)
+
+\subsubsection*{k) Deformación máxima de compresión $\xi_u$}
+\begin{equation*}
+\xi_u = \varphi_u\cdot c
+      = 1.337\times10^{-3}\times0.584
+      = 7.81\times10^{-4}<0.003
+\end{equation*}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/J-1.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $-1$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 1}
+% -------------------------------------------------------
+
+\subsubsection*{Esfuerzos de diseño}
+$V_u=165.70$\,tf,\;
+$M_u=629.87$\,tf$\cdot$m,\;
+$N_u=111.32$\,tf,\;
+$P_u=708.81$\,tf
+
+\subsubsection*{Verificaciones previas}
+\begin{align*}
+\sigma_u &= \frac{708\,806}{576\times25}=49.22\,\text{kg/cm}^2\leq122.5\\
+e_w      &= 25\,\text{cm}\geq15.1\,\text{cm}\\
+V_u      &= 165.70\,\text{tf}\leq571.1\,\text{tf}
+\end{align*}
+
+\subsubsection*{Armadura de corte}
+\begin{align*}
+V_e    &= 2.0\times165.70=331.40\,\text{tf}\\
+V_s    &= 331.40/0.75-142.78=299.08\,\text{tf}\\
+\rho_t &= 0.00495\geq0.0025\\
+A_h    &= 6.18\,\text{cm}^2/\text{m por cara}
+\end{align*}
+
+\subsubsection*{Flexo-Compresión}
+\begin{align*}
+\alpha   &= 0.02209,\quad\omega=0.042\\
+c/l_w    &= 0.0839<3/8\quad(\text{dúctil})\\
+c        &= 48.3\,\text{cm},\quad A_{s,w}=50.40\,\text{cm}^2\\
+\phi M_n &= 767.0\,\text{tf}\cdot\text{m}\geq629.9\,\text{tf}\cdot\text{m}
+\end{align*}
+
+\subsubsection*{Confinamiento y deformación}
+$c=48.3$\,cm $<128$\,cm\quad\text{(No requiere por eje neutro)}\\[4pt]
+$\sigma=(111.32/1.44+629.87/1.3824)/10=53.29\,\text{kg/cm}^2$;\quad
+$0.15f'_c=52.5 < \sigma \leq 70\,\text{kg/cm}^2$
+(Intermedio, no confinar)\\[4pt]
+$\xi_u=1.337\times10^{-3}\times0.483=6.46\times10^{-4}<0.003$
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/J1.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $1$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 2}
+% -------------------------------------------------------
+
+$l_w=5.76$\,m,\; $A_{cv}=14\,400$\,cm$^2$,\; $V_{max}=571.1$\,tf
+
+\subsubsection*{Esfuerzos de diseño}
+$V_u=182.06$\,tf,\; $M_u=573.83$\,tf$\cdot$m,\; $N_u=85.75$\,tf,\; $P_u=619.58$\,tf
+
+\subsubsection*{Verificaciones previas}
+$\sigma_u=43.03\,\text{kg/cm}^2\leq122.5$;\quad $V_u\leq571.1$\,tf
+
+\subsubsection*{Armadura de corte}
+$V_e=364.13$\,tf;\;
+$V_s=342.72$\,tf;\;
+$\rho_t=0.00567$;\;
+$A_h=7.08$\,cm$^2$/m por cara
+
+\subsubsection*{Flexo-Compresión}
+$c=44.5$\,cm;\;
+$\phi M_n=711.4\,\text{tf}\cdot\text{m}\geq573.8$
+
+\subsubsection*{Confinamiento y deformación}
+$c=44.5$\,cm $<128$\,cm;\quad
+$\sigma=47.46\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=5.95\times10^{-4}<0.003$
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/J2.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $2$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 3}
+% -------------------------------------------------------
+
+$V_u=135.72$\,tf,\; $M_u=376.33$\,tf$\cdot$m,\;
+$N_u=70.91$\,tf,\; $P_u=551.65$\,tf
+
+$\sigma_u=38.31\leq122.5$;\quad
+$V_e=271.44$\,tf;\;
+$\rho_t=0.00362$;\;
+$A_h=4.53$\,cm$^2$/m/cara
+
+$c=42.3$\,cm $<128$\,cm;\quad
+$\sigma=32.15\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=5.65\times10^{-4}<0.003$;\quad
+$\phi M_n=678.7\geq376.3$\,tf$\cdot$m
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/J3.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Piso $3$.}
+\end{figure}
+
+% -------------------------------------------------------
+\subsection{Piso 5}
+% -------------------------------------------------------
+
+$V_u=106.57$\,tf,\; $M_u=252.75$\,tf$\cdot$m,\;
+$N_u=56.96$\,tf,\; $P_u=449.82$\,tf
+
+$\sigma_u=31.24\leq122.5$;\quad
+$V_e=213.13$\,tf;\;
+$\rho_t=0.0025$ (mín);\;
+$A_h=3.13$\,cm$^2$/m/cara
+
+$c=40.2$\,cm $<128$\,cm;\quad
+$\sigma=22.24\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=5.37\times10^{-4}<0.003$;\quad
+$\phi M_n=647.7\geq252.8$
+
+% -------------------------------------------------------
+\subsection{Piso 8}
+% -------------------------------------------------------
+
+$V_u=87.68$\,tf,\; $M_u=211.69$\,tf$\cdot$m,\;
+$N_u=45.40$\,tf,\; $P_u=352.55$\,tf
+
+$\sigma_u=24.48\leq122.5$;\quad
+$V_e=175.37$\,tf;\;
+$\rho_t=0.0025$ (mín);\;
+$A_h=3.13$\,cm$^2$/m/cara
+
+$c=38.5$\,cm $<128$\,cm;\quad
+$\sigma=18.47\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=5.14\times10^{-4}<0.003$;\quad
+$\phi M_n=621.9\geq211.7$
+
+% -------------------------------------------------------
+\subsection{Piso 11}
+% -------------------------------------------------------
+
+$V_u=79.25$\,tf,\; $M_u=163.11$\,tf$\cdot$m,\;
+$N_u=29.52$\,tf,\; $P_u=222.31$\,tf
+
+$\sigma_u=15.44\leq122.5$;\quad
+$V_e=158.49$\,tf;\;
+$\rho_t=0.0025$ (mín);\;
+$A_h=3.13$\,cm$^2$/m/cara
+
+$c=36.1$\,cm $<128$\,cm;\quad
+$\sigma=13.85\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=4.83\times10^{-4}<0.003$;\quad
+$\phi M_n=586.0\geq163.1$
+
+% -------------------------------------------------------
+\subsection{Piso 15}
+% -------------------------------------------------------
+
+$V_u=79.25$\,tf,\; $M_u=163.11$\,tf$\cdot$m,\;
+$N_u=29.52$\,tf,\; $P_u=222.31$\,tf
+
+$\sigma_u=15.44\leq122.5$;\quad
+$V_e=158.49$\,tf;\;
+$\rho_t=0.0025$ (mín);\;
+$A_h=3.13$\,cm$^2$/m/cara
+
+$c=36.1$\,cm $<128$\,cm;\quad
+$\sigma=13.85\,\text{kg/cm}^2<52.5\,\text{kg/cm}^2$
+(No confinar);\quad
+$\xi_u=4.83\times10^{-4}<0.003$;\quad
+$\phi M_n=586.0\geq163.1$
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/J5.png}
+\caption{Esquema de muros con resumen de armadura de corte y flexo-compresión. Pisos $5$, $8$, $11$ y $15$.}
+\end{figure}
+
+\newpage
+
+% -------------------------------------------------------
+\subsection{Resumen Muro PJ}
+% -------------------------------------------------------
+
+\begin{longtable}{lcccccccccc}
+\caption{Resumen de diseño Muro PJ --- Dirección X}\label{tab:resumenPJ}\\
+\toprule
+\textbf{P.} & $l_w$ & $V_u$ & $M_u$ & $N_u$ & $\sigma_u$
+            & $V_e$ & $\rho_t$ & $A_h$ & $c$ & $\xi_u$\\
+ & (m) & (tf) & (tf$\cdot$m) & (tf) & (kg/cm$^2$)
+ & (tf) & -- & (cm$^2$/m) & (cm) & ($\times10^{-4}$)\\
+\midrule
+\endfirsthead
+\multicolumn{11}{c}{\textit{Continuación Tabla~\ref{tab:resumenPJ}}}\\
+\toprule
+\textbf{P.} & $l_w$ & $V_u$ & $M_u$ & $N_u$ & $\sigma_u$
+            & $V_e$ & $\rho_t$ & $A_h$ & $c$ & $\xi_u$\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+$-1$ & 5.76 & 109.8 & 779.6 & 178.6 & 62.4 & 219.5 & 0.0025 & 3.13 & 58.4 & 7.81\\
+$1$  & 5.76 & 165.7 & 629.9 & 111.3 & 49.2 & 331.4 & 0.0049 & 6.18 & 48.3 & 6.46\\
+$2$  & 5.76 & 182.1 & 573.8 &  85.8 & 43.0 & 364.1 & 0.0057 & 7.08 & 44.5 & 5.95\\
+$3$  & 5.76 & 135.7 & 376.3 &  70.9 & 38.3 & 271.4 & 0.0036 & 4.53 & 42.3 & 5.65\\
+$5$  & 5.76 & 106.6 & 252.8 &  57.0 & 31.2 & 213.1 & 0.0025 & 3.13 & 40.2 & 5.37\\
+$8$  & 5.76 &  87.7 & 211.7 &  45.4 & 24.5 & 175.4 & 0.0025 & 3.13 & 38.5 & 5.14\\
+$11$ & 5.76 &  79.2 & 163.1 &  29.5 & 15.4 & 158.5 & 0.0025 & 3.13 & 36.1 & 4.83\\
+$15$ & 5.76 &  79.2 & 163.1 &  29.5 & 15.4 & 158.5 & 0.0025 & 3.13 & 36.1 & 4.83\\
+\bottomrule
+\multicolumn{11}{l}{\scriptsize
+  $e_w=25$\,cm (todos los pisos).\quad
+  $\varphi_u=1.337\times10^{-3}$\,m$^{-1}$ (cte.)}
+\end{longtable}
+
+\begin{itemize}
+    \item \textbf{Desplazamiento de techo:} $\delta_u=19.57$\,cm
+    \item \textbf{Curvatura última:} $\varphi_u=1.337\times10^{-3}$\,m$^{-1}$
+    \item \textbf{Confinamiento:} No requerido en ningún piso.
+          Piso $-1$ es el más solicitado con $\sigma=68.80\,\text{kg/cm}^2$,
+          inferior al umbral $0.2f'_c=70\,\text{kg/cm}^2$.
+\end{itemize}
+
+Con los resultados obtenidos, dado que el Piso~1 del Pier C requiere confinamiento, se optó
+por confinar los pisos $-1$ y $1$ de Pier C y dejar los demás pisos sin confinamiento.
