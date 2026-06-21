@@ -375,9 +375,6 @@ INPUT .\Secciones\resumen.tex
 INPUT Secciones\resumen.tex
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\informe_6.toc
-INPUT .\informe_6.toc
-INPUT informe_6.toc
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
@@ -392,6 +389,13 @@ INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\informe_6.toc
+INPUT .\informe_6.toc
+INPUT informe_6.toc
 OUTPUT informe_6.toc
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
@@ -402,6 +406,10 @@ OUTPUT Secciones\intro.aux
 INPUT .\Secciones\intro.tex
 INPUT .\Secciones\intro.tex
 INPUT Secciones\intro.tex
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\Secciones\bases_diseño.tex
 OUTPUT Secciones\bases_diseño.aux
 INPUT .\Secciones\bases_diseño.tex
@@ -473,6 +481,10 @@ OUTPUT Secciones\conclu.aux
 INPUT .\Secciones\conclu.tex
 INPUT .\Secciones\conclu.tex
 INPUT Secciones\conclu.tex
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT informe_6.aux
 INPUT .\Secciones\resumen.aux
 INPUT .\Secciones\resumen.aux
