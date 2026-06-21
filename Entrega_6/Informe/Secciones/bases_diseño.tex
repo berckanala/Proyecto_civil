@@ -1,0 +1,46 @@
+\section{Bases de diseño}
+
+\subsection{Elementos a fundar}
+El diseño abarca los 30 elementos verticales que descargan al nivel de fundación: 21 muros de hormigón armado, resueltos mediante zapata corrida, y 9 columnas, resueltas mediante zapata aislada. Los muros se agrupan según su espesor y posición: los muros perimetrales presentan un espesor $e_w = 0,20$~m (designación MHA20), mientras que los muros interiores tienen $e_w = 0,25$~m (designación MHA25). Las columnas poseen una sección transversal de $30 \times 50$~cm. La totalidad de los elementos a fundar emplea hormigón G35. Dado el comportamiento esencialmente unidireccional del muro, su zapata corrida se verifica en una dirección, en tanto que las zapatas aisladas de columna se verifican de forma biaxial.
+
+\subsection{Materiales}
+El hormigón de las fundaciones es G35, con resistencia a la compresión y módulo de elasticidad
+\begin{equation}
+f'_c = 350~\mathrm{kg/cm^2}, \qquad E_c = 15100\sqrt{350} = 282\,574~\mathrm{kg/cm^2},
+\end{equation}
+especificado según NCh170. El acero de refuerzo es A630-420H según NCh204, empleado en la totalidad de las fundaciones, con
+\begin{equation}
+f_y = 4200~\mathrm{kg/cm^2}, \qquad E_s = 2\,000\,000~\mathrm{kg/cm^2}.
+\end{equation}
+
+\subsection{Parámetros geotécnicos}
+Los parámetros del suelo de fundación corresponden a los asignados para el sector en estudio y se resumen en la Tabla~\ref{tab:geotecnicos}.
+
+\begin{table}[H]
+\centering
+\caption{Parámetros geotécnicos de diseño.}
+\label{tab:geotecnicos}
+\begin{tabular}{lcc}
+\hline
+Parámetro & Símbolo & Valor \\
+\hline
+Presión admisible estática & $\sigma_{adm,e}$ & 70~tonf/m$^2$ \\
+Presión admisible sísmica & $\sigma_{adm,s}$ & 93~tonf/m$^2$ \\
+Coeficiente de roce suelo-fundación & $\mu$ & 0,40 \\
+Factor de seguridad mínimo al deslizamiento & $FS_d$ & 1,50 \\
+Profundidad de sello de fundación & $D_f$ & 2,50~m \\
+Peso específico del suelo & $\gamma_s$ & 1,836~tonf/m$^3$ \\
+Peso específico del hormigón & $\gamma_h$ & 2,50~tonf/m$^3$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Geometría de las zapatas y criterios de diseño}
+Se adopta una altura uniforme $H = 1,20$~m para todas las zapatas, con un recubrimiento de 0,05~m, lo que entrega una altura útil $d = 1,15$~m. Las verificaciones estructurales se realizan conforme a ACI 318-19, empleando factores de reducción de resistencia $\phi = 0,90$ para flexión y $\phi = 0,75$ para corte. Para el diseño estructural de la zapata se emplea un factor de mayoración de cargas de 1,4.
+
+La armadura mínima por retracción y temperatura se determina con una cuantía de 0,0018 sobre la sección bruta:
+\begin{equation}
+A_{s,\min} = 0,0018 \cdot b \cdot H = 0,0018 \cdot 100~\mathrm{cm} \cdot 120~\mathrm{cm} = 21,6~\mathrm{cm^2/m}.
+\end{equation}
+
+Se establece además como criterio que la zona comprimida bajo cada fundación abarque al menos el 80\% de su longitud, limitando la magnitud del despegue admisible entre la zapata y el suelo.

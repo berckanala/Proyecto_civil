@@ -1,0 +1,27 @@
+\section{Combinaciones de carga}
+
+El diseño de las fundaciones distingue dos niveles de solicitación. Las verificaciones geotécnicas —presión de contacto y estabilidad al deslizamiento— se evalúan con combinaciones en estado de servicio, mientras que el diseño estructural de la zapata —corte, punzonamiento y flexión— se realiza con cargas mayoradas. En consecuencia, se consideran dos familias de combinaciones: estáticas, asociadas a las cargas gravitacionales, y sísmicas, que incorporan la acción del sismo.
+
+Las combinaciones consideradas se resumen en la Tabla~\ref{tab:combinaciones}, donde $S$ representa la acción sísmica, evaluada de forma independiente en las direcciones $X$ ($SX$) y $Y$ ($SY$).
+
+\begin{table}[H]
+\centering
+\caption{Combinaciones de carga consideradas en el diseño de fundaciones.}
+\label{tab:combinaciones}
+\begin{tabular}{llc}
+\hline
+Combinación & Tipo & Expresión \\
+\hline
+C1 & Estática & $PP$ \\
+C2 & Estática & $PP + SC$ \\
+C3 & Sísmica & $PP \pm SX$ \\
+C4 & Sísmica & $PP \pm SY$ \\
+\hline
+\end{tabular}
+\end{table}
+
+En las combinaciones sísmicas, el signo $\pm$ recoge ambos sentidos de la acción del sismo, adoptándose en cada elemento el caso más desfavorable. En las columnas, el sismo se evalúa en las dos direcciones del plano y gobierna la condición más exigente entre $SX$ y $SY$. La envolvente de diseño de cada fundación corresponde a la combinación que maximiza la presión de contacto o que minimiza la seguridad al deslizamiento, según la verificación.
+
+De forma complementaria, se evalúa la combinación con sobrecarga y sismo reducidos, $PP + 0,75\,SC \pm 0,75\,S$, como parte de la envolvente sísmica. No obstante, en ningún elemento esta expresión resulta determinante para la presión de contacto, por lo que la condición sísmica de diseño queda gobernada por $PP \pm S$.
+
+La carga axial de servicio empleada en la verificación de presiones incorpora, sobre la solicitación transmitida por la superestructura, el peso propio de la zapata y el relleno de suelo sobre ella, según se detalla en la sección de metodología. Para el diseño estructural de la zapata, las solicitaciones se amplifican mediante un factor de mayoración de 1,4, con el que se obtiene la presión neta mayorada utilizada en las verificaciones de corte, punzonamiento y armadura de flexión.

@@ -1,0 +1,89 @@
+\section{Metodología de diseño}
+
+\subsection{Carga axial de servicio}
+La carga axial que actúa sobre el suelo incorpora, además de la solicitación transmitida por la superestructura, el peso propio de la zapata y el peso del relleno de suelo dispuesto sobre ella hasta el nivel de sello. Para una zapata de dimensiones $B \times L$ y altura $H$, con sello a profundidad $D_f$, este peso adicional es
+\begin{equation}
+W = \left( \gamma_s \, D_f + \gamma_h \, H \right) B \, L,
+\end{equation}
+de modo que la carga axial de servicio sobre el suelo resulta
+\begin{equation}
+N = |P| + W,
+\end{equation}
+donde $P$ es la carga axial transmitida por el muro o columna en la combinación correspondiente.
+
+\subsection{Presión de contacto en muros}
+En los muros, la presión de contacto se evalúa en una dirección. A partir del momento $M$ y la carga axial $N$ se determina la excentricidad
+\begin{equation}
+e = \frac{|M|}{N},
+\end{equation}
+que se compara con el límite del núcleo central $L/6$. Cuando la resultante cae dentro del núcleo ($e \le L/6$), toda la base permanece comprimida y la presión máxima se obtiene mediante la distribución trapezoidal
+\begin{equation}
+\sigma = \frac{N}{B\,L}\left( 1 + \frac{6e}{L} \right).
+\end{equation}
+Cuando la excentricidad supera el núcleo ($e > L/6$), parte de la base se despega y la distribución se vuelve triangular, con una longitud comprimida
+\begin{equation}
+L_p = 3\left( \frac{L}{2} - e \right), \qquad \sigma = \frac{2N}{B\,L_p}.
+\end{equation}
+En este caso se exige que la zona comprimida abarque al menos el 80\% de la longitud de la zapata, esto es $L_p \ge 0,80\,L$. En ambos casos la presión máxima debe cumplir $\sigma \le \sigma_{adm}$, adoptando el valor admisible estático o sísmico según la combinación.
+
+\subsection{Presión de contacto en columnas}
+En las columnas, la verificación es biaxial. A partir de los momentos en ambos ejes se determinan las excentricidades
+\begin{equation}
+e_x = \frac{|M_x|}{N}, \qquad e_y = \frac{|M_y|}{N}.
+\end{equation}
+Si la resultante se mantiene dentro del núcleo central, condición expresada por $\dfrac{e_x}{B} + \dfrac{e_y}{L} \le \dfrac{1}{6}$, la presión máxima en la esquina más cargada es
+\begin{equation}
+\sigma = \frac{N}{B\,L}\left( 1 + \frac{6 e_x}{B} + \frac{6 e_y}{L} \right).
+\end{equation}
+Fuera del núcleo, la presión se obtiene mediante redistribución por cada eje, adoptando el valor máximo resultante. La verificación exige $\sigma \le \sigma_{adm}$.
+
+\subsection{Verificación al corte unidireccional}
+La resistencia al corte aportada por el hormigón se evalúa según ACI 318-19 mediante
+\begin{equation}
+v_c = 0,53\sqrt{f'_c} = 10,01~\mathrm{kg/cm^2}.
+\end{equation}
+La sección crítica se ubica a una distancia $d$ de la cara del elemento. Con la presión neta mayorada $q_u$ actuando sobre la proyección en voladizo $L_1$, el esfuerzo de corte solicitante y la resistencia de diseño, por unidad de ancho $b_w$, son
+\begin{equation}
+V_u = q_u\,(L_1 - d)\,b_w, \qquad \phi V_c = \phi \, v_c \, b_w \, d,
+\end{equation}
+con $\phi = 0,75$. La verificación se satisface cuando $V_u \le \phi V_c$.
+
+\subsection{Verificación al punzonamiento}
+En las zapatas aisladas de columna se verifica adicionalmente el punzonamiento en dos direcciones, sobre un perímetro crítico ubicado a $d/2$ de las caras del soporte:
+\begin{equation}
+b_o = 2\left( b_x + d \right) + 2\left( b_y + d \right).
+\end{equation}
+La resistencia del hormigón al corte por punzonamiento es
+\begin{equation}
+v_{c,2D} = 1,06\sqrt{f'_c} = 20,03~\mathrm{kg/cm^2}.
+\end{equation}
+El esfuerzo solicitante se obtiene descontando la presión que actúa dentro del perímetro crítico, y la resistencia de diseño se evalúa sobre dicho perímetro:
+\begin{equation}
+V_u = P_u - q_u\,A_{crit}, \qquad \phi V_c = \phi \, v_{c,2D} \, b_o \, d,
+\end{equation}
+verificándose $V_u \le \phi V_c$.
+
+\subsection{Estabilidad al deslizamiento}
+La estabilidad frente al deslizamiento se evalúa mediante el factor de seguridad
+\begin{equation}
+FS_d = \frac{\mu \, N}{Q} \ge 1,5,
+\end{equation}
+donde $\mu = 0,40$ es el coeficiente de roce suelo-fundación y $Q$ es la fuerza horizontal solicitante. En los muros, $Q$ corresponde al corte en el plano, mientras que en las columnas se compone vectorialmente a partir de las componentes en ambos ejes:
+\begin{equation}
+Q = |V| \quad \text{(muros)}, \qquad Q = \sqrt{V_2^2 + V_3^2} \quad \text{(columnas)}.
+\end{equation}
+
+\subsection{Diseño de la armadura de flexión}
+El momento de diseño se obtiene tratando la zapata como un voladizo empotrado en la cara del elemento, con una longitud de volado
+\begin{equation}
+L_v = \frac{L - b}{2},
+\end{equation}
+donde $b$ es la dimensión del muro o columna en la dirección considerada. El momento solicitante por unidad de ancho es
+\begin{equation}
+M_u = \frac{q_u \, L_v^2}{2}.
+\end{equation}
+El área de acero requerida se determina iterativamente mediante el bloque de compresión equivalente de Whitney:
+\begin{equation}
+A_s = \frac{M_u}{\phi \, f_y \left( d - \dfrac{a}{2} \right)}, \qquad a = \frac{A_s \, f_y}{0,85 \, f'_c \, b},
+\end{equation}
+con $\phi = 0,90$. El proceso parte de un valor inicial de $a$ y se repite hasta la convergencia del par $(A_s, a)$. El área resultante se compara con la armadura mínima $A_{s,\min} = 21,6~\mathrm{cm^2/m}$, adoptándose el mayor de ambos valores. La necesidad de disponer una parrilla de refuerzo se establece comparando la tensión de tracción resultante en la base con un valor límite de $8,5~\mathrm{kg/cm^2}$: cuando se supera dicho límite, el elemento requiere una parrilla diseñada por flexión; en caso contrario, gobierna la armadura mínima. A partir del área adoptada se selecciona el diámetro y la separación de las barras.

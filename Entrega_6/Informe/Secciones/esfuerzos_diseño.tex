@@ -1,0 +1,88 @@
+\section{Esfuerzos de diseño}
+
+Los esfuerzos de diseño de las fundaciones se obtienen del modelo estructural del edificio, extrayendo las solicitaciones en la base de cada muro y columna, en el nivel inferior de la estructura. Para cada elemento se reportan los esfuerzos en su cabeza y en su pie, adoptando la envolvente más desfavorable. Las solicitaciones relevantes para el diseño de la fundación son la carga axial $N$, el esfuerzo de corte $Q$ y el momento flector $M$ transmitidos a la zapata, expresados en tonf y tonf$\cdot$m.
+
+\subsection{Casos de carga base}
+Los esfuerzos se extraen separados en cuatro casos base, a partir de los cuales se construyen posteriormente las combinaciones de diseño:
+
+\begin{table}[H]
+\centering
+\caption{Casos de carga base extraídos del modelo.}
+\label{tab:casos_base}
+\begin{tabular}{lll}
+\hline
+Sigla & Tipo & Descripción \\
+\hline
+PP & Lineal estático & Peso propio (carga muerta) \\
+SC & Lineal estático & Sobrecarga (carga viva) \\
+SX & Espectro de respuesta & Sismo en dirección X \\
+SY & Espectro de respuesta & Sismo en dirección Y \\
+\hline
+\end{tabular}
+\end{table}
+
+Los esfuerzos sísmicos SX y SY corresponden a valores absolutos de la respuesta espectral modal, obtenidos mediante combinación cuadrática completa. En los muros, la dirección sísmica considerada es la coincidente con el plano del muro según su orientación.
+
+\subsection{Componentes de esfuerzo}
+En los muros, el comportamiento es esencialmente plano: la fundación se diseña a partir de la carga axial $N$, el corte en el plano del muro $Q$ y el momento en el plano $M$. En las columnas, en cambio, los esfuerzos se consideran de forma biaxial, incorporando las componentes de corte y momento en ambos ejes locales ($V_2$, $V_3$, $M_2$, $M_3$), de modo que la zapata aislada se verifica simultáneamente en las dos direcciones.
+
+\subsection{Ubicación en planta}
+Las nueve columnas se disponen en una grilla regular de $3 \times 3$, definida por las coordenadas de la Tabla~\ref{tab:grilla_columnas}. Los muros, por su parte, quedan definidos por las coordenadas de sus puntos extremos, según el trazado indicado en el plano de fundaciones.
+
+\begin{table}[H]
+\centering
+\caption{Coordenadas de la grilla de columnas.}
+\label{tab:grilla_columnas}
+\begin{tabular}{lc}
+\hline
+Eje & Coordenadas (m) \\
+\hline
+$X$ & 9,891 \, / \, 15,841 \, / \, 22,249 \\
+$Y$ & 37,109 \, / \, 42,109 \, / \, 47,709 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Esfuerzos por elemento}
+La Tabla~\ref{tab:esf_muros} presenta los esfuerzos por caso de carga de los muros más solicitados, identificando la dirección sísmica que controla cada componente. La carga axial corresponde al caso de peso propio, que gobierna la compresión transmitida a la fundación.
+
+\begin{table}[H]
+\centering
+\caption{Esfuerzos por caso de carga de los muros más solicitados.}
+\label{tab:esf_muros}
+\begin{tabular}{lccc}
+\hline
+Muro & $N$ (tonf) & $Q$ (tonf) & $M$ (tonf$\cdot$m) \\
+\hline
+P1   & $-103,2$ & 210,4 (SY) & 404,0 (SY) \\
+PN   & $-70,8$  & 156,9 (SX) & 273,5 (SX) \\
+P13  & $-78,7$  & 190,2 (SY) & 401,2 (SY) \\
+PI   & $-463,6$ & 29,3 (SX)  & 396,8 (SX) \\
+P5   & $-761,6$ & 19,6 (SY)  & 163,5 (SX) \\
+PL-6 & $-688,1$ & 15,6 (SY)  & 624,0 (SY) \\
+PJ   & $-480,6$ & 30,9 (SX)  & 466,8 (SX) \\
+PE   & $-388,3$ & 26,0 (SX)  & 446,9 (SX) \\
+PG   & $-463,7$ & 14,6 (SX)  & 348,8 (SX) \\
+PL-J-11 & $-265,3$ & 25,7 (SX) & 257,3 (SY) \\
+\hline
+\end{tabular}
+\end{table}
+
+En las columnas, las solicitaciones son sustancialmente menores y están gobernadas por las cargas gravitacionales; las fuerzas laterales son prácticamente despreciables. La Tabla~\ref{tab:esf_columnas} resume los esfuerzos de las columnas más cargadas.
+
+\begin{table}[H]
+\centering
+\caption{Esfuerzos de las columnas más cargadas (caso de peso propio).}
+\label{tab:esf_columnas}
+\begin{tabular}{lccc}
+\hline
+Columna & $N$ (tonf) & $Q$ (tonf) & $M$ (tonf$\cdot$m) \\
+\hline
+C7 & $-25,65$ & 2,16 & 3,82 \\
+C8 & $-25,02$ & 2,76 & 4,88 \\
+C9 & $-24,21$ & 2,69 & 4,77 \\
+\hline
+\end{tabular}
+\end{table}
+
+Las columnas C1 a C6 presentan cargas axiales menores, en el rango de $-18$ a $-21$~tonf, con esfuerzos de corte inferiores a 1,1~tonf y momentos inferiores a 1,9~tonf$\cdot$m.

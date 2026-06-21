@@ -1,0 +1,80 @@
+\section{Diseño y verificación de fundaciones}
+
+El dimensionamiento de cada fundación se realiza de forma iterativa, partiendo de una sección mínima y aumentando sus dimensiones en planta hasta satisfacer simultáneamente las verificaciones de presión de contacto, corte, punzonamiento y estabilidad al deslizamiento. La totalidad de los 30 elementos —21 muros con zapata corrida y 9 columnas con zapata aislada— cumple todas las verificaciones.
+
+\subsection{Dimensiones y presión de contacto}
+La Tabla~\ref{tab:presion_muros} resume las dimensiones en planta de los muros cuyo diseño queda controlado por la presión de contacto, indicando la presión máxima, el valor admisible aplicable y la condición que gobierna. En los muros más solicitados, la presión sísmica resulta determinante y el diseño queda ajustado al límite admisible, con factores de seguridad cercanos a la unidad.
+
+\begin{table}[H]
+\centering
+\caption{Dimensiones y presión de contacto de los muros que controlan el diseño.}
+\label{tab:presion_muros}
+\begin{tabular}{lccccl}
+\hline
+Muro & $B$ (m) & $L$ (m) & $\sigma$ (tonf/m$^2$) & $\sigma/\sigma_{adm}$ & Condición que gobierna \\
+\hline
+PE & 2,00 & 5,65 & 92,6 & 1,004 & Presión sísmica \\
+PJ & 2,15 & 5,90 & 92,5 & 1,005 & Presión sísmica \\
+P5 & 2,55 & 6,10 & 69,7 & 1,004 & Presión estática \\
+P1 & 2,85 & 47,75 & 9,2 & 7,6 & Geometría / largo del muro \\
+\hline
+\end{tabular}
+\end{table}
+
+Los muros perimetrales, como P1, presentan una gran holgura en presión de contacto: su tamaño en planta queda determinado por el largo del propio muro y no por la tensión sobre el suelo. En cambio, los muros interiores PE, PJ, PI y PG quedan al límite de la presión sísmica admisible, con factores de seguridad del orden de 1,00, lo que refleja un diseño optimizado.
+
+En las columnas, las zapatas aisladas resultan de menor tamaño, variando entre $0,90 \times 1,10$~m en las columnas menos cargadas (C1 a C6) y $1,25 \times 1,25$~m en las más solicitadas (C7 a C9). Estas últimas quedan ajustadas en presión de contacto, con un factor de seguridad cercano a 1,02.
+
+\subsection{Porcentaje de compresión}
+Para cada fundación se verifica que la zona comprimida bajo la base abarque al menos el 80\% de su longitud. La totalidad de los elementos satisface este criterio. En la mayoría de los casos la resultante de cargas cae dentro o muy próxima al núcleo central, de modo que la base permanece íntegramente comprimida (100\%). El único elemento con compresión parcial es el muro PH, que bajo la combinación sísmica más desfavorable alcanza la mayor excentricidad del modelo, manteniendo aun así una zona comprimida del 91,6\%. La Tabla~\ref{tab:compresion} presenta los elementos de mayor excentricidad junto con su porcentaje de compresión resultante.
+
+\begin{table}[H]
+\centering
+\caption{Excentricidad y porcentaje de compresión de los elementos más excéntricos.}
+\label{tab:compresion}
+\begin{tabular}{lcc}
+\hline
+Elemento & $e = M/N$ (m) & Compresión (\%) \\
+\hline
+PH & 1,099 & 91,6 \\
+PE & 0,835 & 100 \\
+PL-6 & 0,702 & 100 \\
+PJ2 & 0,555 & 100 \\
+P12 & 0,551 & 100 \\
+PJ & 0,542 & 100 \\
+PI & 0,541 & 100 \\
+PL-J-11 & 0,535 & 100 \\
+P1 & 0,515 & 100 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Altura de fundación}
+Se adopta una altura uniforme $H = 1,20$~m para la totalidad de las fundaciones. Esta decisión responde a dos criterios. Por una parte, uniformar la altura simplifica la ejecución en obra, evitando sellos de fundación a cotas dispares en zonas donde las zapatas quedan próximas o en contacto. Por otra, esta altura entrega una altura útil $d = 1,15$~m que permite resolver las verificaciones de corte y punzonamiento sin necesidad de armadura de corte, manteniendo el comportamiento de zapata rígida. Como se muestra en las subsecciones siguientes, con esta altura los esfuerzos de corte y punzonamiento quedan holgadamente por debajo de la resistencia del hormigón en todos los elementos, por lo que $H$ no resulta controlada por dichas verificaciones, sino que su valor queda definido por la uniformidad constructiva y la condición de rigidez.
+
+\subsection{Verificación al corte y punzonamiento}
+La verificación al corte unidireccional resulta holgada en todos los elementos, con razones de solicitación a resistencia de diseño inferiores a 0,14. Esto se debe a la elevada altura útil de las zapatas, que incrementa significativamente la resistencia al corte del hormigón frente a la presión neta actuante en la sección crítica.
+
+En las zapatas aisladas de columna, la verificación al punzonamiento sobre el perímetro crítico también presenta una amplia holgura, sin que dicha condición controle el diseño. En las zapatas corridas de muro, el comportamiento es unidireccional y la verificación al punzonamiento no aplica. En consecuencia, ningún elemento requiere ajuste de su altura por concepto de corte o punzonamiento.
+
+\subsection{Estabilidad al deslizamiento}
+La totalidad de las fundaciones satisface el factor de seguridad mínimo al deslizamiento de 1,5. Los casos más ajustados corresponden a los muros perimetrales sometidos a mayor corte sísmico: P1, con $FS_d = 1,502$, y PN, con $FS_d = 1,518$, ambos apenas por sobre el mínimo. El resto de los elementos presenta factores de seguridad superiores, dada la mayor proporción entre la carga axial gravitacional y el corte solicitante.
+
+\subsection{Armadura de las fundaciones}
+La armadura de las zapatas se determina por flexión, tratando el voladizo respecto a la cara del elemento, y se contrasta con la armadura mínima de $21,6~\mathrm{cm^2/m}$. En la mayoría de los elementos gobierna la armadura mínima, resultando una disposición de $\phi 18 @ 100$~mm. 
+
+En aquellos elementos donde la tensión de tracción en la base supera el límite establecido, se dispone adicionalmente una parrilla de refuerzo diseñada por flexión, con una disposición de $\phi 10 @ 200$~mm. Requieren parrilla los muros Plb, P3-L, P3-L-J, PL-6, PL-J-11, PI, P5, PJ, PG y PE, correspondientes a los elementos de mayor solicitación de flexión sobre el suelo. La Tabla~\ref{tab:armadura} resume la armadura adoptada.
+
+\begin{table}[H]
+\centering
+\caption{Armadura adoptada en las fundaciones.}
+\label{tab:armadura}
+\begin{tabular}{ll}
+\hline
+Refuerzo & Disposición \\
+\hline
+Armadura principal (todos los elementos) & $\phi 18 @ 100$~mm \\
+Parrilla (elementos que la requieren) & $\phi 10 @ 200$~mm \\
+\hline
+\end{tabular}
+\end{table}
