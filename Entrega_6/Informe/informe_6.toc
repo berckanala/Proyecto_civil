@@ -28,4 +28,4 @@
 \contentsline {subsection}{\numberline {6.5}Estabilidad al deslizamiento}{15}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Armadura de las fundaciones}{16}{subsection.6.6}%
 \contentsline {section}{\numberline {7}Plano de fundaciones}{18}{section.7}%
-\contentsline {section}{\numberline {8}Conclusiones y comentarios}{20}{section.8}%
+\contentsline {section}{\numberline {8}Conclusiones}{20}{section.8}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.3)  21 JUN 2026 22:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.3)  21 JUN 2026 23:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -714,7 +714,12 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count363
-) (informe_6.aux)
+) (informe_6.aux
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 11.
+ (Secciones/resumen.aux) (Secciones/intro.aux) (Secciones/bases_diseño.aux) (Secciones/esfuerzos_diseño.aux) (Secciones/combinaciones.aux) (Secciones/metodologia.aux) (Secciones/diseño_verificacion.aux) (Secciones/planta.aux) (Secciones/conclu.aux))
 \openout1 = `informe_6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
@@ -791,14 +796,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 93.
 Package hyperref Info: Link coloring ON on input line 93.
+ (informe_6.out) (informe_6.out)
 \@outlinefile=\write4
 \openout4 = `informe_6.out'.
 
 \c@lstlisting=\count370
-<LOGO_UNIVERSIDAD.jpg, id=6, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=126, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 104.
@@ -828,8 +832,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.139 \include{Secciones/resumen.tex}
                                       [1
 
-]
-No file informe_6.toc.
+] (informe_6.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 \tf@toc=\write5
 \openout5 = `informe_6.toc'.
 
@@ -837,7 +843,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 146.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[2
+ [2
 
 
 ]
@@ -854,17 +860,11 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 149.
 \openout2 = `Secciones/bases_diseño.aux'.
 
  (Secciones/bases_diseño.tex
-
-LaTeX Warning: Reference `subsec:zapata_excentrica' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Reference `tab:geotecnicos' on page 4 undefined on input line 22.
-
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 47.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[4
+ [4
 
 
 
@@ -882,17 +882,11 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 150.
 \openout2 = `Secciones/esfuerzos_diseño.aux'.
 
  (Secciones/esfuerzos_diseño.tex
-
-LaTeX Warning: Reference `tab:grilla_columnas' on page 6 undefined on input line 30.
-
-
-LaTeX Warning: Reference `tab:esf_muros' on page 6 undefined on input line 47.
-
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 70.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[6
+ [6
 
 
 
@@ -906,11 +900,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) ha
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.70 
-     ]
-
-LaTeX Warning: Reference `tab:esf_columnas' on page 7 undefined on input line 71.
-
-)
+     ])
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 151.
@@ -928,11 +918,7 @@ l.151 \include{Secciones/esfuerzos_diseño.tex}
                                                ]
 \openout2 = `Secciones/combinaciones.aux'.
 
- (Secciones/combinaciones.tex
-
-LaTeX Warning: Reference `tab:combinaciones' on page 8 undefined on input line 5.
-
-)
+ (Secciones/combinaciones.tex)
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 152.
@@ -972,17 +958,11 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 153.
 \openout2 = `Secciones/diseño_verificacion.aux'.
 
  (Secciones/diseño_verificacion.tex
-
-LaTeX Warning: Reference `tab:excentricos' on page 12 undefined on input line 5.
-
-
-LaTeX Warning: Reference `tab:dimpres' on page 12 undefined on input line 24.
-
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 71.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[12
+ [12
 
 
 
@@ -992,52 +972,36 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) ha
                                                   \__shipout_drop_firstpage_...
 l.71 
      ]
-
-LaTeX Warning: Reference `tab:comp' on page 13 undefined on input line 73.
-
-
-LaTeX Warning: Reference `tab:excentricos' on page 13 undefined on input line 75.
-
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 104.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[13
+ [13
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.104 
       ]
-
-LaTeX Warning: Reference `tab:corte' on page 14 undefined on input line 109.
-
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 162.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[14
+ [14
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.162 
       ]
-
-LaTeX Warning: Reference `tab:desliz' on page 15 undefined on input line 164.
-
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 193.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[15
+ [15
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.193 
-      ]
-
-LaTeX Warning: Reference `tab:arm' on page 16 undefined on input line 195.
-
-)
+      ])
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 154.
@@ -1061,33 +1025,12 @@ l.154 \include{Secciones/diseño_verificacion.tex}
 \openout2 = `Secciones/planta.aux'.
 
  (Secciones/planta.tex
-
-LaTeX Warning: Reference `fig:planta_general' on page 18 undefined on input line 2.
-
-
-LaTeX Warning: Reference `tab:excentricos' on page 18 undefined on input line 2.
-
-
-LaTeX Warning: Reference `tab:dimpres' on page 18 undefined on input line 2.
-
-<Secciones/imagenes/general.png, id=160, 654.94687pt x 626.34pt>
+<Secciones/imagenes/general.png, id=298, 654.94687pt x 626.34pt>
 File: Secciones/imagenes/general.png Graphic file (type png)
 <use Secciones/imagenes/general.png>
 Package pdftex.def Info: Secciones/imagenes/general.png  used on input line 6.
 (pdftex.def)             Requested size: 443.57848pt x 424.20438pt.
-
-LaTeX Warning: Reference `fig:corte_perimetral' on page 18 undefined on input line 11.
-
-
-LaTeX Warning: Reference `fig:corte_corrida' on page 18 undefined on input line 11.
-
-
-LaTeX Warning: Reference `fig:corte_perimetral' on page 18 undefined on input line 11.
-
-
-LaTeX Warning: Reference `fig:corte_corrida' on page 18 undefined on input line 11.
-
-<Secciones/imagenes/perimetral.png, id=162, 194.22563pt x 246.9225pt>
+<Secciones/imagenes/perimetral.png, id=304, 194.22563pt x 246.9225pt>
 File: Secciones/imagenes/perimetral.png Graphic file (type png)
 <use Secciones/imagenes/perimetral.png>
 Package pdftex.def Info: Secciones/imagenes/perimetral.png  used on input line 15.
@@ -1096,7 +1039,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 18.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
-[18
+ [18
 
 
 
@@ -1106,7 +1049,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) h
                                                   \__shipout_drop_firstpage_...
 l.18 \end{figure}
                   <./Secciones/imagenes/general.png>]
-<Secciones/imagenes/corrida.png, id=171, 490.08093pt x 348.55219pt>
+<Secciones/imagenes/corrida.png, id=314, 490.08093pt x 348.55219pt>
 File: Secciones/imagenes/corrida.png Graphic file (type png)
 <use Secciones/imagenes/corrida.png>
 Package pdftex.def Info: Secciones/imagenes/corrida.png  used on input line 22.
@@ -1138,17 +1081,7 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 156.
 
 
 
-] (informe_6.bbl
-informe_6.bbl:36: Undefined control sequence.
-l.36 ...vardyearright , {Decreto Supremo N\textdeg
-                                                  {} 60: Reglamento que fija
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)
+] (informe_6.bbl)
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 165.
@@ -1159,44 +1092,26 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 165.
 ] [22] (informe_6.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (Secciones/resumen.aux) (Secciones/intro.aux) (Secciones/bases_diseño.aux) (Secciones/esfuerzos_diseño.aux) (Secciones/combinaciones.aux) (Secciones/metodologia.aux) (Secciones/diseño_verificacion.aux) (Secciones/planta.aux) (Secciones/conclu.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (Secciones/resumen.aux) (Secciones/intro.aux) (Secciones/bases_diseño.aux) (Secciones/esfuerzos_diseño.aux) (Secciones/combinaciones.aux) (Secciones/metodologia.aux) (Secciones/diseño_verificacion.aux) (Secciones/planta.aux) (Secciones/conclu.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `informe_6.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `informe_6.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  5E92AA840106D8B119A940EBB4D44407;5862.
+Package rerunfilecheck Info: File `informe_6.out' has not changed.
+(rerunfilecheck)             Checksum: 2D63EC2D72A77859C6BCBC74496432D6;5786.
  ) 
 Here is how much of TeX's memory you used:
- 29231 strings out of 467871
- 571669 string characters out of 5418377
- 1214430 words of memory out of 5000000
- 57487 multiletter control sequences out of 15000+600000
- 635677 words of font info for 70 fonts, out of 8000000 for 9000
+ 29294 strings out of 467871
+ 574008 string characters out of 5418377
+ 1215430 words of memory out of 5000000
+ 57527 multiletter control sequences out of 15000+600000
+ 635342 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,104p,2329b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\pedro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on informe_6.pdf (23 pages, 615097 bytes).
+ 84i,17n,104p,2313b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on informe_6.pdf (23 pages, 640865 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
+ 432 PDF objects out of 1000 (max. 8388607)
  101 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
