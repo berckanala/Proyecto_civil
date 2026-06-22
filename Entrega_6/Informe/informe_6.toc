@@ -1,29 +1,31 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Conclusiones y comentarios}{3}{section.1}%
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
 \contentsline {section}{\numberline {2}Bases de diseño}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Elementos a fundar}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Materiales}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Parámetros geotécnicos}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Geometría de las zapatas y criterios de diseño}{4}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Esfuerzos de diseño}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Casos de carga base}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Componentes de esfuerzo}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Ubicación en planta}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Esfuerzos por elemento}{5}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Combinaciones de carga}{7}{section.4}%
-\contentsline {section}{\numberline {5}Metodología de diseño}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Carga axial de servicio}{8}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Presión de contacto en muros}{8}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Presión de contacto en columnas}{8}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Verificación al corte unidireccional}{9}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Verificación al punzonamiento}{9}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Estabilidad al deslizamiento}{9}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Diseño de la armadura de flexión}{9}{subsection.5.7}%
-\contentsline {section}{\numberline {6}Diseño y verificación de fundaciones}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Dimensiones y presión de contacto}{11}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Porcentaje de compresión}{11}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Altura de fundación}{12}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Verificación al corte y punzonamiento}{12}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Estabilidad al deslizamiento}{12}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Armadura de las fundaciones}{12}{subsection.6.6}%
-\contentsline {section}{\numberline {7}Conclusión}{13}{section.7}%
+\contentsline {section}{\numberline {3}Esfuerzos de diseño}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Casos de carga base}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Componentes de esfuerzo}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Ubicación en planta}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Esfuerzos por elemento}{6}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Combinaciones de carga}{8}{section.4}%
+\contentsline {section}{\numberline {5}Metodología de diseño}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Carga axial de servicio}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Presión de contacto en muros}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Presión de contacto en muros perimetrales: zapata excéntrica}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Presión de contacto en columnas}{10}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Verificación al corte unidireccional}{10}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Verificación al punzonamiento}{10}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Estabilidad al deslizamiento}{10}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Diseño de la armadura de flexión}{11}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Diseño y verificación de fundaciones}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Dimensiones y presión de contacto}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Porcentaje de compresión}{13}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Altura de fundación}{14}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Verificación al corte y punzonamiento}{14}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Estabilidad al deslizamiento}{15}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Armadura de las fundaciones}{16}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Plano de fundaciones}{18}{section.7}%
+\contentsline {section}{\numberline {8}Conclusiones y comentarios}{20}{section.8}%

@@ -1,7 +1,12 @@
 \section{Bases de diseño}
 
 \subsection{Elementos a fundar}
-El diseño abarca los 30 elementos verticales que descargan al nivel de fundación: 21 muros de hormigón armado, resueltos mediante zapata corrida, y 9 columnas, resueltas mediante zapata aislada. Los muros se agrupan según su espesor y posición: los muros perimetrales presentan un espesor $e_w = 0,20$~m (designación MHA20), mientras que los muros interiores tienen $e_w = 0,25$~m (designación MHA25). Las columnas poseen una sección transversal de $30 \times 50$~cm. La totalidad de los elementos a fundar emplea hormigón G35. Dado el comportamiento esencialmente unidireccional del muro, su zapata corrida se verifica en una dirección, en tanto que las zapatas aisladas de columna se verifican de forma biaxial.
+
+El diseño abarca los 30 elementos verticales que descargan al nivel de fundación: 21 muros de hormigón armado, resueltos mediante zapata corrida, y 9 columnas, resueltas mediante zapata aislada. Los muros se agrupan según su espesor y posición: los muros perimetrales presentan un espesor $e_w = 0,20$ m (designación MHA20), mientras que los muros interiores tienen $e_w = 0,25$ m (designación MHA25). Las columnas poseen una sección transversal de $30 \times 50$ cm. La totalidad de los elementos a fundar emplea hormigón G35. Dado el comportamiento esencialmente unidireccional del muro, su zapata corrida se verifica en una dirección, en tanto que las zapatas aisladas de columna se verifican de forma biaxial.
+
+Los cinco muros perimetrales del sector, P1, PN, P13, Plb y P12, se resuelven mediante zapata excéntrica: al ubicarse en el límite del edificio, su base no puede desarrollarse hacia el exterior sin sobrepasar la línea de cierro, por lo que se diseñan con el muro en el borde de la zapata y la base proyectándose únicamente hacia el interior, conforme al criterio del curso para fundaciones de muros perimetrales. La metodología correspondiente se detalla en la sección~\ref{subsec:zapata_excentrica}.
+
+El foso de ascensor, delimitado por los muros PH, P9 y PE, se ubica a una profundidad de 1,50 m bajo el nivel de fundación y requiere una losa de fondo, modelada como una placa apoyada en sus cuatro bordes según el criterio del curso.
 
 \subsection{Materiales}
 El hormigón de las fundaciones es G35, con resistencia a la compresión y módulo de elasticidad
@@ -14,7 +19,7 @@ f_y = 4200~\mathrm{kg/cm^2}, \qquad E_s = 2\,000\,000~\mathrm{kg/cm^2}.
 \end{equation}
 
 \subsection{Parámetros geotécnicos}
-Los parámetros del suelo de fundación corresponden a los asignados para el sector en estudio y se resumen en la Tabla~\ref{tab:geotecnicos}.
+Los parámetros del suelo de fundación corresponden a los asignados para el sector en estudio y se resumen en la Tabla~\ref{tab:geotecnicos}. Estos valores corresponden a tensiones admisibles a nivel de sello de fundación, sin que corresponda descontarles el peso del suelo dispuesto sobre dicho nivel.
 
 \begin{table}[H]
 \centering
@@ -43,4 +48,4 @@ La armadura mínima por retracción y temperatura se determina con una cuantía 
 A_{s,\min} = 0,0018 \cdot b \cdot H = 0,0018 \cdot 100~\mathrm{cm} \cdot 120~\mathrm{cm} = 21,6~\mathrm{cm^2/m}.
 \end{equation}
 
-Se establece además como criterio que la zona comprimida bajo cada fundación abarque al menos el 80\% de su longitud, limitando la magnitud del despegue admisible entre la zapata y el suelo.
+Para los muros y columnas con zapata centrada, se establece como criterio que la zona comprimida bajo la fundación abarque al menos el 80\% de su longitud, limitando la magnitud del despegue admisible entre la zapata y el suelo. Este criterio no resulta aplicable a los muros perimetrales con zapata excéntrica, dado que la fracción de base comprimida en ese caso queda determinada por la condición geométrica de borde y no por la magnitud de la solicitación; su tratamiento se detalla en la sección 5.3.

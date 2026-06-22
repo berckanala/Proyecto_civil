@@ -26,6 +26,18 @@ L_p = 3\left( \frac{L}{2} - e \right), \qquad \sigma = \frac{2N}{B\,L_p}.
 \end{equation}
 En este caso se exige que la zona comprimida abarque al menos el 80\% de la longitud de la zapata, esto es $L_p \ge 0,80\,L$. En ambos casos la presión máxima debe cumplir $\sigma \le \sigma_{adm}$, adoptando el valor admisible estático o sísmico según la combinación.
 
+\subsection{Presión de contacto en muros perimetrales: zapata excéntrica}
+\label{subsec:zapata_excentrica}
+Los muros perimetrales se sitúan en el límite del edificio, de modo que su zapata no puede proyectarse hacia el exterior de la línea de cierro. En consecuencia, el muro queda en el borde exterior de la zapata y la base se desarrolla únicamente hacia el interior. El centro de la zapata queda así desplazado respecto del eje del muro, introduciendo en la dirección transversal $B$ una excentricidad geométrica
+\begin{equation}
+e_B = \frac{B}{2} - \frac{e_w}{2} = \frac{B - e_w}{2},
+\end{equation}
+donde $e_w$ es el espesor del muro. Esta excentricidad geométrica se combina con la excentricidad de carga $e_L = |M|/N$, asociada al momento en el plano del muro, evaluándose la presión de contacto en la esquina más cargada como
+\begin{equation}
+\sigma_{\max} = \frac{N}{B\,L}\left( 1 + \frac{6 e_B}{B} + \frac{6 e_L}{L} \right),
+\end{equation}
+verificándose $\sigma_{\max} \le \sigma_{adm}$. Dado que $e_B$ es inherente a la condición de borde y no proviene de la solicitación, en estos elementos el criterio del 80\% de compresión no resulta aplicable; en su lugar se reporta la fracción de base comprimida resultante de la geometría adoptada. El ancho $B$ se ajusta hasta satisfacer simultáneamente la presión admisible y la estabilidad al deslizamiento, manteniendo $L$ igual al largo del muro.
+
 \subsection{Presión de contacto en columnas}
 En las columnas, la verificación es biaxial. A partir de los momentos en ambos ejes se determinan las excentricidades
 \begin{equation}
@@ -72,6 +84,7 @@ donde $\mu = 0,40$ es el coeficiente de roce suelo-fundación y $Q$ es la fuerza
 \begin{equation}
 Q = |V| \quad \text{(muros)}, \qquad Q = \sqrt{V_2^2 + V_3^2} \quad \text{(columnas)}.
 \end{equation}
+En los muros perimetrales con zapata excéntrica, esta verificación resulta determinante en el ajuste del ancho $B$, dado que la holgura disponible en presión de contacto es mayor que en deslizamiento.
 
 \subsection{Diseño de la armadura de flexión}
 El momento de diseño se obtiene tratando la zapata como un voladizo empotrado en la cara del elemento, con una longitud de volado
@@ -82,7 +95,7 @@ donde $b$ es la dimensión del muro o columna en la dirección considerada. El m
 \begin{equation}
 M_u = \frac{q_u \, L_v^2}{2}.
 \end{equation}
-El área de acero requerida se determina iterativamente mediante el bloque de compresión equivalente de Whitney:
+En los muros perimetrales con zapata excéntrica, el voladizo se desarrolla en un único sentido hacia el interior, con $L_v = B - e_w$. El área de acero requerida se determina iterativamente mediante el bloque de compresión equivalente de Whitney:
 \begin{equation}
 A_s = \frac{M_u}{\phi \, f_y \left( d - \dfrac{a}{2} \right)}, \qquad a = \frac{A_s \, f_y}{0,85 \, f'_c \, b},
 \end{equation}

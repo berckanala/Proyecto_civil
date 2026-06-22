@@ -1,80 +1,246 @@
 \section{Diseño y verificación de fundaciones}
-
-El dimensionamiento de cada fundación se realiza de forma iterativa, partiendo de una sección mínima y aumentando sus dimensiones en planta hasta satisfacer simultáneamente las verificaciones de presión de contacto, corte, punzonamiento y estabilidad al deslizamiento. La totalidad de los 30 elementos —21 muros con zapata corrida y 9 columnas con zapata aislada— cumple todas las verificaciones.
+El dimensionamiento de cada fundación se realiza de forma iterativa, partiendo de una sección mínima y aumentando sus dimensiones en planta hasta satisfacer simultáneamente las verificaciones de presión de contacto, corte, punzonamiento y estabilidad al deslizamiento. La totalidad de los 30 elementos —21 muros con zapata corrida y 9 columnas con zapata aislada— cumple todas las verificaciones. En las subsecciones siguientes se reportan los resultados por elemento.
 
 \subsection{Dimensiones y presión de contacto}
-La Tabla~\ref{tab:presion_muros} resume las dimensiones en planta de los muros cuyo diseño queda controlado por la presión de contacto, indicando la presión máxima, el valor admisible aplicable y la condición que gobierna. En los muros más solicitados, la presión sísmica resulta determinante y el diseño queda ajustado al límite admisible, con factores de seguridad cercanos a la unidad.
+La Tabla~\ref{tab:excentricos} resume las dimensiones y la presión de contacto de los cinco muros perimetrales del sector, P1, PN, P13, Plb y P12, resueltos mediante zapata excéntrica conforme a la metodología de la sección 5.3. En P1, PN, P13 y Plb la excentricidad geométrica $e_B$ resulta comparable a la mitad del ancho $B$, lo que reduce la fracción de base comprimida a un rango de 67\% a 68\% y eleva la presión de contacto al orden de 33 a 35~tonf/m$^2$, aún con un factor de seguridad cercano a 2,0 respecto del admisible estático. En P12, la menor carga axial y momento transmitidos, junto con el ancho adoptado, dan lugar a una presión de contacto considerablemente menor, de 11,14~tonf/m$^2$, con la base en compresión completa.
 
 \begin{table}[H]
 \centering
-\caption{Dimensiones y presión de contacto de los muros que controlan el diseño.}
-\label{tab:presion_muros}
-\begin{tabular}{lccccl}
+\caption{Dimensiones y presión de contacto de los muros perimetrales con zapata excéntrica.}
+\label{tab:excentricos}
+\begin{tabular}{lccccccc}
 \hline
-Muro & $B$ (m) & $L$ (m) & $\sigma$ (tonf/m$^2$) & $\sigma/\sigma_{adm}$ & Condición que gobierna \\
+Muro & $B$ (m) & $L$ (m) & $N$ (tonf) & $M$ (tonf$\cdot$m) & $\sigma$ (tonf/m$^2$) & $FS$ & Comp. (\%) \\
 \hline
-PE & 2,00 & 5,65 & 92,6 & 1,004 & Presión sísmica \\
-PJ & 2,15 & 5,90 & 92,5 & 1,005 & Presión sísmica \\
-P5 & 2,55 & 6,10 & 69,7 & 1,004 & Presión estática \\
-P1 & 2,85 & 47,75 & 9,2 & 7,6 & Geometría / largo del muro \\
+P1  & 2,85 & 47,75 & 1175,1 & 604,8 & 33,28 & 2,10 & 67,5 \\
+PN  & 3,00 & 26,50 & 709,2  & 56,0  & 34,06 & 2,06 & 67,7 \\
+P13 & 3,05 & 30,55 & 824,0  & 88,9  & 33,82 & 2,07 & 67,7 \\
+Plb & 5,25 & 3,65  & 170,0  & 2,2   & 34,67 & 2,02 & 67,2 \\
+P12 & 3,50 & 9,80  & 285,7  & 157,3 & 11,14 & 6,28 & 100  \\
 \hline
 \end{tabular}
 \end{table}
 
-Los muros perimetrales, como P1, presentan una gran holgura en presión de contacto: su tamaño en planta queda determinado por el largo del propio muro y no por la tensión sobre el suelo. En cambio, los muros interiores PE, PJ, PI y PG quedan al límite de la presión sísmica admisible, con factores de seguridad del orden de 1,00, lo que refleja un diseño optimizado.
+La Tabla~\ref{tab:dimpres} resume, para el resto de los elementos, las dimensiones en planta adoptadas, los esfuerzos de la combinación que controló el diseño y la presión de contacto resultante. La carga axial $N$ corresponde a la solicitación de servicio sobre el suelo, incorporando el peso propio de la zapata y el relleno según las ecuaciones (4) y (5), y el momento $M$ al de la combinación gobernante. El factor de seguridad se define como $FS = \sigma_{adm}/\sigma$.
 
-En las columnas, las zapatas aisladas resultan de menor tamaño, variando entre $0,90 \times 1,10$~m en las columnas menos cargadas (C1 a C6) y $1,25 \times 1,25$~m en las más solicitadas (C7 a C9). Estas últimas quedan ajustadas en presión de contacto, con un factor de seguridad cercano a 1,02.
-
-\subsection{Porcentaje de compresión}
-Para cada fundación se verifica que la zona comprimida bajo la base abarque al menos el 80\% de su longitud. La totalidad de los elementos satisface este criterio. En la mayoría de los casos la resultante de cargas cae dentro o muy próxima al núcleo central, de modo que la base permanece íntegramente comprimida (100\%). El único elemento con compresión parcial es el muro PH, que bajo la combinación sísmica más desfavorable alcanza la mayor excentricidad del modelo, manteniendo aun así una zona comprimida del 91,6\%. La Tabla~\ref{tab:compresion} presenta los elementos de mayor excentricidad junto con su porcentaje de compresión resultante.
+Los muros interiores de mayor solicitación sísmica —P3-L, P3-L-J, PL-6, PL-J-11, PI, PJ, PG, PH y PE— quedan controlados por la combinación sísmica y se ajustan al límite admisible de 93~tonf/m$^2$, con factores de seguridad cercanos a la unidad, lo que refleja un dimensionamiento optimizado. El resto de los muros interiores y la totalidad de las columnas quedan gobernados por la combinación estática, con presiones inferiores al admisible de 70~tonf/m$^2$ y factores de seguridad mayores.
 
 \begin{table}[H]
 \centering
-\caption{Excentricidad y porcentaje de compresión de los elementos más excéntricos.}
-\label{tab:compresion}
-\begin{tabular}{lcc}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Dimensiones, esfuerzos controlantes y presión de contacto de los muros interiores y columnas.}
+\label{tab:dimpres}
+\begin{tabular}{lcccccccc}
 \hline
-Elemento & $e = M/N$ (m) & Compresión (\%) \\
+Elemento & $B$ (m) & $L$ (m) & $N$ (tonf) & $M$ (tonf$\cdot$m) & $\sigma$ (tonf/m$^2$) & $\sigma_{adm}$ & $FS$ & Combinación \\
 \hline
-PH & 1,099 & 91,6 \\
-PE & 0,835 & 100 \\
-PL-6 & 0,702 & 100 \\
-PJ2 & 0,555 & 100 \\
-P12 & 0,551 & 100 \\
-PJ & 0,542 & 100 \\
-PI & 0,541 & 100 \\
-PL-J-11 & 0,535 & 100 \\
-P1 & 0,515 & 100 \\
+\multicolumn{9}{l}{\textit{Muros interiores}} \\
+\hline
+P3-L    & 1,75 & 1,60  & 199,4  & $-16,1$  & 92,73 & 93 & 1,00 & C3$-$ (din) \\
+P3-L-J  & 1,80 & 4,10  & 531,8  & $-98,4$  & 91,58 & 93 & 1,01 & C3$-$ (din) \\
+PL-6    & 2,15 & 7,60  & 970,9  & $-681,1$ & 92,33 & 93 & 1,01 & C3$-$ (din) \\
+PJ2     & 1,45 & 7,50  & 275,1  & 152,7  & 36,53 & 70 & 1,92 & C2 (est) \\
+PL-J-11 & 1,75 & 5,25  & 524,5  & $-280,5$ & 91,98 & 93 & 1,01 & C3$-$ (din) \\
+PJ1     & 1,45 & 2,85  & 227,9  & $-47,4$  & 79,28 & 93 & 1,17 & C3$-$ (din) \\
+PI      & 2,50 & 5,50  & 796,2  & $-430,6$ & 92,07 & 93 & 1,01 & C3$-$ (din) \\
+P5      & 2,55 & 6,10  & 1052,5 & 32,5   & 69,72 & 70 & 1,00 & C2 (est) \\
+PJ      & 2,15 & 5,90  & 756,5  & $-410,4$ & 92,54 & 93 & 1,00 & C3$-$ (din) \\
+P8-7    & 1,50 & 3,60  & 365,8  & $-1,1$   & 68,09 & 70 & 1,03 & C2 (est) \\
+PG      & 2,50 & 5,50  & 843,0  & $-389,7$ & 92,22 & 93 & 1,01 & C3$-$ (din) \\
+PH      & 1,45 & 5,65  & 343,5  & $-377,6$ & 91,52 & 93 & 1,02 & C3$-$ (din) \\
+PE      & 2,00 & 5,65  & 554,8  & $-463,2$ & 92,63 & 93 & 1,00 & C3$-$ (din) \\
+P9      & 1,45 & 4,00  & 302,7  & $-18,5$  & 56,96 & 70 & 1,23 & C2 (est) \\
+P11     & 1,45 & 4,55  & 268,3  & $-10,3$  & 42,73 & 70 & 1,64 & C2 (est) \\
+P5G     & 1,55 & 5,75  & 575,1  & $-34,0$  & 68,52 & 70 & 1,02 & C2 (est) \\
+\hline
+\multicolumn{9}{l}{\textit{Columnas}} \\
+\hline
+C1 & 0,90 & 1,10 & 45,7 & 0,29 & 48,14 & 70 & 1,45 & C2 (est) \\
+C2 & 0,90 & 1,10 & 44,7 & 1,04 & 56,09 & 70 & 1,25 & C2 (est) \\
+C3 & 0,90 & 1,10 & 44,3 & 1,59 & 56,26 & 70 & 1,24 & C2 (est) \\
+C4 & 0,90 & 1,10 & 45,5 & 0,48 & 51,19 & 70 & 1,37 & C2 (est) \\
+C5 & 0,90 & 1,10 & 41,8 & 0,36 & 48,62 & 70 & 1,44 & C2 (est) \\
+C6 & 0,90 & 1,10 & 40,8 & 0,60 & 46,36 & 70 & 1,51 & C2 (est) \\
+C7 & 1,20 & 1,15 & 57,7 & 7,39 & 68,69 & 70 & 1,02 & C2 (est) \\
+C8 & 1,25 & 1,25 & 57,9 & 9,42 & 68,72 & 70 & 1,02 & C2 (est) \\
+C9 & 1,25 & 1,20 & 55,7 & 9,23 & 67,20 & 70 & 1,04 & C2 (est) \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Porcentaje de compresión}
+Para los muros y columnas con zapata centrada, se verifica que la zona comprimida bajo la base abarque al menos el 80\% de su longitud, según el criterio de la sección 2.4. La totalidad de estos elementos satisface dicho criterio; la Tabla~\ref{tab:comp} presenta la excentricidad y el porcentaje de compresión resultante. En la práctica totalidad de los casos la resultante de cargas cae dentro o muy próxima al núcleo central, de modo que la base permanece íntegramente comprimida (100\%). El único elemento con compresión parcial es el muro PH, que bajo la combinación sísmica más desfavorable alcanza la mayor excentricidad de carga del modelo, $e = 1,10$~m, conservando aun así un 91,6\% de su base comprimida.
+
+En los muros perimetrales con zapata excéntrica —P1, PN, P13 y Plb—, la fracción de base comprimida queda determinada por la excentricidad geométrica de borde y no por el criterio del 80\%, según se indicó en la sección 5.3; sus valores de compresión, entre 67\% y 68\%, se reportan en la Tabla~\ref{tab:excentricos}. El muro P12, también perimetral, alcanza compresión completa pese a su condición de borde, dada su menor solicitación.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Excentricidad y porcentaje de compresión de muros interiores y columnas.}
+\label{tab:comp}
+\begin{tabular}{lcc|lcc}
+\hline
+Elemento & $e$ (m) & Comp. (\%) & Elemento & $e$ (m) & Comp. (\%) \\
+\hline
+P3-L    & 0,08 & 100  & PG   & 0,46 & 100  \\
+P3-L-J  & 0,18 & 100  & PH   & 1,10 & 91,6 \\
+PL-6    & 0,70 & 100  & PE   & 0,83 & 100  \\
+PJ2     & 0,56 & 100  & P9   & 0,06 & 100  \\
+PL-J-11 & 0,54 & 100  & P11  & 0,04 & 100  \\
+PJ1     & 0,21 & 100  & P5G  & 0,06 & 100  \\
+PI      & 0,54 & 100  & C1   & 0,01 & 100  \\
+P5      & 0,03 & 100  & C2   & 0,02 & 100  \\
+PJ      & 0,54 & 100  & C3   & 0,04 & 100  \\
+P8-7    & 0,00 & 100  & C4   & 0,01 & 100  \\
+        &      &      & C5   & 0,02 & 100  \\
+        &      &      & C6   & 0,01 & 100  \\
+        &      &      & C7   & 0,13 & 100  \\
+        &      &      & C8   & 0,16 & 100  \\
+        &      &      & C9   & 0,17 & 100  \\
 \hline
 \end{tabular}
 \end{table}
 
 \subsection{Altura de fundación}
-Se adopta una altura uniforme $H = 1,20$~m para la totalidad de las fundaciones. Esta decisión responde a dos criterios. Por una parte, uniformar la altura simplifica la ejecución en obra, evitando sellos de fundación a cotas dispares en zonas donde las zapatas quedan próximas o en contacto. Por otra, esta altura entrega una altura útil $d = 1,15$~m que permite resolver las verificaciones de corte y punzonamiento sin necesidad de armadura de corte, manteniendo el comportamiento de zapata rígida. Como se muestra en las subsecciones siguientes, con esta altura los esfuerzos de corte y punzonamiento quedan holgadamente por debajo de la resistencia del hormigón en todos los elementos, por lo que $H$ no resulta controlada por dichas verificaciones, sino que su valor queda definido por la uniformidad constructiva y la condición de rigidez.
+Se adopta una altura uniforme $H = 1,20$~m para la totalidad de las fundaciones, incluidos los muros perimetrales con zapata excéntrica. Esta decisión responde a dos criterios. Por una parte, uniformar la altura simplifica la ejecución en obra, evitando sellos de fundación a cotas dispares en zonas donde las zapatas quedan próximas o en contacto. Por otra, esta altura entrega una altura útil $d = 1,15$~m que permite resolver las verificaciones de corte y punzonamiento sin necesidad de armadura de corte, manteniendo el comportamiento de zapata rígida. Como se muestra en las subsecciones siguientes, con esta altura los esfuerzos de corte y punzonamiento quedan holgadamente por debajo de la resistencia del hormigón en todos los elementos, por lo que $H$ no resulta controlada por dichas verificaciones, sino que su valor queda definido por la uniformidad constructiva y la condición de rigidez.
 
 \subsection{Verificación al corte y punzonamiento}
-La verificación al corte unidireccional resulta holgada en todos los elementos, con razones de solicitación a resistencia de diseño inferiores a 0,14. Esto se debe a la elevada altura útil de las zapatas, que incrementa significativamente la resistencia al corte del hormigón frente a la presión neta actuante en la sección crítica.
-
-En las zapatas aisladas de columna, la verificación al punzonamiento sobre el perímetro crítico también presenta una amplia holgura, sin que dicha condición controle el diseño. En las zapatas corridas de muro, el comportamiento es unidireccional y la verificación al punzonamiento no aplica. En consecuencia, ningún elemento requiere ajuste de su altura por concepto de corte o punzonamiento.
-
-\subsection{Estabilidad al deslizamiento}
-La totalidad de las fundaciones satisface el factor de seguridad mínimo al deslizamiento de 1,5. Los casos más ajustados corresponden a los muros perimetrales sometidos a mayor corte sísmico: P1, con $FS_d = 1,502$, y PN, con $FS_d = 1,518$, ambos apenas por sobre el mínimo. El resto de los elementos presenta factores de seguridad superiores, dada la mayor proporción entre la carga axial gravitacional y el corte solicitante.
-
-\subsection{Armadura de las fundaciones}
-La armadura de las zapatas se determina por flexión, tratando el voladizo respecto a la cara del elemento, y se contrasta con la armadura mínima de $21,6~\mathrm{cm^2/m}$. En la mayoría de los elementos gobierna la armadura mínima, resultando una disposición de $\phi 18 @ 100$~mm. 
-
-En aquellos elementos donde la tensión de tracción en la base supera el límite establecido, se dispone adicionalmente una parrilla de refuerzo diseñada por flexión, con una disposición de $\phi 10 @ 200$~mm. Requieren parrilla los muros Plb, P3-L, P3-L-J, PL-6, PL-J-11, PI, P5, PJ, PG y PE, correspondientes a los elementos de mayor solicitación de flexión sobre el suelo. La Tabla~\ref{tab:armadura} resume la armadura adoptada.
+La Tabla~\ref{tab:corte} resume las verificaciones de corte unidireccional y punzonamiento. Los muros perimetrales con zapata excéntrica —P1, PN, P13, Plb y P12—, cuyo voladizo hacia el interior supera la altura útil de la zapata, desarrollan esfuerzo de corte en la sección crítica, con razones $V_u/\phi V_c$ entre 0,01 y 0,23. En el resto de los elementos la sección crítica, ubicada a una distancia $d$ de la cara, queda fuera del borde de la zapata, de modo que el esfuerzo solicitante en dicha sección es nulo y la verificación se satisface de forma holgada. El punzonamiento, verificado en las zapatas aisladas de columna, presenta razón nula en todos los casos. En consecuencia, ningún elemento requiere ajustar su altura por concepto de corte o punzonamiento.
 
 \begin{table}[H]
 \centering
-\caption{Armadura adoptada en las fundaciones.}
-\label{tab:armadura}
-\begin{tabular}{ll}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{Verificación al corte unidireccional y punzonamiento por elemento.}
+\label{tab:corte}
+\begin{tabular}{lcccc}
 \hline
-Refuerzo & Disposición \\
+Elemento & $V_u$ (tonf) & $\phi V_c$ (tonf) & $V_u/\phi V_c$ & Razón punz. \\
 \hline
-Armadura principal (todos los elementos) & $\phi 18 @ 100$~mm \\
-Parrilla (elementos que la requieren) & $\phi 10 @ 200$~mm \\
+\multicolumn{5}{l}{\textit{Muros perimetrales (zapata excéntrica)}} \\
+\hline
+P1  & 55,2 & 4123,7 & 0,01 & 0 \\
+PN  & 51,9 & 2288,5 & 0,02 & 0 \\
+P13 & 66,2 & 2638,3 & 0,03 & 0 \\
+Plb & 73,5 & 315,2  & 0,23 & 0 \\
+P12 & 44,9 & 846,3  & 0,05 & 0 \\
+\hline
+\multicolumn{5}{l}{\textit{Muros interiores}} \\
+\hline
+P3-L    & 0 & 138,2 & 0 & 0 \\
+P3-L-J  & 0 & 354,1 & 0 & 0 \\
+PL-6    & 0 & 656,3 & 0 & 0 \\
+PJ2     & 0 & 647,7 & 0 & 0 \\
+PL-J-11 & 0 & 453,4 & 0 & 0 \\
+PJ1     & 0 & 246,1 & 0 & 0 \\
+PI      & 0 & 475,0 & 0 & 0 \\
+P5      & 0 & 526,8 & 0 & 0 \\
+PJ      & 0 & 509,5 & 0 & 0 \\
+P8-7    & 0 & 310,9 & 0 & 0 \\
+PG      & 0 & 475,0 & 0 & 0 \\
+PH      & 0 & 487,9 & 0 & 0 \\
+PE      & 0 & 487,9 & 0 & 0 \\
+P9      & 0 & 345,4 & 0 & 0 \\
+P11     & 0 & 392,9 & 0 & 0 \\
+P5G     & 0 & 496,6 & 0 & 0 \\
+\hline
+\multicolumn{5}{l}{\textit{Columnas}} \\
+\hline
+C1 & 0 & 95,00  & 0 & 0 \\
+C2 & 0 & 95,00  & 0 & 0 \\
+C3 & 0 & 95,00  & 0 & 0 \\
+C4 & 0 & 95,00  & 0 & 0 \\
+C5 & 0 & 95,00  & 0 & 0 \\
+C6 & 0 & 95,00  & 0 & 0 \\
+C7 & 0 & 99,31  & 0 & 0 \\
+C8 & 0 & 107,95 & 0 & 0 \\
+C9 & 0 & 103,63 & 0 & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Estabilidad al deslizamiento}
+La Tabla~\ref{tab:desliz} resume la verificación al deslizamiento. La totalidad de los elementos supera el factor de seguridad mínimo de 1,5. Los casos más ajustados corresponden a los muros perimetrales con zapata excéntrica sometidos a mayor corte sísmico —P1 ($FS_d = 1,50$), P13 y Plb ($FS_d = 1,51$), P12 ($FS_d = 1,51$) y PN ($FS_d = 1,52$)—, que quedan prácticamente en el límite; en estos elementos es precisamente esta verificación la que fija el ancho $B$ de la base, dado que la holgura en presión de contacto resulta menor que en los muros interiores. El resto de los muros interiores y la totalidad de las columnas presentan factores de seguridad sustancialmente mayores, dada la mayor proporción entre la carga axial estabilizante y el corte solicitante.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Estabilidad al deslizamiento por elemento.}
+\label{tab:desliz}
+\begin{tabular}{lccc|lccc}
+\hline
+Elemento & $Q$ (tonf) & $FS_d$ & Comb. & Elemento & $Q$ (tonf) & $FS_d$ & Comb. \\
+\hline
+P1      & 301,1 & 1,50  & C3$+$ & PH  & 22,5 & 4,41  & C3$+$ \\
+PN      & 178,5 & 1,52  & C3$-$ & PE  & 25,4 & 6,20  & C3$+$ \\
+P13     & 210,2 & 1,51  & C3$-$ & P9  & 13,7 & 7,10  & C3$+$ \\
+Plb     & 42,1  & 1,51  & C3$+$ & P11 & 48,0 & 1,78  & C3$+$ \\
+P12     & 73,1  & 1,51  & C3$-$ & P5G & 10,6 & 17,60 & C3$+$ \\
+P3-L    & 10,3  & 1,85  & C3$+$ & C1  & 0,52 & 21,89 & C3$+$SX \\
+P3-L-J  & 7,1   & 12,24 & C3$+$ & C2  & 1,04 & 10,70 & C3$+$SX \\
+PL-6    & 12,9  & 20,28 & C3$+$ & C3  & 1,41 & 7,80  & C3$+$SX \\
+PJ2     & 56,0  & 2,13  & C3$-$ & C4  & 0,46 & 24,68 & C3$-$SX \\
+PL-J-11 & 30,3  & 1,92  & C3$+$ & C5  & 0,50 & 21,10 & C3$-$SX \\
+PJ1     & 8,3   & 4,91  & C3$+$ & C6  & 0,58 & 17,95 & C3$-$SX \\
+PI      & 37,4  & 3,64  & C3$+$ & C7  & 3,89 & 5,38  & C4$-$SX \\
+P5      & 18,8  & 17,91 & C3$+$ & C8  & 4,94 & 4,27  & C4$-$SX \\
+PJ      & 43,2  & 7,01  & C3$-$ & C9  & 4,83 & 4,21  & C4$-$SX \\
+P8-7    & 8,4   & 16,70 & C3$-$ & PG  & 26,3 & 4,46  & C3$+$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Armadura de las fundaciones}
+La armadura de las zapatas se determina por flexión, tratando el voladizo respecto a la cara del elemento, y se contrasta con la armadura mínima de $21,6~\mathrm{cm^2/m}$. En la totalidad de los elementos gobierna la armadura mínima, resultando una disposición principal de $\phi 18 @ 100$~mm. La necesidad de disponer una parrilla de refuerzo adicional se establece comparando la tensión de tracción en la base $\sigma_h$ con el límite de $8,5~\mathrm{kg/cm^2}$; la superan diez muros —Plb, P3-L, P3-L-J, PL-6, PL-J-11, PI, P5, PJ, PG y PE—, correspondientes a los elementos de mayor solicitación de flexión sobre el suelo, que reciben una parrilla de $\phi 10 @ 200$~mm. La Tabla~\ref{tab:arm} detalla la armadura adoptada por elemento.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Armadura adoptada por elemento.}
+\label{tab:arm}
+\begin{tabular}{lccc}
+\hline
+Elemento & $\sigma_h$ (kg/cm$^2$) & $A_s$ (cm$^2$/m) & Parrilla \\
+\hline
+\multicolumn{4}{l}{\textit{Muros perimetrales (zapata excéntrica)}} \\
+\hline
+P1  & 3,73  & 21,6 & --- \\
+PN  & 4,41  & 21,6 & --- \\
+P13 & 4,53  & 21,6 & --- \\
+Plb & 15,98 & 21,6 & $\phi 10 @ 200$ \\
+P12 & 3,71  & 21,6 & --- \\
+\hline
+\multicolumn{4}{l}{\textit{Muros interiores}} \\
+\hline
+P3-L    & 10,33 & 21,6 & $\phi 10 @ 200$ \\
+P3-L-J  & 10,89 & 21,6 & $\phi 10 @ 200$ \\
+PL-6    & 16,50 & 21,6 & $\phi 10 @ 200$ \\
+PJ2     & 2,40  & 21,6 & --- \\
+PL-J-11 & 10,24 & 21,6 & $\phi 10 @ 200$ \\
+PJ1     & 5,60  & 21,6 & --- \\
+PI      & 23,07 & 21,6 & $\phi 10 @ 200$ \\
+P5      & 17,94 & 21,6 & $\phi 10 @ 200$ \\
+PJ      & 16,54 & 21,6 & $\phi 10 @ 200$ \\
+P8-7    & 5,17  & 21,6 & --- \\
+PG      & 23,11 & 21,6 & $\phi 10 @ 200$ \\
+PH      & 6,52  & 21,6 & --- \\
+PE      & 14,04 & 21,6 & $\phi 10 @ 200$ \\
+P9      & 3,93  & 21,6 & --- \\
+P11     & 2,86  & 21,6 & --- \\
+P5G     & 5,63  & 21,6 & --- \\
+\hline
+\multicolumn{4}{l}{\textit{Columnas}} \\
+\hline
+C1 & 0,82 & 21,6 & --- \\
+C2 & 0,97 & 21,6 & --- \\
+C3 & 0,97 & 21,6 & --- \\
+C4 & 0,87 & 21,6 & --- \\
+C5 & 0,83 & 21,6 & --- \\
+C6 & 0,78 & 21,6 & --- \\
+C7 & 2,70 & 21,6 & --- \\
+C8 & 3,01 & 21,6 & --- \\
+C9 & 2,94 & 21,6 & --- \\
 \hline
 \end{tabular}
 \end{table}
